@@ -9,7 +9,7 @@
 			"\ttemplateUrl: '${templatePath}'",
 			"})",
 			"",
-			"export class ${componentName} implements OnInit {",
+			"export class ${componentName}Component implements OnInit {",
 			"\tconstructor() { }",
 			"",
 			"\tonInit() { }",
