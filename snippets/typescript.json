@@ -36,17 +36,5 @@
 			"\t\t.service('${Service}', ${Service});",
 			"}"
 		]
-	},
-	"Angular Module": {
-		"prefix": "ng1module",
-		"body": [
-			"namespace ${module} {",
-			"\t'use strict';",
-			"",
-			"\tangular.module('${module}', [",
-			"\t\t$0",
-			"\t]);",
-			"}"
-		]
 	}
 }
