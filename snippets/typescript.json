@@ -4,13 +4,13 @@
 		"body": [
 			"import {Component, OnInit} from 'angular2/angular2';",
 			"@Component({",
-			"/tselector: '${selector}',",
-			"/ttemplateUrl: '${templatePath}'",
+			"\tselector: '${selector}',",
+			"\ttemplateUrl: '${templatePath}'",
 			"})",
 			"export class ${componentName} implements OnInit {",
-			"/tconstructor() { }",
+			"\tconstructor() { }",
 			"",
-			"/tonInit() { }",
+			"\tonInit() { }",
 			"}"
 		]
 	}
