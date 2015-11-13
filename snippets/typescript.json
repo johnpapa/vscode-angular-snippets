@@ -1,39 +1,16 @@
 {
-	"Angular Controller": {
-		"prefix": "ng1controller",
+	"Angular Component": {
+		"prefix": "ng2component",
 		"body": [
-			"namespace ${module} {",
-			"\t'use strict';",
+			"import {Component, OnInit} from 'angular2/angular2';",
+			"@Component({",
+			"/tselector: '${selector}',",
+			"/ttemplateUrl: '${templatePath}'",
+			"})",
+			"export class ${componentName} implements OnInit {",
+			"/tconstructor() { }",
 			"",
-			"\texport class ${Controller}Controller {",
-			"\t\tstatic $inject: Array<string> = ['${dependency1}'];",
-			"\t\tconstructor(private ${dependency1}: ${dependency1Type}) {}",
-			"",
-			"\t}",
-			"",
-			"\tangular",
-			"\t\t.module('${Module}')",
-			"\t\t.controller('${Controller}Controller', ${Controller}Controller);",
-			"}"
-		]
-	},
-	"Angular Service": {
-		"prefix": "ng1service",
-		"body": [
-			"namespace ${module} {",
-			"\t'use strict';",
-			"",
-			"\texport interface I${Service} {",
-			"\t}",
-			"\texport class ${Service} implements I${Service} {",
-			"\t\tstatic $inject: Array<string> = ['${dependency1}'];",
-			"\t\tconstructor(private ${dependency1}: ${dependency1Type}) {}",
-			"",
-			"\t}",
-			"",
-			"\tangular",
-			"\t\t.module('${Module}')",
-			"\t\t.service('${Service}', ${Service});",
+			"/tonInit() { }",
 			"}"
 		]
 	}
