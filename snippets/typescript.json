@@ -10,6 +10,7 @@
 			"})",
 			"",
 			"export class ${componentName}Component implements OnInit {",
+			"$0",
 			"\tconstructor() { }",
 			"",
 			"\tonInit() { }",
