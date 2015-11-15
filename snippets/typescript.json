@@ -1,20 +1,20 @@
 {
-	"Angular Component": {
-		"prefix": "ng2component",
-		"body": [
-			"import {Component, OnInit} from 'angular2/angular2';",
-			"",
-			"@Component({",
-			"\tselector: '${1:selector}',",
-			"\ttemplateUrl: '${2:app}/${3:name}.component.html'",
-			"})",
-			"",
-			"export class ${4:name}Component implements OnInit {",
-			"$0",
-			"\tconstructor() { }",
-			"",
-			"\tonInit() { }",
-			"}"
-		]
-	}
+  "Angular Component": {
+    "prefix": "ng2component",
+    "body": [
+      "import {Component, OnInit} from 'angular2/angular2';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector}',",
+      "\ttemplateUrl: '${2:app}/${3:name}.component.html'",
+      "})",
+      "",
+      "export class ${4:name}Component implements OnInit {",
+      "$0",
+      "\tconstructor() { }",
+      "",
+      "\tonInit() { }",
+      "}"
+    ]
+  }
 }
