@@ -9,6 +9,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ```javascript
 ng2component  // creates an Angular 2 component
+ng2service    // creates an Angular 2 service
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.

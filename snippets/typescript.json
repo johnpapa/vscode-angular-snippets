@@ -16,5 +16,18 @@
       "\tonInit() { }",
       "}"
     ]
+  },
+  "Angular Service": {
+    "prefix": "ng2service",
+    "body": [
+      "import {Injectable} from 'angular2/angular2';",
+      "",
+      "@Injectable()",
+      "export class ${1:name}Service {",
+      "$0",
+      "\tconstructor() { }",
+      "",
+      "}"
+    ]
   }
 }
