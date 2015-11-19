@@ -2,7 +2,7 @@
 
 This extension for Visual Studio Code adds snippets for Angular 2 for TypeScript.
 
-![Install Extension](images/use-extension.gif)
+![Use Extension](images/use-extension.gif)
 
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
