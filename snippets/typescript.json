@@ -13,7 +13,7 @@
       "$0",
       "\tconstructor() { }",
       "",
-      "\tonInit() { }",
+      "\tngOnInit() { }",
       "}"
     ]
   },
