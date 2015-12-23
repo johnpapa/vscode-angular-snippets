@@ -2,7 +2,7 @@
   "Angular Component": {
     "prefix": "ng2component",
     "body": [
-      "import {Component, OnInit} from 'angular2/angular2';",
+      "import {Component, OnInit} from 'angular2/core';",
       "",
       "@Component({",
       "\tselector: '${1:selector}',",
@@ -20,7 +20,7 @@
   "Angular Service": {
     "prefix": "ng2service",
     "body": [
-      "import {Injectable} from 'angular2/angular2';",
+      "import {Injectable} from 'angular2/core';",
       "",
       "@Injectable()",
       "export class ${1:name}Service {",
