@@ -29,5 +29,21 @@
       "",
       "}"
     ]
+  },
+    "Angular Pipe": {
+    "prefix": "ng2pipe",
+    "body": [
+      "import {Pipe} from 'angular2/core';",
+      "",
+      "@Pipe({",
+      "\tname: '${1:name}'",
+      "})",
+      "",
+      "export class ${2:pipeName}Pipe {",
+      "\ttransform(value: ${3:type}, args: ${4:type}) : any {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ]
   }
 }
