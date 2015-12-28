@@ -9,6 +9,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ```javascript
 ng2component  // creates an Angular 2 component
+ng2pipe    // creates an Angular 2 pipe
 ng2service    // creates an Angular 2 service
 ```
 
