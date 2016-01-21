@@ -1,49 +1,70 @@
 {
-  "Angular Component": {
-    "prefix": "ng2component",
-    "body": [
-      "import {Component, OnInit} from 'angular2/core';",
-      "",
-      "@Component({",
-      "\tselector: '${1:selector}',",
-      "\ttemplateUrl: '${2:app}/${3:name}.component.html'",
-      "})",
-      "",
-      "export class ${4:name}Component implements OnInit {",
-      "$0",
-      "\tconstructor() { }",
-      "",
-      "\tngOnInit() { }",
-      "}"
-    ]
-  },
-  "Angular Service": {
-    "prefix": "ng2service",
-    "body": [
-      "import {Injectable} from 'angular2/core';",
-      "",
-      "@Injectable()",
-      "export class ${1:name}Service {",
-      "$0",
-      "\tconstructor() { }",
-      "",
-      "}"
-    ]
-  },
+    "Angular Component": {
+        "prefix": "ng2component",
+        "body": [
+            "import {Component, OnInit} from 'angular2/core';",
+            "",
+            "@Component({",
+            "\tselector: '${1:selector}',",
+            "\ttemplateUrl: '${2:app}/${3:name}.component.html',",
+            "\tdirectives: [$5],",
+            "\tproviders:[$6]",
+            "})",
+            "",
+            "export class ${4:name}Component implements OnInit {",
+            "$0",
+            "\tconstructor() { }",
+            "",
+            "\tngOnInit() { }",
+            "}"
+        ]
+    },
+    "Angular Service": {
+        "prefix": "ng2service",
+        "body": [
+            "import {Injectable} from 'angular2/core';",
+            "",
+            "@Injectable()",
+            "export class ${1:name}Service {",
+            "$0",
+            "\tconstructor() { }",
+            "",
+            "}"
+        ]
+    },
     "Angular Pipe": {
-    "prefix": "ng2pipe",
-    "body": [
-      "import {Pipe, PipeTransform} from 'angular2/core';",
-      "",
-      "@Pipe({",
-      "\tname: '${1:name}'",
-      "})",
-      "",
-      "export class ${2:pipeName}Pipe implements PipeTransform {",
-      "\ttransform(value: ${3:type}, args: ${4:type}) : any {",
-      "\t\t$0",
-      "\t}",
-      "}"
-    ]
-  }
+        "prefix": "ng2pipe",
+        "body": [
+            "import {Pipe, PipeTransform} from 'angular2/core';",
+            "",
+            "@Pipe({",
+            "\tname: '${1:name}'",
+            "})",
+            "",
+            "export class ${2:pipeName}Pipe implements PipeTransform {",
+            "\ttransform(value: ${3:type}, args: ${4:type}) : any {",
+            "\t\t$0",
+            "\t}",
+            "}"
+        ]
+    },
+    "Angular Directive": {
+        "prefix": "ng2directive",
+        "body": [
+            "import {Directive, ElementRef, Renderer} from 'angular2/core';",
+            "@Directive({",
+            "\tselector: '${1:selector}'",
+            "})",
+            "export class ${2:name} {",
+            "\tconstructor(private el: ElementRef, private renderer: Renderer) {",
+            "\t}",
+            "}"
+        ]
+    },
+    "Angular Import": {
+        "prefix": "ng2import",
+        "body": [
+            "import {${2:typeNames}} from '${1:modulePath}';"
+        ]
+    }
 }
