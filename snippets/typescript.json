@@ -1,15 +1,16 @@
 {
   "Angular Component": {
-    "prefix": "ng2component",
+    "prefix": "a2component",
+    "description": "Angular 2 component snippet",
     "body": [
-      "import {Component, OnInit} from 'angular2/core';",
+      "import { Component, OnInit } from 'angular2/core';",
       "",
       "@Component({",
-      "\tselector: '${1:selector}',",
-      "\ttemplateUrl: '${2:app}/${3:name}.component.html'",
+      "\tselector: '${selector}',",
+      "\ttemplateUrl: '${path}/${name}.component.html'",
       "})",
       "",
-      "export class ${4:name}Component implements OnInit {",
+      "export class ${ComponentName}Component implements OnInit {",
       "$0",
       "\tconstructor() { }",
       "",
@@ -18,32 +19,50 @@
     ]
   },
   "Angular Service": {
-    "prefix": "ng2service",
+    "prefix": "a2service",
+    "description": "Angular 2 service snippet",
     "body": [
-      "import {Injectable} from 'angular2/core';",
+      "import { Injectable } from 'angular2/core';",
       "",
       "@Injectable()",
-      "export class ${1:name}Service {",
+      "export class ${ServiceName}Service {",
       "$0",
       "\tconstructor() { }",
       "",
       "}"
     ]
   },
-    "Angular Pipe": {
-    "prefix": "ng2pipe",
+  "Angular Pipe": {
+    "prefix": "a2pipe",
+    "description": "Angular 2 pipe snippet",
     "body": [
-      "import {Pipe, PipeTransform} from 'angular2/core';",
+      "import { Pipe, PipeTransform } from 'angular2/core';",
       "",
       "@Pipe({",
-      "\tname: '${1:name}'",
+      "\tname: '${name}'",
       "})",
       "",
-      "export class ${2:pipeName}Pipe implements PipeTransform {",
-      "\ttransform(value: ${3:type}, args: ${4:type}) : any {",
+      "export class ${PipeName}Pipe implements PipeTransform {",
+      "\ttransform(value: ${valuetype}, args: ${argstype}) : any {",
       "\t\t$0",
       "\t}",
       "}"
     ]
-  }
-}
+  },
+  "RouteConfig": {
+    "prefix": "a2route-config",
+    "description": "Angular 2 route config snippet",
+    "body": [
+      "@RouteConfig([",
+      "\t{ path: '/${path}', as: '${RouteName}', component: ${Component} },",
+      "])"
+    ]
+  },
+  "Subscribe": {
+    "prefix": "a2subscribe",
+    "description": "Angular 2 observable subscribe snippet",
+    "body": [
+      "\t\tthis.${service}.${function}()",
+      "\t\t\t.subscribe(${arg} => this.${property} = ${arg}});"
+    ]
+  }}
