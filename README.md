@@ -8,9 +8,14 @@ This extension for Visual Studio Code adds snippets for Angular 2 for TypeScript
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ```javascript
-ng2component  // creates an Angular 2 component
-ng2pipe    // creates an Angular 2 pipe
-ng2service    // creates an Angular 2 service
+a2component-root  // Angular 2 root App component
+a2bootstrap     // Angular 2 bootstraping, for main.ts
+a2component     // Angular 2 component
+a2pipe          // Angular 2 pipe
+a2route-config  // Angular 2 @RouteConfig
+a2route-path    // Angular 2 routing path
+a2service       // Angular 2 service
+a2subscribe     // Angular 2 observable subscription
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.

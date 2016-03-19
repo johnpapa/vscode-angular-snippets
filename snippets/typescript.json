@@ -88,7 +88,7 @@
     ]
   },
   "AppComponent": {
-    "prefix": "a2app-component",
+    "prefix": "a2component-root",
     "description": "Angular 2 App root component snippet",
     "body": [
       "import { Component } from 'angular2/core';",
