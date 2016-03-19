@@ -11,10 +11,10 @@
       "})",
       "",
       "export class ${ComponentName}Component implements OnInit {",
-      "$0",
       "\tconstructor() { }",
       "",
       "\tngOnInit() { }",
+      "$0",
       "}"
     ]
   },
@@ -54,15 +54,61 @@
     "description": "Angular 2 route config snippet",
     "body": [
       "@RouteConfig([",
-      "\t{ path: '/${path}', as: '${RouteName}', component: ${Component} },",
+      "\t{ path: '/${path}', as: '${RouteName}', component: ${Component} }$0",
       "])"
+    ]
+  },
+  "RouteDefinition": {
+    "prefix": "a2route-path",
+    "description": "Angular 2 route path snippet",
+    "body": [
+      "{ path: '/${path}', as: '${RouteName}', component: ${Component} }$0"
     ]
   },
   "Subscribe": {
     "prefix": "a2subscribe",
     "description": "Angular 2 observable subscribe snippet",
     "body": [
-      "\t\tthis.${service}.${function}()",
-      "\t\t\t.subscribe(${arg} => this.${property} = ${arg}});"
+      "this.${service}.${function}",
+      "\t.subscribe(${arg} => this.${property} = ${arg});",
+      "$0"
     ]
-  }}
+  },
+  "Bootstrap": {
+    "prefix": "a2bootstrap",
+    "description": "Angular 2 bootstrap snippet",
+    "body": [
+      "import { bootstrap } from 'angular2/platform/browser';",
+      "import { ${AppComponent} } from './${name}.component';",
+
+      "bootstrap(${AppComponent}, [])",
+      "\t.then(success => console.log(`Bootstrap success`))",
+      "\t.catch(error => console.log(error));",
+      "$0"
+    ]
+  },
+  "AppComponent": {
+    "prefix": "a2app-component",
+    "description": "Angular 2 App root component snippet",
+    "body": [
+      "import { Component } from 'angular2/core';",
+      "import { HTTP_PROVIDERS } from 'angular2/http';",
+      "import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';",
+      "import 'rxjs/Rx'; // load the full rxjs",
+      "",
+      "@Component({",
+      "\tselector: '${selector}',",
+      "\ttemplateUrl: '${path}/${name}.component.html',",
+      "\tdirectives: [ROUTER_DIRECTIVES],",
+      "\tproviders: [",
+      "\t  HTTP_PROVIDERS,",
+      "\t  ROUTER_PROVIDERS",
+      "\t]",
+      "})",
+      "@RouteConfig([",
+      "\t$0",
+      "])",
+      "export class AppComponent {}"
+    ]
+  }
+}
