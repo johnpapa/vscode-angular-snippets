@@ -1,5 +1,5 @@
 {
-    "name": "Angular2",
+    "name": "vscode-angular2-snippets",
     "publisher": "johnpapa",
     "displayName": "Angular 2 TypeScript Snippets",
     "description": "Angular 2 TypeScript snippets",
@@ -13,14 +13,22 @@
         "type": "git",
         "url": "https://github.com/johnpapa/vscode-angular2-snippets.git"
     },
-    "version": "0.2.1",
-    "engines": { "vscode": "0.10.x" },
-    "categories": ["Snippets"],
+    "version": "0.3.0",
+    "engines": {
+        "vscode": "0.10.x"
+    },
+    "categories": [
+        "Snippets"
+    ],
     "contributes": {
         "snippets": [
             {
                 "language": "typescript",
                 "path": "./snippets/typescript.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
             }
         ]
     }

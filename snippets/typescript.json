@@ -1,6 +1,6 @@
 {
   "Angular Component": {
-    "prefix": "a2component",
+    "prefix": "ng2-component",
     "description": "Angular 2 component snippet",
     "body": [
       "import { Component, OnInit } from 'angular2/core';",
@@ -19,7 +19,7 @@
     ]
   },
   "Angular Service": {
-    "prefix": "a2service",
+    "prefix": "ng2-service",
     "description": "Angular 2 service snippet",
     "body": [
       "import { Injectable } from 'angular2/core';",
@@ -33,7 +33,7 @@
     ]
   },
   "Angular Pipe": {
-    "prefix": "a2pipe",
+    "prefix": "ng2-pipe",
     "description": "Angular 2 pipe snippet",
     "body": [
       "import { Pipe, PipeTransform } from 'angular2/core';",
@@ -50,7 +50,7 @@
     ]
   },
   "RouteConfig": {
-    "prefix": "a2route-config",
+    "prefix": "ng2-route",
     "description": "Angular 2 route config snippet",
     "body": [
       "@RouteConfig([",
@@ -59,14 +59,14 @@
     ]
   },
   "RouteDefinition": {
-    "prefix": "a2route-path",
+    "prefix": "ng2-route-path",
     "description": "Angular 2 route path snippet",
     "body": [
       "{ path: '/${path}', as: '${RouteName}', component: ${Component} }$0"
     ]
   },
   "Subscribe": {
-    "prefix": "a2subscribe",
+    "prefix": "ng2-subscribe",
     "description": "Angular 2 observable subscribe snippet",
     "body": [
       "this.${service}.${function}",
@@ -75,7 +75,7 @@
     ]
   },
   "Bootstrap": {
-    "prefix": "a2bootstrap",
+    "prefix": "ng2-bootstrap",
     "description": "Angular 2 bootstrap snippet",
     "body": [
       "import { bootstrap } from 'angular2/platform/browser';",
@@ -88,7 +88,7 @@
     ]
   },
   "AppComponent": {
-    "prefix": "a2component-root",
+    "prefix": "ng2-component-root",
     "description": "Angular 2 App root component snippet",
     "body": [
       "import { Component } from 'angular2/core';",

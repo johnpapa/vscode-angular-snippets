@@ -1,0 +1,54 @@
+{
+  "ngClass": {
+    "prefix": "ng2-ngClass",
+    "body": [
+      "[ngClass]=\"{${cssClass}: ${expression}}\""
+    ],
+    "description": "Angular 2 ngClass snippet"
+  },
+  "ngFor": {
+    "prefix": "ng2-ngFor",
+    "body": [
+      "*ngFor=\"#${item} of ${list}\""
+    ],
+    "description": "Angular 2 *ngFor snippet"
+  },
+  "ngIf": {
+    "prefix": "ng2-ngIf",
+    "body": [
+      "*ngIf=\"${expression}\""
+    ],
+    "description": "Angular 2 *ngIf snippet"
+  },
+  "ngModel": {
+    "prefix": "ng2-ngModel",
+    "body": [
+      "[(ngModel)]=\"${binding}\""
+    ],
+    "description": "Angular 2 ngModel snippet"
+  },
+  "ngRouterLink": {
+    "prefix": "ng2-routerLink",
+    "body": [
+      "[routerLink]=\"['${routeName}']\""
+    ],
+    "description": "Angular 2 routerLink snippet"
+  },
+  "ngStyle": {
+    "prefix": "ng2-ngStyle",
+    "body": [
+      "[ngStyle]=\"{${style}: ${expression}}\""
+    ],
+    "description": "Angular 2 ngStyle snippet"
+  },
+  "ngSwitch": {
+    "prefix": "ng2-ngSwitch",
+    "body": [
+      "<div [ngSwitch]=\"${conditionExpression}\">",
+      "\t<div *ngSwitchWhen=\"${expression}\">${output}</div>",
+      "\t<div *ngSwitchDefault>${output2}</div>",
+      "</div>"
+    ],
+    "description": "Angular 2 ngSwitch snippet"
+  }
+}
