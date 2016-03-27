@@ -9,7 +9,6 @@
       "\tselector: '${selector}',",
       "\ttemplateUrl: '${path}/${name}.component.html'",
       "})",
-      "",
       "export class ${ComponentName}Component implements OnInit {",
       "\tconstructor() { }",
       "",
