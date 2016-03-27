@@ -49,8 +49,8 @@
       "}"
     ]
   },
-  "RouteConfig": {
-    "prefix": "ng2-route",
+  "Angular Routes": {
+    "prefix": "ng2-routes",
     "description": "Angular 2 route config snippet",
     "body": [
       "@RouteConfig([",
@@ -58,7 +58,7 @@
       "])"
     ]
   },
-  "RouteDefinition": {
+  "Angular RouteDefinition": {
     "prefix": "ng2-route-path",
     "description": "Angular 2 route path snippet",
     "body": [
@@ -74,7 +74,7 @@
       "$0"
     ]
   },
-  "Bootstrap": {
+  "Angular Bootstrapping": {
     "prefix": "ng2-bootstrap",
     "description": "Angular 2 bootstrap snippet",
     "body": [
