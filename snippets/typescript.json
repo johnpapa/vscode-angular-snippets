@@ -53,8 +53,8 @@
     "prefix": "ng2-routes",
     "description": "Angular 2 route config snippet",
     "body": [
-      "@RouteConfig([",
-      "\t{ path: '/${path}', as: '${RouteName}', component: ${Component} }$0",
+      "@Routes([",
+      "\t{ path: '/${path}', component: ${Component} }$0",
       "])"
     ]
   },
@@ -62,7 +62,7 @@
     "prefix": "ng2-route-path",
     "description": "Angular 2 route path snippet",
     "body": [
-      "{ path: '/${path}', as: '${RouteName}', component: ${Component} }$0"
+      "{ path: '/${path}', component: ${Component} }$0"
     ]
   },
   "Subscribe": {
@@ -97,7 +97,7 @@
     "body": [
       "import { Component } from '@angular/core';",
       "import { HTTP_PROVIDERS } from '@angular/http';",
-      "import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';",
+      "import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';",
       "import 'rxjs/Rx'; // load the full rxjs",
       "",
       "@Component({",
@@ -110,7 +110,7 @@
       "\t  ROUTER_PROVIDERS",
       "\t]",
       "})",
-      "@RouteConfig([",
+      "@Routes([",
       "\t$0",
       "])",
       "export class AppComponent {}"
