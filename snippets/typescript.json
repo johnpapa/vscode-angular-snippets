@@ -3,11 +3,12 @@
     "prefix": "ng2-component",
     "description": "Angular 2 component snippet",
     "body": [
-      "import { Component, OnInit } from 'angular2/core';",
+      "import { Component, OnInit } from '@angular/core';",
       "",
       "@Component({",
+      "  moduleId: __moduleName,",
       "\tselector: '${selector}',",
-      "\ttemplateUrl: '${path}/${name}.component.html'",
+      "\ttemplateUrl: '${name}.component.html'",
       "})",
       "export class ${ComponentName}Component implements OnInit {",
       "\tconstructor() { }",
@@ -21,7 +22,7 @@
     "prefix": "ng2-service",
     "description": "Angular 2 service snippet",
     "body": [
-      "import { Injectable } from 'angular2/core';",
+      "import { Injectable } from '@angular/core';",
       "",
       "@Injectable()",
       "export class ${ServiceName}Service {",
@@ -35,7 +36,7 @@
     "prefix": "ng2-pipe",
     "description": "Angular 2 pipe snippet",
     "body": [
-      "import { Pipe, PipeTransform } from 'angular2/core';",
+      "import { Pipe, PipeTransform } from '@angular/core';",
       "",
       "@Pipe({",
       "\tname: '${name}'",
@@ -77,10 +78,13 @@
     "prefix": "ng2-bootstrap",
     "description": "Angular 2 bootstrap snippet",
     "body": [
-      "import { bootstrap } from 'angular2/platform/browser';",
+      "import { enableProdMode } from '@angular/core';",
+      "import { bootstrap } from '@angular/platform-browser-dynamic';",
+      "",
       "import { ${AppComponent} } from './${name}.component';",
-
-      "bootstrap(${AppComponent}, [])",
+      "",
+      "// enableProdMode();",
+      "bootstrap(${AppComponent})",
       "\t.then(success => console.log(`Bootstrap success`))",
       "\t.catch(error => console.log(error));",
       "$0"
@@ -90,9 +94,9 @@
     "prefix": "ng2-component-root",
     "description": "Angular 2 App root component snippet",
     "body": [
-      "import { Component } from 'angular2/core';",
-      "import { HTTP_PROVIDERS } from 'angular2/http';",
-      "import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';",
+      "import { Component } from '@angular/core';",
+      "import { HTTP_PROVIDERS } from '@angular/http';",
+      "import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';",
       "import 'rxjs/Rx'; // load the full rxjs",
       "",
       "@Component({",
