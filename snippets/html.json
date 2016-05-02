@@ -9,7 +9,7 @@
   "ngFor": {
     "prefix": "ng2-ngFor",
     "body": [
-      "*ngFor=\"#${item} of ${list}\""
+      "*ngFor=\"let ${item} of ${list}\""
     ],
     "description": "Angular 2 *ngFor snippet"
   },
