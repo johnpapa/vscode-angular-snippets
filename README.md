@@ -13,7 +13,7 @@ ng2-component-root  // Angular 2 root App component
 ng2-bootstrap     // Angular 2 bootstraping, for main.ts
 ng2-component     // Angular 2 component
 ng2-pipe          // Angular 2 pipe
-ng2-route-config  // Angular 2 @RouteConfig
+ng2-routes        // Angular 2 @Routes
 ng2-route-path    // Angular 2 routing path
 ng2-service       // Angular 2 service
 ng2-subscribe     // Angular 2 observable subscription
