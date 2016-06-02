@@ -18,6 +18,26 @@
       "}"
     ]
   },
+  "Angular Component SystemJS": {
+    "prefix": "ng2-component-systemjs",
+    "description": "Angular 2 component snippet for SystemJS",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "declare var __moduleName : string;",
+      "",
+      "@Component({",
+      "\tmoduleId: __moduleName,",
+      "\tselector: '${selector}',",
+      "\ttemplateUrl: '${name}.component.html'",
+      "})",
+      "export class ${ComponentName}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }",
+      "$0",
+      "}"
+    ]
+  },
   "Angular Service": {
     "prefix": "ng2-service",
     "description": "Angular 2 service snippet",
