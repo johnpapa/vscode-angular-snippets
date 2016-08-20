@@ -8,13 +8,12 @@
       "@Component({",
       "\tmoduleId: module.id,",
       "\tselector: '${selector}',",
-      "\ttemplateUrl: '${name}.component.html'",
+      "\ttemplateUrl: '${feature}.component.html'",
       "})",
-      "export class ${ComponentName}Component implements OnInit {",
+      "export class ${Feature}Component implements OnInit {",
       "\tconstructor() { }",
       "",
-      "\tngOnInit() { }",
-      "$0",
+      "\tngOnInit() { }$0",
       "}"
     ]
   },
@@ -28,7 +27,6 @@
       "export class ${ServiceName}Service {",
       "$0",
       "\tconstructor() { }",
-      "",
       "}"
     ]
   },
@@ -50,19 +48,25 @@
     ]
   },
   "Angular Routes": {
-    "prefix": "ng2-routes",
-    "description": "Angular 2 route config snippet",
+    "prefix": "ng2-routing",
+    "description": "Angular 2 routing file snippet",
     "body": [
-      "@Routes([",
-      "\t{ path: '/${path}', component: ${Component} }$0",
-      "])"
-    ]
-  },
-  "Angular RouteDefinition": {
-    "prefix": "ng2-route-path",
-    "description": "Angular 2 route path snippet",
-    "body": [
-      "{ path: '/${path}', component: ${Component} }$0"
+      "import { Routes, RouterModule } from '@angular/router';",
+      "",
+      "import { ${Home}Component } from './${home}.component';",
+      "",
+      "export const routes: Routes = [",
+      "  {",
+      "    path: '',",
+      "    pathMatch: 'full',",
+      "    redirectTo: '${home}',",
+      "  },",
+      "  { path: '${home}', component: ${Home}Component },",
+      "];",
+      "",
+      "export const routing = RouterModule.forRoot(routes);",
+      "",
+      "export const routedComponents = [${Home}Component]"
     ]
   },
   "Http.get": {
@@ -70,7 +74,7 @@
     "description": "Angular 2 Http.get snippet",
     "body": [
       "return this.http.get('${url}')",
-      "\t.map((res: Response) => res.json()${0});"
+      "\t.map((response: Response) => response.json()${0});"
     ]
   },
   "Subscribe": {
@@ -86,42 +90,80 @@
     "prefix": "ng2-bootstrap",
     "description": "Angular 2 bootstrap snippet",
     "body": [
-      "import { enableProdMode } from '@angular/core';",
-      "import { bootstrap } from '@angular/platform-browser-dynamic';",
+      "import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';",
       "",
-      "import { ${AppComponent} } from './${name}.component';",
+      "import { ${App}Module } from './${app}.module';",
       "",
-      "// enableProdMode();",
-      "",
-      "bootstrap(${AppComponent})",
+      "platformBrowserDynamic().bootstrapModule(${App}Module)",
       "\t.then(success => console.log(`Bootstrap success`))",
       "\t.catch(error => console.log(error));",
       "$0"
     ]
   },
-  "AppComponent": {
+  "Angular Root Component": {
     "prefix": "ng2-component-root",
     "description": "Angular 2 App root component snippet",
     "body": [
       "import { Component } from '@angular/core';",
-      "import { HTTP_PROVIDERS } from '@angular/http';",
-      "import { Routes, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';",
-      "import 'rxjs/Rx'; // load the full rxjs",
       "",
       "@Component({",
       "\tmoduleId: module.id,",
-      "\tselector: '${selector}',",
-      "\ttemplateUrl: '${name}.component.html',",
-      "\tdirectives: [ROUTER_DIRECTIVES],",
-      "\tproviders: [",
-      "\t  HTTP_PROVIDERS,",
-      "\t  ROUTER_PROVIDERS",
-      "\t]",
+      "\tselector: '${my-app}',",
+      "\ttemplate: `",
+      "\t\t<router-outlet></router-outlet>",
+      "\t\t`",
       "})",
-      "@Routes([",
-      "\t$0",
-      "])",
-      "export class AppComponent {}"
+      "export class AppComponent { }",
+      "$0"
+    ]
+  },
+  "Angular Root Module": {
+    "prefix": "ng2-module-root",
+    "description": "Angular 2 Root Module snippet",
+    "body": [
+      "import { NgModule, provide } from '@angular/core';",
+      "import { BrowserModule  } from '@angular/platform-browser';",
+      "import { FormsModule } from '@angular/forms';",
+      "import { HttpModule, XHRBackend } from '@angular/http';",
+      "",
+      "import { ${App}Component }   from './${app}.component';",
+      "import { routing } from './${app}.routing'; //TODO: Create ${app}.routing", 
+      "",
+      "@NgModule({",
+      "\timports: [",
+      "\t\tBrowserModule,",
+      "\t\tFormsModule,",
+      "\t\tHttpModule,",
+      "\t\trouting,",
+      "\t],",
+      "\tdeclarations: [${App}Component],",
+      "\tproviders: [/* TODO: Providers go here */],",
+      "\tbootstrap: [${App}Component],",
+      "})",
+      "",
+      "export class ${App}Module { }",
+      "$0"
+    ]
+  },
+  "Angular Module": {
+    "prefix": "ng2-module",
+    "description": "Angular 2 Module snippet",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "",
+      "import { ${Feature}Component }   from './${feature}.component';",
+      "import { routing, routedComponents } from './${feature}.routing'; //TODO: Create ${feature}.routing", 
+      "",
+      "const declarables = [${Feature}Component, routedComponents]",
+      "",
+      "@NgModule({",
+      "\timports: [routing],",
+      "\tdeclarations: [declarables],",
+      "\tproviders: [/* TODO: Providers go here */],",
+      "})",
+      "",
+      "export default class ${Feature}Component { }",
+      "$0"
     ]
   }
 }

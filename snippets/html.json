@@ -30,7 +30,7 @@
   "ngRouterLink": {
     "prefix": "ng2-routerLink",
     "body": [
-      "[routerLink]=\"['${routeName}']\""
+      "[routerLink]=\"['/${routeName}']\""
     ],
     "description": "Angular 2 routerLink snippet"
   },

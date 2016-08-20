@@ -9,14 +9,16 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript Snippets
 ```typescript
-ng2-component-root  // Angular 2 root App component
 ng2-bootstrap       // Angular 2 bootstraping, for main.ts
 ng2-component       // Angular 2 component
+ng2-component-root  // Angular 2 root app component
+ng2-http-get        // Angular 2 http.get with Rx Observable
+ng2-module          // Angular 2 root app module
+ng2-module-root     // Angular 2 module
 ng2-pipe            // Angular 2 pipe
-ng2-routes          // Angular 2 @Routes
-ng2-route-path      // Angular 2 routing path
+ng2-routing         // Angular 2 routing
 ng2-service         // Angular 2 service
-ng2-subscribe       // Angular 2 observable subscription
+ng2-subscribe       // Angular 2 Rx Observable subscription
 ```
 
 ###HTML Snippets
