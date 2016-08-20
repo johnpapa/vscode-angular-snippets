@@ -45,7 +45,7 @@
     "prefix": "ng2-ngSwitch",
     "body": [
       "<div [ngSwitch]=\"${conditionExpression}\">",
-      "\t<div *ngSwitchWhen=\"${expression}\">${output}</div>",
+      "\t<div *ngSwitchCase=\"${expression}\">${output}</div>",
       "\t<div *ngSwitchDefault>${output2}</div>",
       "</div>"
     ],
