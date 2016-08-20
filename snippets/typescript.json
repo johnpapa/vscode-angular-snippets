@@ -113,7 +113,7 @@
       "\t\t<router-outlet></router-outlet>",
       "\t\t`",
       "})",
-      "export class AppComponent { }",
+      "export class ${App}Component { }",
       "$0"
     ]
   },
