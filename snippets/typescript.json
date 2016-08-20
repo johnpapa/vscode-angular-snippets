@@ -66,7 +66,7 @@
       "",
       "export const routing = RouterModule.forRoot(routes);",
       "",
-      "export const routedComponents = [${Home}Component]"
+      "export const routedComponents = [${Home}Component];"
     ]
   },
   "Http.get": {
@@ -121,10 +121,10 @@
     "prefix": "ng2-module-root",
     "description": "Angular 2 Root Module snippet",
     "body": [
-      "import { NgModule, provide } from '@angular/core';",
+      "import { NgModule } from '@angular/core';",
       "import { BrowserModule  } from '@angular/platform-browser';",
       "import { FormsModule } from '@angular/forms';",
-      "import { HttpModule, XHRBackend } from '@angular/http';",
+      "import { HttpModule } from '@angular/http';",
       "",
       "import { ${App}Component }   from './${app}.component';",
       "import { routing } from './${app}.routing'; //TODO: Create ${app}.routing", 
