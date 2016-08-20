@@ -126,7 +126,7 @@
       "import { FormsModule } from '@angular/forms';",
       "import { HttpModule } from '@angular/http';",
       "",
-      "import { ${App}Component }   from './${app}.component';",
+      "import { ${App}Component } from './${app}.component';",
       "import { routing } from './${app}.routing'; //TODO: Create ${app}.routing", 
       "",
       "@NgModule({",
