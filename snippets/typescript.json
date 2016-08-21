@@ -140,14 +140,13 @@
       "\tproviders: [/* TODO: Providers go here */],",
       "\tbootstrap: [${App}Component],",
       "})",
-      "",
       "export class ${App}Module { }",
       "$0"
     ]
   },
-  "Angular Module": {
+  "Angular Feature Module": {
     "prefix": "ng2-module",
-    "description": "Angular 2 Module snippet",
+    "description": "Angular 2 Feature Module snippet",
     "body": [
       "import { NgModule } from '@angular/core';",
       "",
@@ -161,8 +160,7 @@
       "\tdeclarations: [declarables],",
       "\tproviders: [/* TODO: Providers go here */],",
       "})",
-      "",
-      "export default class ${Feature}Component { }",
+      "export class ${Feature}Module { }",
       "$0"
     ]
   }
