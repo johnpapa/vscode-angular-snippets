@@ -159,18 +159,5 @@
       "export class ${Name}Module { }",
       "$0"
     ]
-  },
-  "Angular Shared Module/'s forRoot'": {
-    "prefix": "ng2-forRoot",
-    "description": "Angular 2 Shared Module's forRoot() snippet. Returns ModuleWithProviders",
-    "body": [
-      "  static forRoot() {",
-      "   return {",
-      "     ngModule: ${Shared}Module,",
-      "     providers: []",
-      "   };",
-      " }",
-      "$0"
-    ]  
   }
 }
