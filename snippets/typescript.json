@@ -144,9 +144,9 @@
       "$0"
     ]
   },
-  "Angular Feature Module": {
-    "prefix": "ng2-module",
-    "description": "Angular 2 Feature Module snippet",
+  "Angular Routing Module": {
+    "prefix": "ng2-module-feature",
+    "description": "Angular 2 Feature Module with routing snippet",
     "body": [
       "import { NgModule } from '@angular/core';",
       "",
@@ -157,11 +157,41 @@
       "",
       "@NgModule({",
       "\timports: [routing],",
+      "\texports: [],",
       "\tdeclarations: [declarables],",
-      "\tproviders: [/* TODO: Providers go here */],",
+      "\tproviders: [],",
       "})",
       "export class ${Feature}Module { }",
       "$0"
     ]
+  },
+  "Angular Shared Module": {
+    "prefix": "ng2-module-shared",
+    "description": "Angular 2 Shared Module snippet",
+    "body": [
+      "import { NgModule, ModuleWithProviders } from '@angular/core';",
+      "import { CommonModule } from '@angular/common';",
+      "",
+      "import { ${Shared}Component }   from './${shared}.component';",
+      "",
+      "const declarables = [${Shared}Component, routedComponents]",
+      "const providers = [];",
+      "",
+      "@NgModule({",
+      "\timports: [CommonModule],",
+      "\texports: [],",
+      "\tdeclarations: [declarables],",
+      "\tproviders: [],",
+      "})",
+      "export class ${Shared}Module {",
+      "  static forRoot(): ModuleWithProviders {",
+      "   return {",
+      "     ngModule: ${Shared}Module,",
+      "     providers: [providers]",
+      "   };",
+      " }",
+      "}",
+      "$0"
+    ]  
   }
 }
