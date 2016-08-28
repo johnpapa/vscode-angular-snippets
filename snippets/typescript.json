@@ -53,20 +53,15 @@
     "body": [
       "import { Routes, RouterModule } from '@angular/router';",
       "",
-      "import { ${Home}Component } from './${home}.component';",
+      "import { ${Name}Component } from './${name}.component';",
       "",
       "export const routes: Routes = [",
-      "  {",
-      "    path: '',",
-      "    pathMatch: 'full',",
-      "    redirectTo: '${home}',",
-      "  },",
-      "  { path: '${home}', component: ${Home}Component },",
+      "  { path: '${path}', component: ${Name}Component },",
       "];",
       "",
-      "export const routing = RouterModule.forRoot(routes);",
+      "export const routing = RouterModule.for${Root|Child}(routes);",
       "",
-      "export const routedComponents = [${Home}Component];"
+      "export const routedComponents = [${Name}Component];"
     ]
   },
   "Http.get": {
