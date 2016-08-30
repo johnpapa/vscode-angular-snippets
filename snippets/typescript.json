@@ -64,7 +64,7 @@
       "  imports: [RouterModule.for${Child|Root}(routes)],",
       "  exports: [RouterModule],",
       "})",
-      "export class LoginRoutingModule { }",
+      "export class ${Name}RoutingModule { }",
       "",
       "export const routedComponents = [${Name}Component];"
     ]
