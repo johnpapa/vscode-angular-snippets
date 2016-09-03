@@ -13,8 +13,8 @@ ng2-bootstrap       // Angular 2 bootstrapping, for main.ts
 ng2-component       // Angular 2 component
 ng2-component-root  // Angular 2 root app component
 ng2-http-get        // Angular 2 http.get with Rx Observable
-ng2-module          // Angular 2 root app module
-ng2-module-root     // Angular 2 module
+ng2-module          // Angular 2 module
+ng2-module-root     // Angular 2 root app module
 ng2-pipe            // Angular 2 pipe
 ng2-routing         // Angular 2 routing
 ng2-service         // Angular 2 service
