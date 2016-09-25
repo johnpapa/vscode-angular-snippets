@@ -9,6 +9,7 @@
       "\tmoduleId: module.id,",
       "\tselector: '${selector}',",
       "\ttemplateUrl: '${feature}.component.html'",
+      "\tstyleUrls: ['${feature}.component.css']",
       "})",
       "export class ${Feature}Component implements OnInit {",
       "\tconstructor() { }",
