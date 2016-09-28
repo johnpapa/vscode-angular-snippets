@@ -81,7 +81,7 @@
     "prefix": "ng2-subscribe",
     "description": "Angular 2 observable subscribe snippet",
     "body": [
-      "this.${service}.${function}()",
+      "this.${service}.${function}",
       "\t.subscribe(${arg} => this.${property} = ${arg});",
       "$0"
     ]
