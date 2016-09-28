@@ -1,6 +1,6 @@
 # Angular 2 TypeScript Snippets for VS Code
 
-**Now Updated for RC6 and @NgModule**
+**Now Updated for Angular 2.0.0 release**
 
 This extension for Visual Studio Code adds snippets for Angular 2 for TypeScript and HTML.
 
