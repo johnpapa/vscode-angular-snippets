@@ -41,7 +41,7 @@
       "})",
       "",
       "export class ${PipeName}Pipe implements PipeTransform {",
-      "\ttransform(value: any, args: any[]): any {",
+      "\ttransform(value: any, ...args: any[]): any {",
       "\t\t$0",
       "\t}",
       "}"
