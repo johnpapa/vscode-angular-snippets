@@ -149,7 +149,7 @@
     "body": [
       "import { NgModule } from '@angular/core';",
       "",
-      "import { ${Name}Component }   from './${name}.component';",
+      "import { ${Name}Component } from './${name}.component';",
       "",
       "@NgModule({",
       "\timports: [],",
