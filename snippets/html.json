@@ -50,5 +50,19 @@
       "</div>"
     ],
     "description": "Angular 2 ngSwitch snippet"
+  },
+  "pre w/ json": {
+    "prefix": "ng2-prej",
+    "body": [
+      "<pre>{{$1 | json}}</pre>$2"
+    ],
+    "description": "Angular 2 pre debug | json"
+  },
+  "pre w/ async json": {
+    "prefix": "ng2-preja",
+    "body": [
+      "<pre>{{$1 | async | json}}</pre>$2"
+    ],
+    "description": "Angular 2 pre debug | async | json"
   }
 }
