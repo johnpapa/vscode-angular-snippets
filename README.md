@@ -1,8 +1,8 @@
-# Angular 2 TypeScript Snippets for VS Code
+# Angular TypeScript Snippets for VS Code
 
-**Now Updated for Angular 2.0.0 release**
+**Now Updated for Angular 2.4 release**
 
-This extension for Visual Studio Code adds snippets for Angular 2 for TypeScript and HTML.
+This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
 ![Use Extension](images/use-extension.gif)
 
@@ -11,16 +11,16 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript Snippets
 ```typescript
-a-bootstrap       // Angular 2 bootstrapping, for main.ts
-a-component       // Angular 2 component
-a-component-root  // Angular 2 root app component
-a-http-get        // Angular 2 http.get with Rx Observable
-a-module          // Angular 2 module
-a-module-root     // Angular 2 root app module
-a-pipe            // Angular 2 pipe
-a-routing         // Angular 2 routing
-a-service         // Angular 2 service
-a-subscribe       // Angular 2 Rx Observable subscription
+a-bootstrap       // Angular bootstrapping, for main.ts
+a-component       // Angular component
+a-component-root  // Angular root app component
+a-http-get        // Angular http.get with Rx Observable
+a-module          // Angular module
+a-module-root     // Angular root app module
+a-pipe            // Angular pipe
+a-routing         // Angular routing
+a-service         // Angular service
+a-subscribe       // Angular Rx Observable subscription
 ```
 
 ###HTML Snippets

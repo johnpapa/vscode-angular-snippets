@@ -4,42 +4,42 @@
     "body": [
       "[ngClass]=\"{${cssClass}: ${expression}}\""
     ],
-    "description": "Angular 2 ngClass snippet"
+    "description": "Angular ngClass snippet"
   },
   "ngFor": {
     "prefix": "a-ngFor",
     "body": [
       "*ngFor=\"let ${item} of ${list}\""
     ],
-    "description": "Angular 2 *ngFor snippet"
+    "description": "Angular *ngFor snippet"
   },
   "ngIf": {
     "prefix": "a-ngIf",
     "body": [
       "*ngIf=\"${expression}\""
     ],
-    "description": "Angular 2 *ngIf snippet"
+    "description": "Angular *ngIf snippet"
   },
   "ngModel": {
     "prefix": "a-ngModel",
     "body": [
       "[(ngModel)]=\"${binding}\""
     ],
-    "description": "Angular 2 ngModel snippet"
+    "description": "Angular ngModel snippet"
   },
   "ngRouterLink": {
     "prefix": "a-routerLink",
     "body": [
       "[routerLink]=\"['/${routeName}']\""
     ],
-    "description": "Angular 2 routerLink snippet"
+    "description": "Angular routerLink snippet"
   },
   "ngStyle": {
     "prefix": "a-ngStyle",
     "body": [
       "[ngStyle]=\"{${style}: ${expression}}\""
     ],
-    "description": "Angular 2 ngStyle snippet"
+    "description": "Angular ngStyle snippet"
   },
   "ngSwitch": {
     "prefix": "a-ngSwitch",
@@ -49,20 +49,20 @@
       "\t<div *ngSwitchDefault>${output2}</div>",
       "</div>"
     ],
-    "description": "Angular 2 ngSwitch snippet"
+    "description": "Angular ngSwitch snippet"
   },
   "pre w/ json": {
     "prefix": "a-prej",
     "body": [
       "<pre>{{$1 | json}}</pre>$2"
     ],
-    "description": "Angular 2 pre debug | json"
+    "description": "Angular pre debug | json"
   },
   "pre w/ async json": {
     "prefix": "a-preja",
     "body": [
       "<pre>{{$1 | async | json}}</pre>$2"
     ],
-    "description": "Angular 2 pre debug | async | json"
+    "description": "Angular pre debug | async | json"
   }
 }

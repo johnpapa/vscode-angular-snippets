@@ -14,7 +14,8 @@
         "url": "https://github.com/johnpapa/vscode-angular2-snippets.git"
     },
     "keywords" : [
-	"Angular 2",
+	"Angular",
+    "Angular 2",
 	"TypeScript",
 	"Snippets",
 	"VS code",
