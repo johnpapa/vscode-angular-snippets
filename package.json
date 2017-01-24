@@ -1,8 +1,8 @@
 {
-    "name": "Angular2",
+    "name": "angular",
     "publisher": "johnpapa",
-    "displayName": "Angular 2 TypeScript Snippets",
-    "description": "Angular 2 TypeScript snippets",
+    "displayName": "Angular TypeScript Snippets",
+    "description": "Angular w/ TypeScript snippets",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
         "color": "#0273D4",
@@ -20,7 +20,7 @@
 	"VS code",
 	"HTML"
     ],
-    "version": "1.0.2",
+    "version": "1.1.0",
     "engines": {
         "vscode": "0.10.x"
     },
