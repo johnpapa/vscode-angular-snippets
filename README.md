@@ -11,27 +11,27 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript Snippets
 ```typescript
-ng2-bootstrap       // Angular 2 bootstrapping, for main.ts
-ng2-component       // Angular 2 component
-ng2-component-root  // Angular 2 root app component
-ng2-http-get        // Angular 2 http.get with Rx Observable
-ng2-module          // Angular 2 module
-ng2-module-root     // Angular 2 root app module
-ng2-pipe            // Angular 2 pipe
-ng2-routing         // Angular 2 routing
-ng2-service         // Angular 2 service
-ng2-subscribe       // Angular 2 Rx Observable subscription
+a-bootstrap       // Angular 2 bootstrapping, for main.ts
+a-component       // Angular 2 component
+a-component-root  // Angular 2 root app component
+a-http-get        // Angular 2 http.get with Rx Observable
+a-module          // Angular 2 module
+a-module-root     // Angular 2 root app module
+a-pipe            // Angular 2 pipe
+a-routing         // Angular 2 routing
+a-service         // Angular 2 service
+a-subscribe       // Angular 2 Rx Observable subscription
 ```
 
 ###HTML Snippets
 ```html
-ng2-ngClass
-ng2-ngFor
-ng2-ngIf
-ng2-ngModel
-ng2-routerLink
-ng2-ngStyle
-ng2-ngSwitch
+a-ngClass
+a-ngFor
+a-ngIf
+a-ngModel
+a-routerLink
+a-ngStyle
+a-ngSwitch
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.

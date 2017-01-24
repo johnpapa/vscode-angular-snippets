@@ -1,6 +1,6 @@
 {
   "Angular Component": {
-    "prefix": "ng2-component",
+    "prefix": "a-component",
     "description": "Angular 2 component snippet",
     "body": [
       "import { Component, OnInit } from '@angular/core';",
@@ -18,7 +18,7 @@
     ]
   },
   "Angular Service": {
-    "prefix": "ng2-service",
+    "prefix": "a-service",
     "description": "Angular 2 service snippet",
     "body": [
       "import { Injectable } from '@angular/core';",
@@ -31,7 +31,7 @@
     ]
   },
   "Angular Pipe": {
-    "prefix": "ng2-pipe",
+    "prefix": "a-pipe",
     "description": "Angular 2 pipe snippet",
     "body": [
       "import { Pipe, PipeTransform } from '@angular/core';",
@@ -48,7 +48,7 @@
     ]
   },
   "Angular Routes": {
-    "prefix": "ng2-routing",
+    "prefix": "a-routing",
     "description": "Angular 2 routing file snippet",
     "body": [
       "import { NgModule } from '@angular/core';",
@@ -70,7 +70,7 @@
     ]
   },
   "Http.get": {
-    "prefix": "ng2-http-get",
+    "prefix": "a-http-get",
     "description": "Angular 2 Http.get snippet",
     "body": [
       "return this.http.get('${url}')",
@@ -78,7 +78,7 @@
     ]
   },
   "Subscribe": {
-    "prefix": "ng2-subscribe",
+    "prefix": "a-subscribe",
     "description": "Angular 2 observable subscribe snippet",
     "body": [
       "this.${service}.${function}",
@@ -87,7 +87,7 @@
     ]
   },
   "Angular Bootstrapping": {
-    "prefix": "ng2-bootstrap",
+    "prefix": "a-bootstrap",
     "description": "Angular 2 bootstrap snippet",
     "body": [
       "import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';",
@@ -101,7 +101,7 @@
     ]
   },
   "Angular Root Component": {
-    "prefix": "ng2-component-root",
+    "prefix": "a-component-root",
     "description": "Angular 2 App root component snippet",
     "body": [
       "import { Component } from '@angular/core';",
@@ -118,7 +118,7 @@
     ]
   },
   "Angular Root Module": {
-    "prefix": "ng2-module-root",
+    "prefix": "a-module-root",
     "description": "Angular 2 Root Module snippet",
     "body": [
       "import { NgModule } from '@angular/core';",
@@ -144,7 +144,7 @@
     ]
   },
   "Angular Module": {
-    "prefix": "ng2-module",
+    "prefix": "a-module",
     "description": "Angular 2 Module snippet",
     "body": [
       "import { NgModule } from '@angular/core';",
