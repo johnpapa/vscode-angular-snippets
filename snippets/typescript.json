@@ -160,5 +160,23 @@
       "export class ${Name}Module { }",
       "$0"
     ]
+  },
+  "Angular Import": {
+    "prefix": "ng2-import",
+    "description": "Angular 2 Import snippet",
+    "body": [
+      "import { ${2:name} } from '${1:package}';",
+      "",
+      "import { ${Name}Component } from './${name}.component';",
+      "",
+      "@NgModule({",
+      "\timports: [],",
+      "\texports: [],",
+      "\tdeclarations: [${Name}Component],",
+      "\tproviders: [],",
+      "})",
+      "export class ${Name}Module { }",
+      "$0"
+    ]
   }
 }
