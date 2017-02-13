@@ -32,6 +32,8 @@ a-ngModel
 a-routerLink
 a-ngStyle
 a-ngSwitch
+a-prej
+a-preja
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
