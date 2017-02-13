@@ -32,6 +32,8 @@ ng2-ngModel
 ng2-routerLink
 ng2-ngStyle
 ng2-ngSwitch
+ng2-prej
+ng2-preja
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
