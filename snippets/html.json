@@ -1,68 +1,68 @@
 {
   "ngClass": {
-    "prefix": "ng2-ngClass",
+    "prefix": "a-ngClass",
     "body": [
       "[ngClass]=\"{${cssClass}: ${expression}}\""
     ],
-    "description": "Angular 2 ngClass snippet"
+    "description": "Angular ngClass snippet"
   },
   "ngFor": {
-    "prefix": "ng2-ngFor",
+    "prefix": "a-ngFor",
     "body": [
       "*ngFor=\"let ${item} of ${list}\""
     ],
-    "description": "Angular 2 *ngFor snippet"
+    "description": "Angular *ngFor snippet"
   },
   "ngIf": {
-    "prefix": "ng2-ngIf",
+    "prefix": "a-ngIf",
     "body": [
       "*ngIf=\"${expression}\""
     ],
-    "description": "Angular 2 *ngIf snippet"
+    "description": "Angular *ngIf snippet"
   },
   "ngModel": {
-    "prefix": "ng2-ngModel",
+    "prefix": "a-ngModel",
     "body": [
       "[(ngModel)]=\"${binding}\""
     ],
-    "description": "Angular 2 ngModel snippet"
+    "description": "Angular ngModel snippet"
   },
   "ngRouterLink": {
-    "prefix": "ng2-routerLink",
+    "prefix": "a-routerLink",
     "body": [
       "[routerLink]=\"['/${routeName}']\""
     ],
-    "description": "Angular 2 routerLink snippet"
+    "description": "Angular routerLink snippet"
   },
   "ngStyle": {
-    "prefix": "ng2-ngStyle",
+    "prefix": "a-ngStyle",
     "body": [
       "[ngStyle]=\"{${style}: ${expression}}\""
     ],
-    "description": "Angular 2 ngStyle snippet"
+    "description": "Angular ngStyle snippet"
   },
   "ngSwitch": {
-    "prefix": "ng2-ngSwitch",
+    "prefix": "a-ngSwitch",
     "body": [
       "<div [ngSwitch]=\"${conditionExpression}\">",
       "\t<div *ngSwitchCase=\"${expression}\">${output}</div>",
       "\t<div *ngSwitchDefault>${output2}</div>",
       "</div>"
     ],
-    "description": "Angular 2 ngSwitch snippet"
+    "description": "Angular ngSwitch snippet"
   },
   "pre w/ json": {
-    "prefix": "ng2-prej",
+    "prefix": "a-prej",
     "body": [
       "<pre>{{$1 | json}}</pre>$2"
     ],
-    "description": "Angular 2 pre debug | json"
+    "description": "Angular pre debug | json"
   },
   "pre w/ async json": {
-    "prefix": "ng2-preja",
+    "prefix": "a-preja",
     "body": [
       "<pre>{{$1 | async | json}}</pre>$2"
     ],
-    "description": "Angular 2 pre debug | async | json"
+    "description": "Angular pre debug | async | json"
   }
 }

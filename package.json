@@ -1,8 +1,8 @@
 {
-    "name": "Angular2",
+    "name": "angular",
     "publisher": "johnpapa",
-    "displayName": "Angular 2 TypeScript Snippets",
-    "description": "Angular 2 TypeScript snippets",
+    "displayName": "Angular TypeScript Snippets",
+    "description": "Angular w/ TypeScript snippets",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
         "color": "#0273D4",
@@ -14,13 +14,14 @@
         "url": "https://github.com/johnpapa/vscode-angular2-snippets.git"
     },
     "keywords" : [
-	"Angular 2",
+	"Angular",
+    "Angular v2",
 	"TypeScript",
 	"Snippets",
 	"VS code",
 	"HTML"
     ],
-    "version": "1.0.2",
+    "version": "2.0.0",
     "engines": {
         "vscode": "0.10.x"
     },
