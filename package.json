@@ -2,7 +2,7 @@
     "name": "angular2",
     "publisher": "johnpapa",
     "displayName": "Angular v2 TypeScript Snippets",
-    "description": "Angular w/ TypeScript snippets (supports Angular v2+)",
+    "description": "Angular with TypeScript snippets. This extension upports Angular v2 or greater.",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
         "color": "#0273D4",
@@ -20,7 +20,7 @@
 	"TypeScript",
 	"HTML"
     ],
-    "version": "2.0.1",
+    "version": "2.0.2",
     "engines": {
         "vscode": "0.10.x"
     },
