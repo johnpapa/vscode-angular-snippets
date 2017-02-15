@@ -160,5 +160,12 @@
       "export class ${Name}Module { }",
       "$0"
     ]
+  },
+  "Angular Import": {
+    "prefix": "ng2-import",
+    "description": "Angular 2 Import snippet",
+    "body": [
+      "import { ${2:name} } from '${1:package}';"
+    ]
   }
 }
