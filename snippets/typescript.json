@@ -165,11 +165,11 @@
     "prefix": "a-directive",
     "description": "Angular directive snippet",
     "body": [
-      "import { Directive, ElementRef } from '@angular/core';",
+      "import { Directive } from '@angular/core';",
       "",
       "@Directive({ selector: '[${feature}]' })",
       "export class ${Feature}Directive {",
-      "\tconstructor(el: ElementRef) {",
+      "\tconstructor() {",
       "\t\t",
       "\t}",
       "}"
