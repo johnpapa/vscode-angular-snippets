@@ -14,6 +14,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 a-bootstrap       // Angular bootstrapping, for main.ts
 a-component       // Angular component
 a-component-root  // Angular root app component
+a-directive       // Angular directive
 a-http-get        // Angular http.get with Rx Observable
 a-module          // Angular module
 a-module-root     // Angular root app module
