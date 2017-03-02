@@ -10,6 +10,7 @@
       "\tselector: '${selector}',",
       "\ttemplateUrl: '${feature}.component.html'",
       "})",
+      "",
       "export class ${Feature}Component implements OnInit {",
       "\tconstructor() { }",
       "",
