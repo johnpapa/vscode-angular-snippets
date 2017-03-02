@@ -161,5 +161,19 @@
       "export class ${Name}Module { }",
       "$0"
     ]
+  },
+  "Angular Directive": {
+    "prefix": "a-directive",
+    "description": "Angular directive snippet",
+    "body": [
+      "import { Directive } from '@angular/core';",
+      "",
+      "@Directive({ selector: '[${feature}]' })",
+      "export class ${Feature}Directive {",
+      "\tconstructor() {",
+      "\t\t",
+      "\t}",
+      "}"
+    ]
   }
 }
