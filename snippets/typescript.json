@@ -70,6 +70,35 @@
       "export const routedComponents = [${Name}Component];"
     ]
   },
+  "Angular Validator": {
+    "prefix": "a-validator",
+    "description": "Angular validator snippet",
+    "body": [
+      "import { Directive } from '@angular/core';",
+      "import { Validator, NG_VALIDATORS, FormControl } from '@angular/forms';",
+      "",
+      "@Directive({",
+      "\tselector: '[${validatorName}][ngModel]',",
+      "\tproviders: [",
+      "\t\t{ provide: NG_VALIDATORS, useExisting: ${className}, multi: true }",
+      "\t]",
+      "})",
+      "",
+      "export class ${className} implements Validator {",
+      "\tvalidate(c: FormControl): { [key: string]: any } {",
+      "\t\tif (valid) {",
+      "\t\t\treturn null;",
+      "\t\t}",
+      "",
+      "\t\treturn {",
+      "\t\t\t${validatorName}: {",
+      "\t\t\t\tvalid: false",
+      "\t\t\t}",
+      "\t\t};",
+      "\t}",
+      "}"
+    ]
+  },
   "Http.get": {
     "prefix": "a-http-get",
     "description": "Angular Http.get snippet",
@@ -127,7 +156,7 @@
       "import { HttpModule } from '@angular/http';",
       "",
       "import { ${App}Component } from './${app}.component';",
-      "import { AppRoutingModule } from './${app}.routing'; //TODO: Create ${app}.routing", 
+      "import { AppRoutingModule } from './${app}.routing'; //TODO: Create ${app}.routing",
       "",
       "@NgModule({",
       "\timports: [",
