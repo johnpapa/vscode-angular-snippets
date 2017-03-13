@@ -175,5 +175,44 @@
       "\t}",
       "}"
     ]
+  },
+  "Angular CanActivate guard": {
+    "prefix": "a-can-activate",
+    "description": "Angular CanActivate service snippet",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
+      "",
+      "@Injectable()",
+      "export class ${Feature}Guard {",
+      "\tconstructor() {",
+      "\t\t",
+      "\t}",
+      "",
+      "\tcanActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {",
+      "\t\treturn true;",
+      "\t}",
+      "}"
+    ]
+  },"Angular CanDeactivate guard": {
+    "prefix": "a-can-deactivate",
+    "description": "Angular CanDeactivate guard snippet",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
+      "",
+      "import { ${Feature}Component } from './${Feature}.component';",
+      "",
+      "@Injectable()",
+      "export class CanDeactivate${Feature} implements CanDeactivate<${Feature}Component> {",
+      "\tconstructor() {",
+      "\t\t",
+      "\t}",
+      "",
+      "\tcanDeactivate(component: ${Feature}Component, route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {",
+      "\t\treturn false;",
+      "\t}",
+      "}"
+    ]
   }
 }
