@@ -21,6 +21,8 @@ a-module-root     // Angular root app module
 a-pipe            // Angular pipe
 a-routing         // Angular routing
 a-service         // Angular service
+a-can-activate    // Angular CanActivate guard
+a-can-deactivate  // Angular CanDeactivate guard
 a-subscribe       // Angular Rx Observable subscription
 ```
 
