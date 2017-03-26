@@ -30,7 +30,7 @@
   "ngIfElse": {
     "prefix": "a-ngIfElse",
     "body": [
-      "*ngIf=\"${expression}\";else ${templateName}"
+      "*ngIf=\"${expression};else ${templateName}\""
     ],
     "description": "Angular *ngIfElse snippet"
   },
