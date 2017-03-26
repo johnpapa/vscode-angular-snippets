@@ -1,7 +1,7 @@
 ## Angular TypeScript Snippets Changelog
 
-<a name="2.1.1"></a>
-# 2.1.1 (2017-03-26)
+<a name="2.1.2"></a>
+# 2.1.2 (2017-03-26)
 
 * Added `ngForAsync` snippet
 * Added `ngIfElse` snippet
