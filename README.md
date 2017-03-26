@@ -1,6 +1,6 @@
 # Angular TypeScript Snippets for VS Code
 
-**Now Updated for Angular 2.4 release**
+**Now Updated for Angular 4.0.0 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
@@ -28,7 +28,9 @@ a-subscribe       // Angular Rx Observable subscription
 ```html
 a-ngClass
 a-ngFor
+a-ngForAsync
 a-ngIf
+a-ngIfElse
 a-ngModel
 a-routerLink
 a-ngStyle

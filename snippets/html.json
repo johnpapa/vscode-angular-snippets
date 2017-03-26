@@ -13,12 +13,26 @@
     ],
     "description": "Angular *ngFor snippet"
   },
+  "ngForAsync": {
+    "prefix": "a-ngForAsync",
+    "body": [
+      "*ngFor=\"let ${item} of ${stream} | async as ${list}\""
+    ],
+    "description": "Angular *ngForAsync snippet"
+  },
   "ngIf": {
     "prefix": "a-ngIf",
     "body": [
       "*ngIf=\"${expression}\""
     ],
     "description": "Angular *ngIf snippet"
+  },
+  "ngIfElse": {
+    "prefix": "a-ngIfElse",
+    "body": [
+      "*ngIf=\"${expression}\";else ${templateName}"
+    ],
+    "description": "Angular *ngIfElse snippet"
   },
   "ngModel": {
     "prefix": "a-ngModel",
