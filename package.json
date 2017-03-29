@@ -1,7 +1,7 @@
 {
     "name": "Angular2",
     "publisher": "johnpapa",
-    "displayName": "Angular v4 TypeScript Snippets",
+    "displayName": "Angular TypeScript Snippets",
     "description": "Angular with TypeScript snippets.",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
