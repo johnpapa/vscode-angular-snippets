@@ -293,5 +293,18 @@
       "\t}",
       "}"
     ]
+  },
+  "Angular Module SkipSelf Constructor": {
+    "prefix": "a-ctor-skip-self",
+    "description": "Angular Module SkipSelf constructor",
+    "body": [
+      "constructor( @Optional() @SkipSelf() parentModule: ${ModuleName} {",
+      "\tif (parentModule) {",
+      "\t\tconst msg = `${ModuleName} has already been loaded. ",
+      "\t\t\tImport ${ModuleName} once, only, in the root AppModule.`;",
+      "\t\tthrow new Error(msg);",
+      "\t}",
+      "}"
+    ]
   }
 }
