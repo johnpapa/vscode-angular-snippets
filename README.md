@@ -47,7 +47,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 
 ## Installation
 
-1. Install Visual Studio Code 0.10.1 or higher
+1. Install Visual Studio Code 1.10.0 or higher
 2. Launch Code
 3. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
 4. Select `Install Extension`
