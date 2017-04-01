@@ -11,19 +11,21 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript Snippets
 ```typescript
-a-bootstrap       // Angular bootstrapping, for main.ts
-a-component       // Angular component
-a-component-root  // Angular root app component
-a-directive       // Angular directive
-a-http-get        // Angular http.get with Rx Observable
-a-module          // Angular module
-a-module-root     // Angular root app module
-a-pipe            // Angular pipe
-a-routing         // Angular routing
-a-service         // Angular service
-a-can-activate    // Angular CanActivate guard
-a-can-deactivate  // Angular CanDeactivate guard
-a-subscribe       // Angular Rx Observable subscription
+a-bootstrap                 // Angular bootstrapping, for main.ts
+a-component                 // Angular component
+a-component-root            // Angular root app component
+a-directive                 // Angular directive
+a-guard-can-activate        // Angular CanActivate guard
+a-guard-can-activate-child  // Angular CanActivateChild guard
+a-guard-can-deactivate      // Angular CanDeactivate guard
+a-guard-can-load            // Angular CanLoad guard
+a-http-get                  // Angular http.get with Rx Observable
+a-module                    // Angular module
+a-module-root               // Angular root app module
+a-pipe                      // Angular pipe
+a-routing                   // Angular routing
+a-service                   // Angular service
+a-subscribe                 // Angular Rx Observable subscription
 ```
 
 ###HTML Snippets
