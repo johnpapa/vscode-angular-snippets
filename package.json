@@ -14,15 +14,15 @@
         "url": "https://github.com/johnpapa/vscode-angular2-snippets.git"
     },
     "keywords" : [
-	"Angular",
-    "Angular 2",
-    "Angular 4",
-	"TypeScript",
-	"HTML"
+        "Angular",
+        "Angular 2",
+        "Angular 4",
+        "TypeScript",
+        "HTML"
     ],
-    "version": "2.1.2",
+    "version": "2.2.0",
     "engines": {
-        "vscode": "0.10.x"
+        "vscode": "1.10.x"
     },
     "categories": [
         "Snippets"
