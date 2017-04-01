@@ -1,7 +1,7 @@
 {
   "Angular Component": {
     "prefix": "a-component",
-    "description": "Angular component snippet",
+    "description": "Angular component",
     "body": [
       "import { Component, OnInit } from '@angular/core';",
       "",
@@ -20,7 +20,7 @@
   },
   "Angular Service": {
     "prefix": "a-service",
-    "description": "Angular service snippet",
+    "description": "Angular service",
     "body": [
       "import { Injectable } from '@angular/core';",
       "",
@@ -33,7 +33,7 @@
   },
   "Angular Pipe": {
     "prefix": "a-pipe",
-    "description": "Angular pipe snippet",
+    "description": "Angular pipe",
     "body": [
       "import { Pipe, PipeTransform } from '@angular/core';",
       "",
@@ -48,39 +48,55 @@
       "}"
     ]
   },
-  "Angular Routes": {
-    "prefix": "a-routing",
-    "description": "Angular routing file snippet",
+  "Angular Eager Route Path": {
+    "prefix": "a-route-path-eager",
+    "description": "Angular eager route path",
     "body": [
-      "import { NgModule } from '@angular/core';",
-      "import { Routes, RouterModule } from '@angular/router';",
-      "",
-      "import { ${Name}Component } from './${name}.component';",
-      "",
-      "const routes: Routes = [",
-      "  { path: '${path}', component: ${Name}Component },",
-      "];",
-      "",
-      "@NgModule({",
-      "  imports: [RouterModule.for${Child|Root}(routes)],",
-      "  exports: [RouterModule],",
-      "})",
-      "export class ${Name}RoutingModule { }",
-      "",
-      "export const routedComponents = [${Name}Component];"
+      "{ path: '${path}', component: ${Name}Component },"
+    ]
+  },
+  "Angular Lazy Route Path": {
+    "prefix": "a-route-path-lazy",
+    "description": "Angular lazy route path",
+    "body": [
+      "{ path: '${path}', loadChildren: '${lazy-path}#${lazy-module}' },"
     ]
   },
   "Http.get": {
     "prefix": "a-http-get",
-    "description": "Angular Http.get snippet",
+    "description": "Angular Http.get",
     "body": [
       "return this.http.get('${url}')",
       "\t.map((response: Response) => response.json()${0});"
     ]
   },
+  "Angular Http Service": {
+    "prefix": "a-service-http",
+    "description": "Angular service with Http",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { Http, Response } from '@angular/http';",
+      "import { Observable } from 'rxjs/Observable';",
+      "import 'rxjs/add/operator/map';",
+      "import 'rxjs/add/operator/catch';",
+      "",
+      "@Injectable()",
+      "export class ${ServiceName}Service {",
+      "\tconstructor(private http: Http) { }",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Output Event": {
+    "prefix": "a-output-event",
+    "body": [
+      "@Output() ${eventName}: EventEmitter<${eventType}> = new EventEmitter<${eventType}>();"
+    ],
+    "description": "Angular @Output event and emitter"
+  },
   "Subscribe": {
     "prefix": "a-subscribe",
-    "description": "Angular observable subscribe snippet",
+    "description": "Angular observable subscribe",
     "body": [
       "this.${service}.${function}",
       "\t.subscribe(${arg} => this.${property} = ${arg});",
@@ -89,27 +105,27 @@
   },
   "Angular Bootstrapping": {
     "prefix": "a-bootstrap",
-    "description": "Angular bootstrap snippet",
+    "description": "Angular bootstrap",
     "body": [
       "import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';",
+      "//import { enableProdMode } from '@angular/core';",
       "",
+      "//enableProdMode(); // Uncomment for production",
       "import { ${App}Module } from './${app}.module';",
       "",
-      "platformBrowserDynamic().bootstrapModule(${App}Module)",
-      "\t.then(success => console.log(`Bootstrap success`))",
-      "\t.catch(error => console.log(error));",
+      "platformBrowserDynamic().bootstrapModule(${App}Module);",
       "$0"
     ]
   },
   "Angular Root Component": {
     "prefix": "a-component-root",
-    "description": "Angular App root component snippet",
+    "description": "Angular App root component",
     "body": [
       "import { Component } from '@angular/core';",
       "",
       "@Component({",
       "\tmoduleId: module.id,",
-      "\tselector: '${my-app}',",
+      "\tselector: '${prefix-app}',",
       "\ttemplate: `",
       "\t\t<router-outlet></router-outlet>",
       "\t\t`",
@@ -120,7 +136,7 @@
   },
   "Angular Root Module": {
     "prefix": "a-module-root",
-    "description": "Angular Root Module snippet",
+    "description": "Angular Root Module",
     "body": [
       "import { NgModule } from '@angular/core';",
       "import { BrowserModule  } from '@angular/platform-browser';",
@@ -144,9 +160,31 @@
       "$0"
     ]
   },
+  "Angular Routing Module": {
+    "prefix": "a-module-routing",
+    "description": "Angular routing module file (forChild)",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "import { Routes, RouterModule } from '@angular/router';",
+      "",
+      "import { ${Name}Component } from './${name}.component';",
+      "",
+      "const routes: Routes = [",
+      "  { path: '${path}', component: ${Name}Component },",
+      "];",
+      "",
+      "@NgModule({",
+      "  imports: [RouterModule.forChild(routes)],",
+      "  exports: [RouterModule],",
+      "})",
+      "export class ${Name}RoutingModule { }",
+      "",
+      "export const routedComponents = [${Name}Component];"
+    ]
+  },
   "Angular Module": {
     "prefix": "a-module",
-    "description": "Angular Module snippet",
+    "description": "Angular Module",
     "body": [
       "import { NgModule } from '@angular/core';",
       "",
@@ -164,7 +202,7 @@
   },
   "Angular Directive": {
     "prefix": "a-directive",
-    "description": "Angular directive snippet",
+    "description": "Angular directive",
     "body": [
       "import { Directive } from '@angular/core';",
       "",
@@ -176,7 +214,7 @@
   },
   "Angular CanActivate Guard": {
     "prefix": "a-guard-can-activate",
-    "description": "Angular CanActivate guard snippet",
+    "description": "Angular CanActivate guard",
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angular/router';",
@@ -193,7 +231,7 @@
   },
   "Angular CanActivateChild Guard": {
     "prefix": "a-guard-can-activate-child",
-    "description": "Angular CanActivateChild guard snippet",
+    "description": "Angular CanActivateChild guard",
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { ActivatedRouteSnapshot, CanActivateChild, RouterStateSnapshot } from '@angular/router';",
@@ -210,7 +248,7 @@
   },
   "Angular CanLoad Guard": {
     "prefix": "a-guard-can-load",
-    "description": "Angular CanLoad guard snippet",
+    "description": "Angular CanLoad guard",
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { CanLoad, Route } from '@angular/router';",
@@ -227,7 +265,7 @@
   },
   "Angular CanDeactivate Guard": {
     "prefix": "a-guard-can-deactivate",
-    "description": "Angular CanDeactivate guard snippet",
+    "description": "Angular CanDeactivate guard",
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot } from '@angular/router';",

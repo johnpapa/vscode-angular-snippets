@@ -1,59 +1,92 @@
 {
+  "class": {
+    "prefix": "a-class",
+    "body": [
+      "[class]=\"${expression}\""
+    ],
+    "description": "Angular [class] binding"
+  },
+  "style": {
+    "prefix": "a-style",
+    "body": [
+      "[style.${property}]=\"${expression}\""
+    ],
+    "description": "Angular [style] binding"
+  },
   "ngClass": {
     "prefix": "a-ngClass",
     "body": [
       "[ngClass]=\"{${cssClass}: ${expression}}\""
     ],
-    "description": "Angular ngClass snippet"
+    "description": "Angular ngClass"
   },
   "ngFor": {
     "prefix": "a-ngFor",
     "body": [
       "*ngFor=\"let ${item} of ${list}\""
     ],
-    "description": "Angular *ngFor snippet"
+    "description": "Angular *ngFor"
   },
   "ngForAsync": {
     "prefix": "a-ngForAsync",
     "body": [
       "*ngFor=\"let ${item} of ${stream} | async as ${list}\""
     ],
-    "description": "Angular *ngForAsync snippet"
+    "description": "Angular *ngForAsync"
   },
   "ngIf": {
     "prefix": "a-ngIf",
     "body": [
       "*ngIf=\"${expression}\""
     ],
-    "description": "Angular *ngIf snippet"
+    "description": "Angular *ngIf"
   },
   "ngIfElse": {
     "prefix": "a-ngIfElse",
     "body": [
       "*ngIf=\"${expression};else ${templateName}\""
     ],
-    "description": "Angular *ngIfElse snippet"
+    "description": "Angular *ngIfElse"
   },
   "ngModel": {
     "prefix": "a-ngModel",
     "body": [
       "[(ngModel)]=\"${binding}\""
     ],
-    "description": "Angular ngModel snippet"
+    "description": "Angular ngModel"
   },
   "ngRouterLink": {
     "prefix": "a-routerLink",
     "body": [
-      "[routerLink]=\"['/${routeName}']\""
+      "[routerLink]=\"['/${routePath}']\"$0"
     ],
-    "description": "Angular routerLink snippet"
+    "description": "Angular routerLink"
+  },
+  "ngRouterLinkWithParameter": {
+    "prefix": "a-routerLink-param",
+    "body": [
+      "[routerLink]=\"['${routePath}', ${routeParameterValue}$0]\""
+    ],
+    "description": "Angular routerLink with a route parameter"
+  },
+  "ngSelect": {
+    "prefix": "a-select",
+    "body": [
+      "<select (change)=\"${changeFunction}($event)\">",
+      "\t<option *ngFor=\"let ${item} of ${list}\"",
+      "\t\t[value]=\"${item}\" ",
+      "\t\t[selected]=\"${selectFunction}(${item})\"",
+      "\t\t>{{${item}}}</option>",
+      "</select>"
+    ],
+    "description": "Angular <select> binding"
   },
   "ngStyle": {
     "prefix": "a-ngStyle",
     "body": [
       "[ngStyle]=\"{${style}: ${expression}}\""
     ],
-    "description": "Angular ngStyle snippet"
+    "description": "Angular ngStyle"
   },
   "ngSwitch": {
     "prefix": "a-ngSwitch",
@@ -63,7 +96,7 @@
       "\t<div *ngSwitchDefault>${output2}</div>",
       "</div>"
     ],
-    "description": "Angular ngSwitch snippet"
+    "description": "Angular ngSwitch"
   },
   "pre w/ json": {
     "prefix": "a-prej",

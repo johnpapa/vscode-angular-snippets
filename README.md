@@ -11,36 +11,44 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript Snippets
 ```typescript
-a-bootstrap                 // Angular bootstrapping, for main.ts
-a-component                 // Angular component
-a-component-root            // Angular root app component
-a-directive                 // Angular directive
-a-guard-can-activate        // Angular CanActivate guard
-a-guard-can-activate-child  // Angular CanActivateChild guard
-a-guard-can-deactivate      // Angular CanDeactivate guard
-a-guard-can-load            // Angular CanLoad guard
-a-http-get                  // Angular http.get with Rx Observable
-a-module                    // Angular module
-a-module-root               // Angular root app module
-a-pipe                      // Angular pipe
-a-routing                   // Angular routing
-a-service                   // Angular service
-a-subscribe                 // Angular Rx Observable subscription
+a-bootstrap                 // bootstrapping, for main.ts
+a-component                 // component
+a-component-root            // root app component
+a-directive                 // directive
+a-guard-can-activate        // CanActivate guard
+a-guard-can-activate-child  // CanActivateChild guard
+a-guard-can-deactivate      // CanDeactivate guard
+a-guard-can-load            // CanLoad guard
+a-http-get                  // http.get with Rx Observable
+a-module                    // module
+a-module-root               // root app module
+a-module-routing            // routing module file (forChild)
+a-output-event              // @Output event and emitter
+a-pipe                      // pipe
+a-route-path-eager          // eager route path
+a-route-path-lazy           // lazy route path
+a-service                   // service
+a-service-http              // service with Http
+a-subscribe                 // Rx Observable subscription
 ```
 
 ###HTML Snippets
 ```html
-a-ngClass
-a-ngFor
-a-ngForAsync
-a-ngIf
-a-ngIfElse
-a-ngModel
-a-routerLink
-a-ngStyle
-a-ngSwitch
-a-prej
-a-preja
+a-class                     // [class] binding
+a-select                    // [style] binding
+a-style                     // <select> binding
+a-ngClass                   // ngClass
+a-ngFor                     // *ngFor
+a-ngForAsync                // *ngFor with async
+a-ngIf                      // *ngIf
+a-ngIfElse                  // *ngIf with else
+a-ngModel                   // ngModel
+a-routerLink                // routerLink
+a-routerLink-param          // routerLink with a route parameter
+a-ngStyle                   // ngStyle
+a-ngSwitch                  // ngSwitch
+a-prej                      // pre debug | json
+a-preja                     // pre debug | async | json
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
