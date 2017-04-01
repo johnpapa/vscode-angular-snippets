@@ -79,7 +79,7 @@
       "\t\t>{{${item}}}</option>",
       "</select>"
     ],
-    "description": "Angular <select> binding"
+    "description": "<select> control"
   },
   "ngStyle": {
     "prefix": "a-ngStyle",

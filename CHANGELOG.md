@@ -3,7 +3,18 @@
 <a name="2.2.0"></a>
 # 2.2.0 (2017-04-01)
 
-* Added router guard snippets
+* Added TypeScript snippets for
+  * eager route path
+  * lazy route path
+  * output event and emitter
+  * routing guards
+  * service with Http
+
+* Added HTML snippets for
+  * `[class]` binding
+  * `[style]` binding
+  * `[routerLink]` with a parameter
+  * `<select>` control
 
 <a name="2.1.2"></a>
 # 2.1.2 (2017-03-26)

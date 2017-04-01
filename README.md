@@ -35,8 +35,8 @@ a-subscribe                 // Rx Observable subscription
 ###HTML Snippets
 ```html
 a-class                     // [class] binding
-a-select                    // [style] binding
-a-style                     // <select> binding
+a-select                    // <select> control
+a-style                     // [style] binding
 a-ngClass                   // ngClass
 a-ngFor                     // *ngFor
 a-ngForAsync                // *ngFor with async
