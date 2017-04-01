@@ -1,5 +1,11 @@
 ## Angular TypeScript Snippets Changelog
 
+<a name="2.2.3"></a>
+# 2.2.3 (2017-04-01)
+
+* Added TypeScript snippets for
+  * skip self constructor
+
 <a name="2.2.2"></a>
 # 2.2.2 (2017-04-01)
 
