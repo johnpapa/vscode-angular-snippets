@@ -72,14 +72,11 @@
   "ngSelect": {
     "prefix": "a-select",
     "body": [
-      "<select (change)=\"${changeFunction}($event)\">",
-      "\t<option *ngFor=\"let ${item} of ${list}\"",
-      "\t\t[value]=\"${item}\" ",
-      "\t\t[selected]=\"${selectFunction}(${item})\"",
-      "\t\t>{{${item}}}</option>",
+      "<select [(ngModel)]=\"${model}\">",
+      "\t<option *ngFor=\"let ${item} of ${list}\" [value]=\"${item}\">{{${item}}}</option>",
       "</select>"
     ],
-    "description": "<select> control"
+    "description": "<select> control with ngModel"
   },
   "ngStyle": {
     "prefix": "a-ngStyle",
