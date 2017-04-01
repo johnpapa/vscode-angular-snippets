@@ -20,9 +20,12 @@
         "TypeScript",
         "HTML"
     ],
-    "version": "2.2.0",
+    "version": "2.2.1",
     "engines": {
-        "vscode": "1.10.x"
+        "vscode": "^1.10.0"
+    },
+    "devDependencies": {
+        "vscode": "^1.11.0"
     },
     "categories": [
         "Snippets"
