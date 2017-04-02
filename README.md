@@ -6,6 +6,8 @@ This extension for Visual Studio Code adds snippets for Angular for TypeScript a
 
 ![Use Extension](images/use-extension.gif)
 
+See the [CHANGELOG](CHANGELOG.md) for the latest changes
+
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
@@ -25,6 +27,8 @@ a-module-root               // root app module
 a-module-routing            // routing module file (forChild)
 a-output-event              // @Output event and emitter
 a-pipe                      // pipe
+a-route-path-404            // 404 route path
+a-route-path-default        // default route path
 a-route-path-eager          // eager route path
 a-route-path-lazy           // lazy route path
 a-service                   // service
