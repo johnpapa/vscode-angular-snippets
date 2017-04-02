@@ -33,6 +33,7 @@ a-route-path-eager          // eager route path
 a-route-path-lazy           // lazy route path
 a-service                   // service
 a-service-http              // service with Http
+a-ctor-skip-self            // angular ngmodule's skipself constructor
 a-subscribe                 // Rx Observable subscription
 ```
 
