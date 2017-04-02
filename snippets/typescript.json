@@ -48,6 +48,20 @@
       "}"
     ]
   },
+  "Angular Default Route Path": {
+    "prefix": "a-route-path-default",
+    "description": "Angular default route path",
+    "body": [
+      "{ path: '', pathMatch: 'full', redirectTo: '${dashboard}' }$0"
+    ]
+  },
+  "Angular 404 Route Path": {
+    "prefix": "a-route-path-404",
+    "description": "Angular 404 route path",
+    "body": [
+      "{ path: '**', pathMatch: 'full', component: ${PathNotFoundComponent} }$0"
+    ]
+  },
   "Angular Eager Route Path": {
     "prefix": "a-route-path-eager",
     "description": "Angular eager route path",

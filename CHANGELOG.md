@@ -1,10 +1,12 @@
 ## Angular TypeScript Snippets Changelog
 
 <a name="2.2.3"></a>
-# 2.2.3 (2017-04-01)
+# 2.2.3 (2017-04-02)
 
 * Added TypeScript snippets for
   * skip self constructor
+  * default route path
+  * 404 route path
 
 <a name="2.2.2"></a>
 # 2.2.2 (2017-04-01)
