@@ -40,6 +40,7 @@ a-subscribe                 // Rx Observable subscription
 ###HTML Snippets
 ```html
 a-class                     // [class] binding
+a-click                     // (click) binding
 a-select                    // <select> control
 a-style                     // [style] binding
 a-ngClass                   // ngClass

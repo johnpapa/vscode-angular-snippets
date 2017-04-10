@@ -6,6 +6,13 @@
     ],
     "description": "Angular [class] binding"
   },
+  "click": {
+    "prefix": "a-click",
+    "body": [
+      "(click)=\"${expression}\""
+    ],
+    "description": "Angular (click) binding"
+  },
   "style": {
     "prefix": "a-style",
     "body": [
