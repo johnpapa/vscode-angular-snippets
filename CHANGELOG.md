@@ -1,5 +1,23 @@
 ## Angular TypeScript Snippets Changelog
 
+<a name="2.3.0"></a>
+# 2.3.0 (2017-05-21)
+
+* Added TypeScript snippets for RxJS
+  * RxJS Observable
+  * RxJS BehaviorSubject
+  * RxJS ReplaySubject
+  * RxJS Subject
+  * RxJS add operator
+  * RxJS add observable
+
+* Fixed all TypeScript snippets 
+  added positional prefix to all named variable/placeholders
+  e.g. ${name} --> ${1:name}
+
+* Removed TypeScript snippets 
+  * a-bootstrap
+
 <a name="2.2.3"></a>
 # 2.2.3 (2017-04-02)
 

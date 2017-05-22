@@ -7,11 +7,11 @@
       "",
       "@Component({",
       "\tmoduleId: module.id,",
-      "\tselector: '${selector-name}',",
-      "\ttemplateUrl: '${name}.component.html'",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
       "})",
       "",
-      "export class ${Name}Component implements OnInit {",
+      "export class ${3:Name}Component implements OnInit {",
       "\tconstructor() { }",
       "",
       "\tngOnInit() { }$0",
@@ -25,7 +25,7 @@
       "import { Injectable } from '@angular/core';",
       "",
       "@Injectable()",
-      "export class ${Name}Service {",
+      "export class ${1:Name}Service {",
       "$0",
       "\tconstructor() { }",
       "}"
@@ -38,10 +38,10 @@
       "import { Pipe, PipeTransform } from '@angular/core';",
       "",
       "@Pipe({",
-      "\tname: '${selector-name}'",
+      "\tname: '${1:selector-name}'",
       "})",
       "",
-      "export class ${Name}Pipe implements PipeTransform {",
+      "export class ${2:Name}Pipe implements PipeTransform {",
       "\ttransform(value: any, ...args: any[]): any {",
       "\t\t$0",
       "\t}",
@@ -52,28 +52,28 @@
     "prefix": "a-route-path-default",
     "description": "Angular default route path",
     "body": [
-      "{ path: '', pathMatch: 'full', redirectTo: '${dashboard}' }$0"
+      "{ path: '', pathMatch: 'full', redirectTo: '${1:path}' }$0"
     ]
   },
   "Angular 404 Route Path": {
     "prefix": "a-route-path-404",
     "description": "Angular 404 route path",
     "body": [
-      "{ path: '**', pathMatch: 'full', component: ${PathNotFoundComponent} }$0"
+      "{ path: '**', pathMatch: 'full', component: ${1:PathNotFoundComponent} }$0"
     ]
   },
   "Angular Eager Route Path": {
     "prefix": "a-route-path-eager",
     "description": "Angular eager route path",
     "body": [
-      "{ path: '${path}', component: ${Name}Component },"
+      "{ path: '${1:path}', component: ${2:Name}Component },"
     ]
   },
   "Angular Lazy Route Path": {
     "prefix": "a-route-path-lazy",
     "description": "Angular lazy route path",
     "body": [
-      "{ path: '${path}', loadChildren: '${lazy-path}#${lazy-module}' },"
+      "{ path: '${1:path}', loadChildren: '${2:lazy-path}#${3:lazy-module}' },"
     ]
   },
   "Http.get": {
@@ -95,7 +95,7 @@
       "import 'rxjs/add/operator/catch';",
       "",
       "@Injectable()",
-      "export class ${ServiceName}Service {",
+      "export class ${1:ServiceName}Service {",
       "\tconstructor(private http: Http) { }",
       "\t$0",
       "}"
@@ -104,7 +104,7 @@
   "Output Event": {
     "prefix": "a-output-event",
     "body": [
-      "@Output() ${eventName}: EventEmitter<${eventType}> = new EventEmitter<${eventType}>();"
+      "@Output() ${1:eventName}: EventEmitter<${1:eventType}> = new EventEmitter<${1:eventType}>();"
     ],
     "description": "Angular @Output event and emitter"
   },
@@ -112,22 +112,8 @@
     "prefix": "a-subscribe",
     "description": "Angular observable subscribe",
     "body": [
-      "this.${service}.${function}",
-      "\t.subscribe(${arg} => this.${property} = ${arg});",
-      "$0"
-    ]
-  },
-  "Angular Bootstrapping": {
-    "prefix": "a-bootstrap",
-    "description": "Angular bootstrap",
-    "body": [
-      "import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';",
-      "//import { enableProdMode } from '@angular/core';",
-      "",
-      "//enableProdMode(); // Uncomment for production",
-      "import { ${App}Module } from './${app}.module';",
-      "",
-      "platformBrowserDynamic().bootstrapModule(${App}Module);",
+      "this.${1:service}.${2:function}",
+      "\t.subscribe(${3:arg} => this.${4:property} = ${3:arg});",
       "$0"
     ]
   },
@@ -139,12 +125,12 @@
       "",
       "@Component({",
       "\tmoduleId: module.id,",
-      "\tselector: '${prefix-app}',",
+      "\tselector: '${1:prefix-app}',",
       "\ttemplate: `",
       "\t\t<router-outlet></router-outlet>",
       "\t\t`",
       "})",
-      "export class ${App}Component { }",
+      "export class ${2:App}Component { }",
       "$0"
     ]
   },
@@ -156,8 +142,8 @@
       "import { BrowserModule  } from '@angular/platform-browser';",
       "import { HttpModule } from '@angular/http';",
       "",
-      "import { ${App}Component } from './${app}.component';",
-      "import { AppRoutingModule } from './${app}.routing'; //TODO: Create ${app}.routing",
+      "import { ${1:App}Component } from './${1:app}.component';",
+      "import { AppRoutingModule } from './${1:app}.routing'; //TODO: Create ${1:app}.routing",
       "",
       "@NgModule({",
       "\timports: [",
@@ -166,11 +152,11 @@
       "\t",
       "\t\tAppRoutingModule,",
       "\t],",
-      "\tdeclarations: [${App}Component],",
+      "\tdeclarations: [${1:App}Component],",
       "\tproviders: [/* TODO: Providers go here */],",
-      "\tbootstrap: [${App}Component],",
+      "\tbootstrap: [${1:App}Component],",
       "})",
-      "export class ${App}Module { }",
+      "export class ${1:App}Module { }",
       "$0"
     ]
   },
@@ -181,19 +167,19 @@
       "import { NgModule } from '@angular/core';",
       "import { Routes, RouterModule } from '@angular/router';",
       "",
-      "import { ${Name}Component } from './${name}.component';",
+      "import { ${1:Name}Component } from './${2:name}.component';",
       "",
       "const routes: Routes = [",
-      "  { path: '${path}', component: ${Name}Component },",
+      "  { path: '${3:path}', component: ${1:Name}Component },",
       "];",
       "",
       "@NgModule({",
       "  imports: [RouterModule.forChild(routes)],",
       "  exports: [RouterModule],",
       "})",
-      "export class ${Name}RoutingModule { }",
+      "export class ${1:Name}RoutingModule { }",
       "",
-      "export const routedComponents = [${Name}Component];"
+      "export const routedComponents = [${1:Name}Component];"
     ]
   },
   "Angular Module": {
@@ -202,15 +188,15 @@
     "body": [
       "import { NgModule } from '@angular/core';",
       "",
-      "import { ${Name}Component } from './${name}.component';",
+      "import { ${1:Name}Component } from './${2:name}.component';",
       "",
       "@NgModule({",
       "\timports: [],",
       "\texports: [],",
-      "\tdeclarations: [${Name}Component],",
+      "\tdeclarations: [${1:Name}Component],",
       "\tproviders: [],",
       "})",
-      "export class ${Name}Module { }",
+      "export class ${1:Name}Module { }",
       "$0"
     ]
   },
@@ -220,8 +206,8 @@
     "body": [
       "import { Directive } from '@angular/core';",
       "",
-      "@Directive({ selector: '[${selector-name}]' })",
-      "export class ${Name}Directive {",
+      "@Directive({ selector: '[${1:selector-name}]' })",
+      "export class ${2:Name}Directive {",
       "\tconstructor() { }",
       "}"
     ]
@@ -234,7 +220,7 @@
       "import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angular/router';",
       "",
       "@Injectable()",
-      "export class ${Name}Guard implements CanActivate {",
+      "export class ${1:Name}Guard implements CanActivate {",
       "\tconstructor() { }",
       "",
       "\tcanActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {",
@@ -251,7 +237,7 @@
       "import { ActivatedRouteSnapshot, CanActivateChild, RouterStateSnapshot } from '@angular/router';",
       "",
       "@Injectable()",
-      "export class ${Name}Guard implements CanActivateChild {",
+      "export class ${1:Name}Guard implements CanActivateChild {",
       "\tconstructor() { }",
       "",
       "\tcanActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {",
@@ -268,7 +254,7 @@
       "import { CanLoad, Route } from '@angular/router';",
       "",
       "@Injectable()",
-      "export class ${Name}Guard implements CanLoad {",
+      "export class ${1:Name}Guard implements CanLoad {",
       "\tconstructor() { }",
       "",
       "\tcanLoad(route: Route) {",
@@ -285,7 +271,7 @@
       "import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs/Observable';",
       "",
-      "import { ${ComponentName}Component } from './${filename}.component';",
+      "import { ${1:ComponentName}Component } from './${2:filename}.component';",
       "",
       "// Consider using this interface for all CanDeactivate guards,",
       "// and have your components implement this interface, too.",
@@ -297,9 +283,9 @@
       "// }",
       "",
       "@Injectable()",
-      "export class ${Name}Guard implements CanDeactivate<${ComponentName}Component> {",
+      "export class ${2:Name}Guard implements CanDeactivate<${1:ComponentName}Component> {",
       "\tcanDeactivate(",
-      "\t\tcomponent: ${ComponentName}Component,",
+      "\t\tcomponent: ${1:ComponentName}Component,",
       "\t\tcurrentRoute: ActivatedRouteSnapshot, ",
       "\t\tcurrentState: RouterStateSnapshot",
       "\t): Observable<boolean>|Promise<boolean>|boolean {",
@@ -312,13 +298,63 @@
     "prefix": "a-ctor-skip-self",
     "description": "Angular Module SkipSelf constructor",
     "body": [
-      "constructor( @Optional() @SkipSelf() parentModule: ${ModuleName} {",
+      "constructor( @Optional() @SkipSelf() parentModule: ${1:ModuleName} {",
       "\tif (parentModule) {",
-      "\t\tconst msg = `${ModuleName} has already been loaded. ",
-      "\t\t\tImport ${ModuleName} once, only, in the root AppModule.`;",
+      "\t\tconst msg = `${1:ModuleName} has already been loaded. ",
+      "\t\t\tImport ${1:ModuleName} once, only, in the root AppModule.`;",
       "\t\tthrow new Error(msg);",
       "\t}",
       "}"
     ]
+  },
+  "RxJS Observable Import": {
+    "prefix": "rx-observable",
+    "description": "RxJS Observable import",
+    "body": [
+      "import 'rxjs/Observable';",
+      "$0"
+    ]
+  },
+  "RxJS ReplaySubject Import": {
+    "prefix": "rx-replay-subject",
+    "description": "RxJS ReplaySubject import",
+    "body": [
+      "import 'rxjs/ReplaySubject';",
+      "$0"
+    ]
+  },
+  "RxJS Subject Import": {
+    "prefix": "rx-subject",
+    "description": "RxJS Subject import",
+    "body": [
+      "import 'rxjs/Subject';",
+      "$0"
+    ]
+  },
+  "RxJS BehaviorSubject Import": {
+    "prefix": "rx-behavior-subject",
+    "description": "RxJS BehaviorSubject import",
+    "body": [
+      "import 'rxjs/BehaviorSubject';",
+      "$0"
+    ]
+  },
+  "RxJS Add Operator Import": {
+    "prefix": "rx-add-operator",
+    "description": "RxJS Add Operator import",
+    "body": [
+      "import 'rxjs/add/operator/${1:map}';",
+      "$0"
+    ]
+  },
+  "RxJS Add Observable Import": {
+    "prefix": "rx-add-observable",
+    "description": "RxJS Add Observable import",
+    "body": [
+      "import 'rxjs/add/observable/${1:of}';",
+      "$0"
+    ]
   }
 }
+
+

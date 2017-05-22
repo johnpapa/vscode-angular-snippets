@@ -11,9 +11,8 @@ See the [CHANGELOG](CHANGELOG.md) for the latest changes
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
-### TypeScript Snippets
+### TypeScript Angular Snippets
 ```typescript
-a-bootstrap                 // bootstrapping, for main.ts
 a-component                 // component
 a-component-root            // root app component
 a-directive                 // directive
@@ -35,6 +34,16 @@ a-service                   // service
 a-service-http              // service with Http
 a-ctor-skip-self            // angular ngmodule's skipself constructor
 a-subscribe                 // Rx Observable subscription
+```
+
+### TypeScript RxJS Snippets
+```typescript
+rx-observable               // Rx Observable import
+rx-subject                  // Rx Subject import
+rx-replay-subject           // Rx ReplaySubject import
+rx-behavior-subject         // Rx BehaviorSubject import
+rx-add-operator             // Rx add operator import
+rx-add-observable           // Rx add observable import
 ```
 
 ###HTML Snippets
