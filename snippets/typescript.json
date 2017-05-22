@@ -311,7 +311,7 @@
     "prefix": "rx-observable",
     "description": "RxJS Observable import",
     "body": [
-      "import 'rxjs/Observable';",
+      "import { Observable } from 'rxjs/Observable';",
       "$0"
     ]
   },
@@ -319,7 +319,7 @@
     "prefix": "rx-replay-subject",
     "description": "RxJS ReplaySubject import",
     "body": [
-      "import 'rxjs/ReplaySubject';",
+      "import { ReplaySubject } from 'rxjs/ReplaySubject';",
       "$0"
     ]
   },
@@ -327,7 +327,7 @@
     "prefix": "rx-subject",
     "description": "RxJS Subject import",
     "body": [
-      "import 'rxjs/Subject';",
+      "import { Subject } from 'rxjs/Subject';",
       "$0"
     ]
   },
@@ -335,7 +335,7 @@
     "prefix": "rx-behavior-subject",
     "description": "RxJS BehaviorSubject import",
     "body": [
-      "import 'rxjs/BehaviorSubject';",
+      "import { BehaviorSubject } from 'rxjs/BehaviorSubject';",
       "$0"
     ]
   },

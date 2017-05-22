@@ -1,7 +1,7 @@
 ## Angular TypeScript Snippets Changelog
 
-<a name="2.3.0"></a>
-# 2.3.0 (2017-05-21)
+<a name="2.3.1"></a>
+# 2.3.1 (2017-05-22)
 
 * Added TypeScript snippets for RxJS
   * RxJS Observable
