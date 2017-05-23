@@ -1,5 +1,11 @@
 ## Angular TypeScript Snippets Changelog
 
+<a name="2.3.2"></a>
+# 2.3.2 (2017-05-23)
+
+* Modified TypeScript snippets
+  * Removed `module.id` from `@Component`
+
 <a name="2.3.1"></a>
 # 2.3.1 (2017-05-22)
 
