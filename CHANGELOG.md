@@ -1,10 +1,13 @@
 ## Angular TypeScript Snippets Changelog
 
 <a name="2.3.2"></a>
-# 2.3.2 (2017-05-23)
+# 2.3.2 (2017-05-29)
 
+* Added JSON schema validation for Web App Manifest
 * Modified TypeScript snippets
   * Removed `module.id` from `@Component`
+
+* Fixed all HTML and TypeScript snippets to use positional placeholders
 
 <a name="2.3.1"></a>
 # 2.3.1 (2017-05-22)

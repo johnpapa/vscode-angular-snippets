@@ -79,8 +79,8 @@
     "prefix": "a-http-get",
     "description": "Angular Http.get",
     "body": [
-      "return this.http.get('${url}')",
-      "\t.map((response: Response) => response.json()${0});"
+      "return this.http.get('${1:url}')",
+      "\t.map((response: Response) => response.json());$0"
     ]
   },
   "Angular Http Service": {
