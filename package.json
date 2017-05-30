@@ -11,16 +11,16 @@
     "license": "SEE LICENSE IN LICENSE.md",
     "repository": {
         "type": "git",
-        "url": "https://github.com/johnpapa/vscode-angular2-snippets.git"
+        "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
     },
-    "keywords" : [
+    "keywords": [
         "Angular",
         "Angular 2",
         "Angular 4",
         "TypeScript",
         "HTML"
     ],
-    "version": "2.3.2-beta",
+    "version": "2.3.2",
     "engines": {
         "vscode": "^1.10.0"
     },
@@ -28,9 +28,16 @@
         "vscode": "^1.11.0"
     },
     "categories": [
-        "Snippets"
+        "Snippets",
+        "Other"
     ],
     "contributes": {
+        "jsonValidation": [
+            {
+                "fileMatch": "manifest.json",
+                "url": "http://json.schemastore.org/web-manifest"
+            }
+        ],
         "snippets": [
             {
                 "language": "typescript",
