@@ -61,8 +61,8 @@ a-routerLink                // routerLink
 a-routerLink-param          // routerLink with a route parameter
 a-ngStyle                   // ngStyle
 a-ngSwitch                  // ngSwitch
-a-prej                      // pre debug | json
-a-preja                     // pre debug | async | json
+a-prej                      // <pre>{{model | json}}</pre>
+a-preja                     // <pre>{{model | async | json}}</pre>
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
