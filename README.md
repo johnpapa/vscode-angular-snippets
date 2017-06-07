@@ -49,6 +49,7 @@ rx-add-observable           // Rx add observable import
 ###HTML Snippets
 ```html
 a-class                     // [class] binding
+a-click                     // (click) binding
 a-select                    // <select> control
 a-style                     // [style] binding
 a-ngClass                   // ngClass
