@@ -103,7 +103,7 @@
   "Output Event": {
     "prefix": "a-output-event",
     "body": [
-      "@Output() ${1:eventName}: EventEmitter<${2:eventType}> = new EventEmitter<${2:eventType}>();"
+      "@Output() ${1:eventName} = new EventEmitter<${2:eventType}>();"
     ],
     "description": "Angular @Output event and emitter"
   },
