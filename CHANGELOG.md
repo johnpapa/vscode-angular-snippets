@@ -1,5 +1,11 @@
 ## Angular TypeScript Snippets Changelog
 
+<a name="2.3.3"></a>
+# 2.3.3 (2017-06-14)
+
+* Removed EventEmitter type from snippet, as it was implicit
+* Fixed bug where event name and event type where mistakenly using the same snippet placeholder ([#57](https://github.com/johnpapa/vscode-angular-snippets/pull/57))
+
 <a name="2.3.2"></a>
 # 2.3.2 (2017-05-29)
 
@@ -20,11 +26,11 @@
   * RxJS add operator
   * RxJS add observable
 
-* Fixed all TypeScript snippets 
+* Fixed all TypeScript snippets
   added positional prefix to all named variable/placeholders
   e.g. ${name} --> ${1:name}
 
-* Removed TypeScript snippets 
+* Removed TypeScript snippets
   * a-bootstrap
 
 <a name="2.2.3"></a>
