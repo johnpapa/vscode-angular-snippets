@@ -46,7 +46,7 @@ rx-add-operator             // Rx add operator import
 rx-add-observable           // Rx add observable import
 ```
 
-###HTML Snippets
+### HTML Snippets
 ```html
 a-class                     // [class] binding
 a-select                    // <select> control
