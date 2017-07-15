@@ -50,38 +50,32 @@
   "Angular Default Route Path": {
     "prefix": "a-route-path-default",
     "description": "Angular default route path",
-    "body": [
-      "{ path: '', pathMatch: 'full', redirectTo: '${1:path}' }$0"
-    ]
+    "body": ["{ path: '', pathMatch: 'full', redirectTo: '${1:path}' }$0"]
   },
   "Angular 404 Route Path": {
     "prefix": "a-route-path-404",
     "description": "Angular 404 route path",
-    "body": [
-      "{ path: '**', pathMatch: 'full', component: ${1:PathNotFoundComponent} }$0"
-    ]
+    "body": ["{ path: '**', pathMatch: 'full', component: ${1:PathNotFoundComponent} }$0"]
   },
   "Angular Eager Route Path": {
     "prefix": "a-route-path-eager",
     "description": "Angular eager route path",
-    "body": [
-      "{ path: '${1:path}', component: ${2:Name}Component },"
-    ]
+    "body": ["{ path: '${1:path}', component: ${2:Name}Component },"]
   },
   "Angular Lazy Route Path": {
     "prefix": "a-route-path-lazy",
     "description": "Angular lazy route path",
-    "body": [
-      "{ path: '${1:path}', loadChildren: '${2:lazy-path}#${3:lazy-module}' },"
-    ]
+    "body": ["{ path: '${1:path}', loadChildren: '${2:lazy-path}#${3:lazy-module}' },"]
   },
   "Http.get": {
     "prefix": "a-http-get",
     "description": "Angular Http.get",
-    "body": [
-      "return this.http.get('${1:url}')",
-      "\t.map((response: Response) => response.json());$0"
-    ]
+    "body": ["return this.http.get('${1:url}')", "\t.map((response: Response) => response.json());$0"]
+  },
+  "HttpClient.get": {
+    "prefix": "a-httpclient-get",
+    "description": "Angular HttpClient.get",
+    "body": ["return this.httpClient.get('${1:url}');$0"]
   },
   "Angular Http Service": {
     "prefix": "a-service-http",
@@ -100,21 +94,29 @@
       "}"
     ]
   },
+  "Angular HttpClient Service": {
+    "prefix": "a-service-httpclient",
+    "description": "Angular service with HttpClient",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { Http, Response } from '@angular/common/http';",
+      "",
+      "@Injectable()",
+      "export class ${1:ServiceName}Service {",
+      "\tconstructor(private httpClient: HttpClient) { }",
+      "\t$0",
+      "}"
+    ]
+  },
   "Output Event": {
     "prefix": "a-output-event",
-    "body": [
-      "@Output() ${1:eventName} = new EventEmitter<${2:eventType}>();"
-    ],
+    "body": ["@Output() ${1:eventName} = new EventEmitter<${2:eventType}>();"],
     "description": "Angular @Output event and emitter"
   },
   "Subscribe": {
     "prefix": "a-subscribe",
     "description": "Angular observable subscribe",
-    "body": [
-      "this.${1:service}.${2:function}",
-      "\t.subscribe(${3:arg} => this.${4:property} = ${3:arg});",
-      "$0"
-    ]
+    "body": ["this.${1:service}.${2:function}", "\t.subscribe(${3:arg} => this.${4:property} = ${3:arg});", "$0"]
   },
   "Angular Root Component": {
     "prefix": "a-component-root",
@@ -308,51 +310,31 @@
   "RxJS Observable Import": {
     "prefix": "rx-observable",
     "description": "RxJS Observable import",
-    "body": [
-      "import { Observable } from 'rxjs/Observable';",
-      "$0"
-    ]
+    "body": ["import { Observable } from 'rxjs/Observable';", "$0"]
   },
   "RxJS ReplaySubject Import": {
     "prefix": "rx-replay-subject",
     "description": "RxJS ReplaySubject import",
-    "body": [
-      "import { ReplaySubject } from 'rxjs/ReplaySubject';",
-      "$0"
-    ]
+    "body": ["import { ReplaySubject } from 'rxjs/ReplaySubject';", "$0"]
   },
   "RxJS Subject Import": {
     "prefix": "rx-subject",
     "description": "RxJS Subject import",
-    "body": [
-      "import { Subject } from 'rxjs/Subject';",
-      "$0"
-    ]
+    "body": ["import { Subject } from 'rxjs/Subject';", "$0"]
   },
   "RxJS BehaviorSubject Import": {
     "prefix": "rx-behavior-subject",
     "description": "RxJS BehaviorSubject import",
-    "body": [
-      "import { BehaviorSubject } from 'rxjs/BehaviorSubject';",
-      "$0"
-    ]
+    "body": ["import { BehaviorSubject } from 'rxjs/BehaviorSubject';", "$0"]
   },
   "RxJS Add Operator Import": {
     "prefix": "rx-add-operator",
     "description": "RxJS Add Operator import",
-    "body": [
-      "import 'rxjs/add/operator/${1:map}';",
-      "$0"
-    ]
+    "body": ["import 'rxjs/add/operator/${1:map}';", "$0"]
   },
   "RxJS Add Observable Import": {
     "prefix": "rx-add-observable",
     "description": "RxJS Add Observable import",
-    "body": [
-      "import 'rxjs/add/observable/${1:of}';",
-      "$0"
-    ]
+    "body": ["import 'rxjs/add/observable/${1:of}';", "$0"]
   }
 }
-
-

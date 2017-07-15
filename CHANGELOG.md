@@ -1,4 +1,11 @@
-## Angular TypeScript Snippets Changelog
+## Angular Snippets Changelog
+
+<a name="2.4.0"></a>
+# 2.4.0 (2017-07-15)
+
+* Added TypeScript snippets for HttpClient
+  * `a-httpclient-get` HttpClient.get
+  * `a-service-httpclient` Service template for HttpClient
 
 <a name="2.3.3"></a>
 # 2.3.3 (2017-06-14)

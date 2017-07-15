@@ -21,6 +21,7 @@ a-guard-can-activate-child  // CanActivateChild guard
 a-guard-can-deactivate      // CanDeactivate guard
 a-guard-can-load            // CanLoad guard
 a-http-get                  // http.get with Rx Observable
+a-httpclient-get            // httpClient.get with Rx Observable
 a-module                    // module
 a-module-root               // root app module
 a-module-routing            // routing module file (forChild)
@@ -32,6 +33,7 @@ a-route-path-eager          // eager route path
 a-route-path-lazy           // lazy route path
 a-service                   // service
 a-service-http              // service with Http
+a-service-httpclient        // service with HttpClient
 a-ctor-skip-self            // angular ngmodule's skipself constructor
 a-subscribe                 // Rx Observable subscription
 ```
