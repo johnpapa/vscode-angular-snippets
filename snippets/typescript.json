@@ -99,7 +99,7 @@
     "description": "Angular service with HttpClient",
     "body": [
       "import { Injectable } from '@angular/core';",
-      "import { Http, Response } from '@angular/common/http';",
+      "import { HttpClient } from '@angular/common/http';",
       "",
       "@Injectable()",
       "export class ${1:ServiceName}Service {",
