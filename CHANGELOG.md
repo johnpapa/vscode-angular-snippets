@@ -1,7 +1,7 @@
 ## Angular Snippets Changelog
 
-<a name="2.4.1"></a>
-# 2.4.1 (2017-08-21)
+<a name="2.4.2"></a>
+# 2.4.2 (2017-08-21)
 
 * Fixes
   * `a-service-httpclient` now imports correct module

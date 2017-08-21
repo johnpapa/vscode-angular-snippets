@@ -14,7 +14,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript Angular Snippets
 
-| Snippet | Purpose |
+| Snippet                      | Purpose                    |
 |------------------------------|----------------------------|
 | `a-component`                | component |
 | `a-component-root`           | root app component |
@@ -42,7 +42,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript RxJS Snippets
 
-| Snippet | Purpose |
+| Snippet                      | Purpose                    |
 |------------------------------|----------------------------|
 | `rx-observable`              | Rx `Observable` import |
 | `rx-subject`                 | Rx `Subject` import |
@@ -53,7 +53,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### HTML Snippets
 
-| Snippet | Purpose |
+| Snippet                      | Purpose                             |
 |------------------------------|-------------------------------------|
 | `a-class`                    | `[class]` binding |
 | `a-select`                   | `<select>` control |
