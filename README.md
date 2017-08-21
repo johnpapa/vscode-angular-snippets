@@ -9,9 +9,11 @@ This extension for Visual Studio Code adds snippets for Angular for TypeScript a
 See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
 ## Usage
+
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### TypeScript Angular Snippets
+
 ```typescript
 a-component                 // component
 a-component-root            // root app component
@@ -39,6 +41,7 @@ a-subscribe                 // Rx Observable subscription
 ```
 
 ### TypeScript RxJS Snippets
+
 ```typescript
 rx-observable               // Rx Observable import
 rx-subject                  // Rx Subject import
@@ -49,6 +52,7 @@ rx-add-observable           // Rx add observable import
 ```
 
 ### HTML Snippets
+
 ```html
 a-class                     // [class] binding
 a-select                    // <select> control
@@ -72,10 +76,10 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 ## Installation
 
 1. Install Visual Studio Code 1.10.0 or higher
-2. Launch Code
-3. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
-4. Select `Install Extension`
-5. Choose the extension
-6. Reload Visual Studio Code
+1. Launch Code
+1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+1. Select `Install Extension`
+1. Choose the extension
+1. Reload Visual Studio Code
 
 ![Install Extension](images/install-extension.gif)
