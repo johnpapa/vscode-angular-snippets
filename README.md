@@ -43,33 +43,33 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 ### TypeScript RxJS Snippets
 
 | Snippet | Purpose |
-|---------------------------|----------------------------|
-| `rx-observable`           | Rx `Observable` import |
-| `rx-subject`              | Rx `Subject` import |
-| `rx-replay-subject`       | Rx `ReplaySubject` import |
-| `rx-behavior-subject`     | Rx `BehaviorSubject` import |
-| `rx-add-operator`         | Rx add operator import |
-| `rx-add-observable`       | Rx add observable import |
+|------------------------------|----------------------------|
+| `rx-observable`              | Rx `Observable` import |
+| `rx-subject`                 | Rx `Subject` import |
+| `rx-replay-subject`          | Rx `ReplaySubject` import |
+| `rx-behavior-subject`        | Rx `BehaviorSubject` import |
+| `rx-add-operator`            | Rx add operator import |
+| `rx-add-observable`          | Rx add observable import |
 
 ### HTML Snippets
 
 | Snippet | Purpose |
-|---------------------------|----------------------------|
-| `a-class`                 | `[class]` binding |
-| `a-select`                | `<select>` control |
-| `a-style`                 | `[style]` binding |
-| `a-ngClass`               | `ngClass` |
-| `a-ngFor`                 | `*ngFor` |
-| `a-ngForAsync`            | `*ngFor` with async |
-| `a-ngIf`                  | `*ngIf` |
-| `a-ngIfElse`              | `*ngIf` with `else` |
-| `a-ngModel`               | `ngModel` |
-| `a-routerLink`            | `routerLink` |
-| `a-routerLink-param`      | `routerLink` with a route parameter |
-| `a-ngStyle`               | `ngStyle` |
-| `a-ngSwitch`              | `ngSwitch` |
-| `a-prej`                  | `<pre>{{model | json}}</pre>` |
-| `a-preja`                 | `<pre>{{model | async | json}}</pre>` |
+|------------------------------|-------------------------------------|
+| `a-class`                    | `[class]` binding |
+| `a-select`                   | `<select>` control |
+| `a-style`                    | `[style]` binding |
+| `a-ngClass`                  | `ngClass` |
+| `a-ngFor`                    | `*ngFor` |
+| `a-ngForAsync`               | `*ngFor` with async |
+| `a-ngIf`                     | `*ngIf` |
+| `a-ngIfElse`                 | `*ngIf` with `else` |
+| `a-ngModel`                  | `ngModel` |
+| `a-routerLink`               | `routerLink` |
+| `a-routerLink-param`         | `routerLink` with a route parameter |
+| `a-ngStyle`                  | `ngStyle` |
+| `a-ngSwitch`                 | `ngSwitch` |
+| `a-prej`                     | show the JSON form of a model |
+| `a-preja`                    | show the JSON form of a model, using async |
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
 
