@@ -1,5 +1,14 @@
 ## Angular Snippets Changelog
 
+<a name="2.4.3"></a>
+# 2.4.3 (2017-08-24)
+
+* Added HTML snippets
+  * `a-ngFor-trackBy`
+
+* Added TypeScript snippets
+  * `a-component-inline`
+
 <a name="2.4.2"></a>
 # 2.4.2 (2017-08-21)
 

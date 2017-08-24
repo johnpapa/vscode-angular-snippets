@@ -17,6 +17,24 @@
       "}"
     ]
   },
+  "Angular Component with Inline Template": {
+    "prefix": "a-component-inline",
+    "description": "Angular component with an inline template",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplate: `$0`",
+      "})",
+      "",
+      "export class ${2:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }",
+      "}"
+    ]
+  },
   "Angular Service": {
     "prefix": "a-service",
     "description": "Angular service",

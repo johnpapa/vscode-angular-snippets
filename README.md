@@ -17,6 +17,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | Snippet                      | Purpose                    |
 |------------------------------|----------------------------|
 | `a-component`                | component |
+| `a-component-inline`         | component with inline template |
 | `a-component-root`           | root app component |
 | `a-directive`                | directive |
 | `a-guard-can-activate`       | `CanActivate` guard |
@@ -61,6 +62,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-ngClass`                  | `ngClass` |
 | `a-ngFor`                    | `*ngFor` |
 | `a-ngForAsync`               | `*ngFor` with async |
+| `a-ngFor-trackBy`            | `*ngFor` with trackBy |
 | `a-ngIf`                     | `*ngIf` |
 | `a-ngIfElse`                 | `*ngIf` with `else` |
 | `a-ngModel`                  | `ngModel` |

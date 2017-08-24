@@ -23,14 +23,21 @@
   "ngFor": {
     "prefix": "a-ngFor",
     "body": [
-      "*ngFor=\"let ${1:item} of ${2:list}\""
+      "*ngFor=\"let ${1:item} of ${2:list}\"${0}"
     ],
     "description": "Angular *ngFor"
+  },
+  "ngFor with trackBy": {
+    "prefix": "a-ngFor-trackBy",
+    "body": [
+      "*ngFor=\"let ${1:item} of ${2:list}; trackBy:${1:item}.id\"${0}"
+    ],
+    "description": "Angular *ngFor with trackBy"
   },
   "ngForAsync": {
     "prefix": "a-ngForAsync",
     "body": [
-      "*ngFor=\"let ${1:item} of ${2:stream} | async as ${3:list}\""
+      "*ngFor=\"let ${1:item} of ${2:stream} | async as ${3:list}\"${0}"
     ],
     "description": "Angular *ngForAsync"
   },
