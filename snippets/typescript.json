@@ -312,6 +312,24 @@
       "}"
     ]
   },
+  "Angular Router Events": {
+    "prefix": "a-router-events",
+    "description": "Angular Router Events",
+    "body": [
+      "checkEvents() {",
+      "\tthis.router.events.subscribe(event => {",
+      "\t\tswitch (true) {",
+      "\t\t\tcase event instanceof ${1:eventName}:",
+      "\t\t\t\t$0",
+      "\t\t\t\tbreak;",
+      "",
+      "\t\t\tdefault:",
+      "\t\t\t\tbreak;",
+      "\t\t}",
+      "\t});",
+      "}"
+    ]
+  },
   "Angular Module SkipSelf Constructor": {
     "prefix": "a-ctor-skip-self",
     "description": "Angular Module SkipSelf constructor",

@@ -1,5 +1,11 @@
 ## Angular Snippets Changelog
 
+<a name="2.5.0"></a>
+# 2.5.0 (2017-09-02)
+
+* Added TypeScript snippets
+  * `a-router-events`
+
 <a name="2.4.3"></a>
 # 2.4.3 (2017-08-24)
 

@@ -1,6 +1,6 @@
 # Angular TypeScript Snippets for VS Code
 
-**Now Updated for Angular 4.0.0 release**
+**Now Updated for Angular 4.3.0 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
@@ -35,6 +35,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-route-path-default`       | default route path |
 | `a-route-path-eager`         | eager route path |
 | `a-route-path-lazy`          | lazy route path |
+| `a-router-events`            | listen to one or more router events |
 | `a-service`                  | service |
 | `a-service-http`             | service with `Http` |
 | `a-service-httpclient`       | service with `HttpClient` |
