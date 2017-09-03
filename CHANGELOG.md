@@ -1,5 +1,11 @@
 ## Angular Snippets Changelog
 
+<a name="2.6.0"></a>
+# 2.6.0 (2017-09-03)
+
+* Added TypeScript snippets
+| `a-http-interceptor`, Angular `HttpInterceptor` for `HttpClient`
+
 <a name="2.5.0"></a>
 # 2.5.0 (2017-09-02)
 

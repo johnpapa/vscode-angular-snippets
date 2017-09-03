@@ -126,6 +126,24 @@
       "}"
     ]
   },
+  "Angular HttpInterceptor": {
+    "prefix": "a-http-interceptor",
+    "description": "Angular HttpInterceptor for HttpClient",
+    "body": [
+      "import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';",
+      "import { Observable } from 'rxjs/Observable';",
+      "import 'rxjs/add/operator/do';",
+      "",
+      "export class LogInterceptor implements HttpInterceptor {",
+      "\tconstructor() {}",
+      "",
+      "\tintercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {",
+      "\t\tconst started = Date.now();",
+      "\t\treturn next.handle(req);$0",
+      "\t}",
+      "}"
+    ]
+  },
   "Output Event": {
     "prefix": "a-output-event",
     "body": ["@Output() ${1:eventName} = new EventEmitter<${2:eventType}>();"],
