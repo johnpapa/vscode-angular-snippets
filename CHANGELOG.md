@@ -1,10 +1,20 @@
 ## Angular Snippets Changelog
 
+<a name="2.7.0"></a>
+# 2.7.0 (2017-09-04)
+
+* Added TypeScript snippets
+  * `a-http-interceptor-logging`, Angular `HttpInterceptor` that logs traffic
+  * `a-http-interceptor-headers`, Angular `HttpInterceptor` that sets headers
+
+* Updated TypeScript snippet
+  * `a-http-interceptor` to be an empty interceptor
+
 <a name="2.6.0"></a>
 # 2.6.0 (2017-09-03)
 
 * Added TypeScript snippets
-| `a-http-interceptor`, Angular `HttpInterceptor` for `HttpClient`
+  * `a-http-interceptor`, Angular `HttpInterceptor` for `HttpClient`
 
 <a name="2.5.0"></a>
 # 2.5.0 (2017-09-02)

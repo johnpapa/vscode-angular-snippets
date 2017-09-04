@@ -20,7 +20,7 @@
         "TypeScript",
         "HTML"
     ],
-    "version": "2.6.0",
+    "version": "2.7.0",
     "engines": {
         "vscode": "^1.10.0"
     },

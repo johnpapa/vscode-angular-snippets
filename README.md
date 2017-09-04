@@ -26,7 +26,9 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-guard-can-load`           | `CanLoad` guard |
 | `a-http-get`                 | `http.get` with Rx Observable |
 | `a-httpclient-get`           | `httpClient.get` with Rx Observable |
-| `a-http-interceptor`         | Angular `HttpInterceptor` for `HttpClient` |
+| `a-http-interceptor`         | Empty Angular `HttpInterceptor` for `HttpClient` |
+| `a-http-interceptor-headers` | Angular `HttpInterceptor` that sets headers for `HttpClient` |
+| `a-http-interceptor-logging` | Angular `HttpInterceptor` that logs traffic for `HttpClient` |
 | `a-module`                   | module |
 | `a-module-root`              | root app module |
 | `a-module-routing`           | routing module file (forChild) |
