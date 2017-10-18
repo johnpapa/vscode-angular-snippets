@@ -1,5 +1,10 @@
 ## Angular Snippets Changelog
 
+<a name="2.8.0"></a>
+# 2.8.0 (2017-10-17)
+
+* Added Optional Theme for "Winter is Coming"
+
 <a name="2.7.0"></a>
 # 2.7.0 (2017-09-04)
 

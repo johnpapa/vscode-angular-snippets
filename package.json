@@ -20,7 +20,7 @@
         "TypeScript",
         "HTML"
     ],
-    "version": "2.7.0",
+    "version": "2.8.0",
     "engines": {
         "vscode": "^1.10.0"
     },
@@ -36,6 +36,13 @@
             {
                 "fileMatch": "manifest.json",
                 "url": "http://json.schemastore.org/web-manifest"
+            }
+        ],
+		"themes": [
+			{
+				"label": "Winter is Coming",
+				"uiTheme": "vs-dark",
+				"path": "./themes/WinterIsComing.tmTheme"
             }
         ],
         "snippets": [
