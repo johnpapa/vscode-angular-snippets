@@ -1,7 +1,7 @@
 {
     "name": "Angular2",
     "publisher": "johnpapa",
-    "displayName": "Angular v4 TypeScript Snippets",
+    "displayName": "Angular v5 TypeScript Snippets",
     "description": "Angular with TypeScript snippets.",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
@@ -16,11 +16,11 @@
     "keywords": [
         "Angular",
         "Angular 2",
-        "Angular 4",
+        "Angular 5",
         "TypeScript",
         "HTML"
     ],
-    "version": "2.9.1",
+    "version": "2.10.0",
     "engines": {
         "vscode": "^1.10.0"
     },
