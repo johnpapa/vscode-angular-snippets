@@ -1,5 +1,10 @@
 ## Angular Snippets Changelog
 
+<a name="2.9.1"></a>
+# 2.9.1 (2017-10-23)
+
+* Merged PR to fix a bug with the `canActivateChild` snippet
+
 <a name="2.9.0"></a>
 # 2.9.0 (2017-10-18)
 
