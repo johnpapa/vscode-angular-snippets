@@ -4,7 +4,7 @@
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
-![Use Extension](images/use-extension-1.gif)
+![Use Extension](images/use-extension.gif)
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
