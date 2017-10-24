@@ -76,6 +76,9 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-ngSwitch`                 | `ngSwitch` |
 | `a-prej`                     | show the JSON form of a model |
 | `a-preja`                    | show the JSON form of a model, using async |
+| `a-ng-container`             | `<ng-container>` element |
+| `a-ng-template`              | `<ng-template>` element |
+| `a-ng-content`               | `<ng-content>` element |
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
 
