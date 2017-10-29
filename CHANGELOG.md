@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="2.11.0"></a>
+# 2.11.0 (2017-10-29)
+
+* Added HTML snippets
+  * `a-formControlName`
+  * `a-formGroup`
+  * `a-formGroupName`  
 
 <a name="2.10.0"></a>
 # 2.10.0 (TBD)
