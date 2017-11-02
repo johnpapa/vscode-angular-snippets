@@ -439,5 +439,10 @@
     "prefix": "rx-add-observable",
     "description": "RxJS Add Observable import",
     "body": ["import 'rxjs/add/observable/${1:of}';", "$0"]
+  },
+  "RxJS Operators": {
+    "prefix": "rx-operators",
+    "description": "RxJS Operators import",
+    "body": ["import { ${1:map} } from 'rxjs/operators';", "$0"]
   }
 }
