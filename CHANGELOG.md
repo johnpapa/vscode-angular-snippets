@@ -1,7 +1,7 @@
 ## Angular Snippets Changelog
 
-<a name="2.10.0"></a>
-# 2.10.0 (2017-11-13)
+<a name="2.11.0"></a>
+# 2.11.0 (2017-11-13)
 
 * Added `rx-operators` for Rx operators import
 * Updated images
