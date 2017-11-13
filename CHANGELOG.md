@@ -1,11 +1,16 @@
 ## Angular Snippets Changelog
 
-
 <a name="2.10.0"></a>
-# 2.10.0 (TBD)
+# 2.10.0 (2017-11-13)
 
+* Added `rx-operators` for Rx operators import
 * Updated images
-* Updated to support v5.0.0
+* Updated to support Angular v5
+* Updated some snippets to use lettable operators
+  * `a-http-interceptor-logging`
+  * `a-service-httpclient`
+
+> Thanks to https://github.com/mohammedzamakhan for the `rx-operators` PR.
 
 <a name="2.9.1"></a>
 # 2.9.1 (2017-10-23)
