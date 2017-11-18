@@ -1,5 +1,10 @@
 ## Angular Snippets Changelog
 
+<a name="2.11.1"></a>
+# 2.11.1 (2017-11-18)
+
+* Fixed `a-prej` in HTML
+
 <a name="2.11.0"></a>
 # 2.11.0 (2017-11-13)
 
