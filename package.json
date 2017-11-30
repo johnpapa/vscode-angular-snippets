@@ -1,8 +1,8 @@
 {
     "name": "Angular2",
     "publisher": "johnpapa",
-    "displayName": "Angular v5 TypeScript Snippets",
-    "description": "Angular with TypeScript snippets.",
+    "displayName": "Angular v5 Snippets",
+    "description": "Angular v5 snippets by John Papa",
     "icon": "images/angular-shield.png",
     "galleryBanner": {
         "color": "#0273D4",
@@ -13,6 +13,7 @@
         "type": "git",
         "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
     },
+    "main": "./out/index",
     "keywords": [
         "Angular",
         "Angular 2",
@@ -20,12 +21,19 @@
         "TypeScript",
         "HTML"
     ],
-    "version": "2.10.0",
+    "version": "2.11.2",
     "engines": {
-        "vscode": "^1.10.0"
+        "vscode": "^1.17.0"
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "vscode": "^1.11.0"
+        "vscode": "^1.0.0",
+        "typescript": "^2.1.5",
+        "@types/node": "^8.0.34"
     },
     "categories": [
         "Snippets",

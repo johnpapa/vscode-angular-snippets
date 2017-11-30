@@ -55,6 +55,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `rx-behavior-subject`        | Rx `BehaviorSubject` import |
 | `rx-add-operator`            | Rx add operator import |
 | `rx-add-observable`          | Rx add observable import |
+| `rx-operators`               | Rx operators import |
 
 ### HTML Snippets
 

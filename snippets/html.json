@@ -126,7 +126,7 @@
   "pre w/ json": {
     "prefix": "a-prej",
     "body": [
-      "<pre>{{${model:1} | json}}</pre>$0"
+      "<pre>{{${1:model} | json}}</pre>$0"
     ],
     "description": "Angular pre debug | json"
   },

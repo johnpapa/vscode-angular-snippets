@@ -1,18 +1,30 @@
 ## Angular Snippets Changelog
 
-<a name="2.11.0"></a>
-# 2.11.0 (2017-10-29)
+<a name="next"></a>
+# next (next)
 
 * Added HTML snippets
   * `a-formControlName`
   * `a-formGroup`
   * `a-formGroupName`  
 
-<a name="2.10.0"></a>
-# 2.10.0 (TBD)
+<a name="2.11.2"></a>
+# 2.11.2 (2017-11-18)
 
+* Fixed `a-prej` in HTML
+* Updated title of the extension
+
+<a name="2.11.0"></a>
+# 2.11.0 (2017-11-13)
+
+* Added `rx-operators` for Rx operators import
 * Updated images
-* Updated to support v5.0.0
+* Updated to support Angular v5
+* Updated some snippets to use lettable operators
+  * `a-http-interceptor-logging`
+  * `a-service-httpclient`
+
+> Thanks to https://github.com/mohammedzamakhan for the `rx-operators` PR.
 
 <a name="2.9.1"></a>
 # 2.9.1 (2017-10-23)
