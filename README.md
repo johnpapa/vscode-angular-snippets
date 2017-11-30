@@ -68,6 +68,9 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-ngFor`                    | `*ngFor` |
 | `a-ngForAsync`               | `*ngFor` with async |
 | `a-ngFor-trackBy`            | `*ngFor` with trackBy |
+| `a-formControlName`          | `formControlName` |
+| `a-formGroup`                | `formGroup` |
+| `a-formGroupName`            | `formGroupName` |
 | `a-ngIf`                     | `*ngIf` |
 | `a-ngIfElse`                 | `*ngIf` with `else` |
 | `a-ngModel`                  | `ngModel` |

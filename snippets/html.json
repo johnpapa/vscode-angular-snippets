@@ -41,6 +41,27 @@
     ],
     "description": "Angular *ngForAsync"
   },
+  "ngFormControlName": {
+    "prefix": "a-formControlName",
+    "body": [
+      "formControlName=\"${1:control}\""
+    ],
+    "description": "Angular formControlName"
+  },
+  "ngFormGroup": {
+    "prefix": "a-formGroup",
+    "body": [
+      "[formGroup]=\"${1:form}\""
+    ],
+    "description": "Angular formGroup"
+  },
+  "ngFormGroupName": {
+    "prefix": "a-formGroupName",
+    "body": [
+      "[formGroupName]=\"${1:name}\""
+    ],
+    "description": "Angular formGroupName"
+  },
   "ngIf": {
     "prefix": "a-ngIf",
     "body": [

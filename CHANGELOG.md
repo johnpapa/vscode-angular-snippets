@@ -1,5 +1,13 @@
 ## Angular Snippets Changelog
 
+<a name="next"></a>
+# next (next)
+
+* Added HTML snippets
+  * `a-formControlName`
+  * `a-formGroup`
+  * `a-formGroupName`  
+
 <a name="2.11.2"></a>
 # 2.11.2 (2017-11-18)
 
