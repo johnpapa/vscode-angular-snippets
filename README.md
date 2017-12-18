@@ -51,6 +51,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 |------------------------------|----------------------------|
 | `rx-observable`              | Rx `Observable` import |
 | `rx-subject`                 | Rx `Subject` import |
+| `rx-subscription`            | Rx `Subscription` import |
 | `rx-replay-subject`          | Rx `ReplaySubject` import |
 | `rx-behavior-subject`        | Rx `BehaviorSubject` import |
 | `rx-add-operator`            | Rx add operator import |
