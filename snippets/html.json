@@ -106,6 +106,13 @@
     ],
     "description": "<select> control with ngModel"
   },
+  "ngRouterLinkActive": {
+    "prefix": "ng2-routerLinkActive",
+    "body": [
+      "routerLinkActive=\"${className:active}\" [routerLinkActiveOptions]=\"{exact: ${option:true}}\""
+    ],
+    "description": "Angular 2 routerLinkActive snippet"
+  },
   "ngStyle": {
     "prefix": "a-ngStyle",
     "body": [
