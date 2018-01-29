@@ -1,8 +1,8 @@
 ## Angular Snippets Changelog
 
-<a name="2.12.0"></a>
+<a name="2.12.1"></a>
 
-# 2.12.0 (2018-01-29)
+# 2.12.1 (2018-01-29)
 
 * update `a-routerLink` and `a-routerLinkParam` to include `routerLinkActive`
 * Added HTML snippets
