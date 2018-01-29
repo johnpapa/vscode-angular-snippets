@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="2.12.0"></a>
+# 2.12.0 (2018-01-29)
+
+* update `a-routerLink` and  `a-routerLinkParam` to include `routerLinkActive`
+
+> Thanks to https://github.com/doggy8088 for the PR and idea
+
 <a name="2.11.2"></a>
 # 2.11.2 (2017-11-18)
 
