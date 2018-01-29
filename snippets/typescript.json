@@ -73,7 +73,9 @@
   "Angular 404 Route Path": {
     "prefix": "a-route-path-404",
     "description": "Angular 404 route path",
-    "body": ["{ path: '**', pathMatch: 'full', component: ${1:PathNotFoundComponent} }$0"]
+    "body": [
+      "{ path: '**', pathMatch: 'full', component: ${1:PathNotFoundComponent} }$0"
+    ]
   },
   "Angular Eager Route Path": {
     "prefix": "a-route-path-eager",
@@ -83,7 +85,9 @@
   "Angular Lazy Route Path": {
     "prefix": "a-route-path-lazy",
     "description": "Angular lazy route path",
-    "body": ["{ path: '${1:path}', loadChildren: '${2:lazy-path}#${3:lazy-module}' },"]
+    "body": [
+      "{ path: '${1:path}', loadChildren: '${2:lazy-path}#${3:lazy-module}' },"
+    ]
   },
   "Http.get": {
     "prefix": "a-http-get",
@@ -427,6 +431,11 @@
     "prefix": "rx-subject",
     "description": "RxJS Subject import",
     "body": ["import { Subject } from 'rxjs/Subject';", "$0"]
+  },
+  "RxJS Subscription Import": {
+    "prefix": "rx-subscription",
+    "description": "RxJS Subscription import",
+    "body": ["import { Subscription } from 'rxjs/Subscription';", "$0"]
   },
   "RxJS BehaviorSubject Import": {
     "prefix": "rx-behavior-subject",

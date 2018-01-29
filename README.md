@@ -51,6 +51,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 |------------------------------|----------------------------|
 | `rx-observable`              | Rx `Observable` import |
 | `rx-subject`                 | Rx `Subject` import |
+| `rx-subscription`            | Rx `Subscription` import |
 | `rx-replay-subject`          | Rx `ReplaySubject` import |
 | `rx-behavior-subject`        | Rx `BehaviorSubject` import |
 | `rx-add-operator`            | Rx add operator import |
@@ -87,7 +88,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 
 1. Install Visual Studio Code 1.10.0 or higher
 1. Launch Code
-1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+1. Hit `Ctrl`-`Shift`-`X` (Windows, Linux) or `Cmd`-`Shift`-`X` (OSX) or Click on Extensions Icon
 1. Select `Install Extension`
 1. Choose the extension
 1. Reload Visual Studio Code
