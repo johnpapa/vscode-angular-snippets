@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="2.13.0"></a>
+
+# 2.13.0 (2018-02-20)
+
+* Added multi-stage Docker file snippet
+  * `docker-angular-multi-stage`
+
 <a name="2.12.0"></a>
 
 # 2.12.0 (2018-01-29)
