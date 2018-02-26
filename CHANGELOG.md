@@ -1,5 +1,13 @@
 ## Angular Snippets Changelog
 
+<a name="2.14.0"></a>
+
+# 2.14.0 (2018-02-25)
+
+* Added TypeScript snippets
+  * `a-route-path-with-children`
+  * `a-route-params-subscribe`
+
 <a name="2.13.0"></a>
 
 # 2.13.0 (2018-02-20)

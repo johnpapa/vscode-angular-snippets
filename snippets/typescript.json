@@ -70,6 +70,19 @@
     "description": "Angular default route path",
     "body": ["{ path: '', pathMatch: 'full', redirectTo: '${1:path}' }$0"]
   },
+  "Angular Route Path with Children": {
+    "prefix": "a-route-path-with-children",
+    "description": "Angular route path with children",
+    "body": [
+      "{",
+      "\tpath: '', ",
+      "\tcomponent: ${1:Component},",
+      "\tchildren: [",
+      "\t\t{ path: '${2:childpath}', component: ${3:ChildComponent} }",
+      "\t]",
+      "}$0"
+    ]
+  },
   "Angular 404 Route Path": {
     "prefix": "a-route-path-404",
     "description": "Angular 404 route path",
@@ -84,6 +97,16 @@
     "prefix": "a-route-path-lazy",
     "description": "Angular lazy route path",
     "body": ["{ path: '${1:path}', loadChildren: '${2:lazy-path}#${3:lazy-module}' },"]
+  },
+  "Routing Params - Subscribe": {
+    "prefix": "a-route-params-subscribe",
+    "description": "Angular - subscribe to routing parameters",
+    "body": [
+      "this.route.params",
+      "\t.pipe(map(params => params['id']), tap(id => (this.id = +id)))",
+      "\t.subscribe(id => ${1:function()}());",
+      "$0"
+    ]
   },
   "Http.get": {
     "prefix": "a-http-get",
