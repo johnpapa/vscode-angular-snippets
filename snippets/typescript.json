@@ -86,7 +86,9 @@
   "Angular 404 Route Path": {
     "prefix": "a-route-path-404",
     "description": "Angular 404 route path",
-    "body": ["{ path: '**', pathMatch: 'full', component: ${1:PathNotFoundComponent} }$0"]
+    "body": [
+      "{ path: '**', pathMatch: 'full', component: ${1:PathNotFoundComponent} }$0"
+    ]
   },
   "Angular Eager Route Path": {
     "prefix": "a-route-path-eager",
@@ -96,7 +98,9 @@
   "Angular Lazy Route Path": {
     "prefix": "a-route-path-lazy",
     "description": "Angular lazy route path",
-    "body": ["{ path: '${1:path}', loadChildren: '${2:lazy-path}#${3:lazy-module}' },"]
+    "body": [
+      "{ path: '${1:path}', loadChildren: '${2:lazy-path}#${3:lazy-module}' },"
+    ]
   },
   "Routing Params - Subscribe": {
     "prefix": "a-route-params-subscribe",
@@ -403,6 +407,22 @@
       "\t\treturn false;$0",
       "\t}",
       "}"
+    ]
+  },
+  "Angular Custom Preload Strategy": {
+    "prefix": "a-preload-strategy",
+    "description": "Angular custom preload strategy",
+    "body": [
+      "import { PreloadingStrategy, Route } from '@angular/router';",
+      "import { Observable } from 'rxjs/Observable';",
+      "import { of } from 'rxjs/observable/of';",
+      "",
+      "export class PreloadSelectedModulesList implements PreloadingStrategy {",
+      "\tpreload(route: Route, load: Function): Observable<any> {",
+      "\t\treturn route.data && route.data['${1:preload}'] ? load() : of(null);",
+      "\t}",
+      "}",
+      "$0"
     ]
   },
   "Angular Router Events": {

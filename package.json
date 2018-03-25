@@ -14,7 +14,7 @@
     "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
   },
   "keywords": ["Angular", "Angular 2", "Angular 5", "TypeScript", "HTML"],
-  "version": "2.14.0",
+  "version": "2.15.0",
   "engines": {
     "vscode": "^1.17.0"
   },

@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="2.15.0"></a>
+
+# 2.15.0 (2018-03-25)
+
+* Added TypeScript snippets
+  * `a-preload-strategy`
+
 <a name="2.14.0"></a>
 
 # 2.14.0 (2018-02-25)
