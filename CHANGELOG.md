@@ -1,5 +1,13 @@
 ## Angular Snippets Changelog
 
+<a name="2.16.0"></a>
+
+# 2.16.0 (2018-04-03)
+
+* Added Node.js Express snippets
+  * Snippet that is ideal for serving a simple node.js express app that serves the angular app from the `./dist` folder
+  * `ex-simple-server`
+
 <a name="2.15.0"></a>
 
 # 2.15.0 (2018-03-25)
