@@ -22,7 +22,7 @@
       "FROM ${2:node:8.9-alpine}",
       "WORKDIR /usr/src/app",
       "COPY --from=node-server /usr/src /usr/src",
-      "COPY --from=client-app /usr/src/app/dist ./",
+      "COPY --from=client-app /usr/src/app ./",
       "EXPOSE ${4:3000}",
       "CMD [\"node\", \"index.js\"]",
       "$0"

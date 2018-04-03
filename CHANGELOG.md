@@ -1,12 +1,13 @@
 ## Angular Snippets Changelog
 
-<a name="2.16.0"></a>
+<a name="2.16.1"></a>
 
-# 2.16.0 (2018-04-03)
+# 2.16.1 (2018-04-03)
 
 * Added Node.js Express snippets
   * Snippet that is ideal for serving a simple node.js express app that serves the angular app from the `./dist` folder
   * `ex-simple-server`
+* Fixed bug where dockerfile was pointing at wrong output folder
 
 <a name="2.15.0"></a>
 
