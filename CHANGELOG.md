@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="2.16.2"></a>
+
+# 2.16.2 (2018-04-03)
+
+* Added documentatin to README for new snippets
+* Upgraded README for v6
+
 <a name="2.16.1"></a>
 
 # 2.16.1 (2018-04-03)

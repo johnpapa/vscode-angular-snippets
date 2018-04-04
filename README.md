@@ -1,6 +1,6 @@
 # Angular TypeScript Snippets for VS Code
 
-**Now Updated for Angular 5.0.0 release**
+**Now Updated for Angular 6.0.0 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
@@ -52,6 +52,12 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | Snippet                      | Purpose                                      |
 | ---------------------------- | -------------------------------------------- |
 | `docker-angular-multi-stage` | Multi-stage Dockerfile for Node with Angular |
+
+### JavaScript Snippets
+
+| Snippet                      | Purpose                                      |
+| ---------------------------- | -------------------------------------------- |
+| `ex-simple-server`           | Node.js Express Server                       |
 
 ### TypeScript RxJS Snippets
 
