@@ -13,8 +13,8 @@
     "type": "git",
     "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
   },
-  "keywords": ["Angular", "Angular 2", "Angular 5", "TypeScript", "HTML"],
-  "version": "2.16.1",
+  "keywords": ["Angular", "Angular 2", "Angular 6", "TypeScript", "HTML"],
+  "version": "2.17.0",
   "engines": {
     "vscode": "^1.17.0"
   },

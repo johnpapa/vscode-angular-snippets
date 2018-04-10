@@ -112,35 +112,10 @@
       "$0"
     ]
   },
-  "Http.get": {
-    "prefix": "a-http-get",
-    "description": "Angular Http.get",
-    "body": [
-      "return this.http.get('${1:url}')",
-      "\t.map((response: Response) => response.json());$0"
-    ]
-  },
   "HttpClient.get": {
     "prefix": "a-httpclient-get",
     "description": "Angular HttpClient.get",
     "body": ["return this.httpClient.get('${1:url}');$0"]
-  },
-  "Angular Http Service": {
-    "prefix": "a-service-http",
-    "description": "Angular service with Http",
-    "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { Http, Response } from '@angular/http';",
-      "import { Observable } from 'rxjs/Observable';",
-      "import 'rxjs/add/operator/map';",
-      "import 'rxjs/add/operator/catch';",
-      "",
-      "@Injectable()",
-      "export class ${1:ServiceName}Service {",
-      "\tconstructor(private http: Http) { }",
-      "\t$0",
-      "}"
-    ]
   },
   "Angular HttpClient Service": {
     "prefix": "a-service-httpclient",
@@ -148,7 +123,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { HttpClient } from '@angular/common/http';",
-      "import { catchError } from 'rxjs/operators';",
+      "import { catchError } from 'rxjs';",
       "",
       "@Injectable()",
       "export class ${1:ServiceName}Service {",
@@ -162,8 +137,7 @@
     "description": "Angular HttpInterceptor for Logging HttpClient",
     "body": [
       "import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';",
-      "import { Observable } from 'rxjs/Observable';",
-      "import { tap } from 'rxjs/operators';",
+      "import { Observable, tap } from 'rxjs';",
       "",
       "export class LogInterceptor implements HttpInterceptor {",
       "\tconstructor() {}",
@@ -188,7 +162,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from '@angular/common/http';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "@Injectable()",
       "export class HeaderInterceptor implements HttpInterceptor {",
@@ -209,7 +183,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { HttpInterceptor, HttpEvent, HttpHandler, HttpRequest } from '@angular/common/http';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "@Injectable()",
       "export class HeaderInterceptor implements HttpInterceptor {",
@@ -384,7 +358,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "import { ${1:ComponentName}Component } from './${2:filename}.component';",
       "",
@@ -414,8 +388,7 @@
     "description": "Angular custom preload strategy",
     "body": [
       "import { PreloadingStrategy, Route } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
-      "import { of } from 'rxjs/observable/of';",
+      "import { Observable, of } from 'rxjs';",
       "",
       "export class PreloadSelectedModulesList implements PreloadingStrategy {",
       "\tpreload(route: Route, load: Function): Observable<any> {",
@@ -456,39 +429,9 @@
       "}"
     ]
   },
-  "RxJS Observable Import": {
-    "prefix": "rx-observable",
-    "description": "RxJS Observable import",
-    "body": ["import { Observable } from 'rxjs/Observable';", "$0"]
-  },
-  "RxJS ReplaySubject Import": {
-    "prefix": "rx-replay-subject",
-    "description": "RxJS ReplaySubject import",
-    "body": ["import { ReplaySubject } from 'rxjs/ReplaySubject';", "$0"]
-  },
-  "RxJS Subject Import": {
-    "prefix": "rx-subject",
-    "description": "RxJS Subject import",
-    "body": ["import { Subject } from 'rxjs/Subject';", "$0"]
-  },
-  "RxJS BehaviorSubject Import": {
-    "prefix": "rx-behavior-subject",
-    "description": "RxJS BehaviorSubject import",
-    "body": ["import { BehaviorSubject } from 'rxjs/BehaviorSubject';", "$0"]
-  },
-  "RxJS Add Operator Import": {
-    "prefix": "rx-add-operator",
-    "description": "RxJS Add Operator import",
-    "body": ["import 'rxjs/add/operator/${1:map}';", "$0"]
-  },
-  "RxJS Add Observable Import": {
-    "prefix": "rx-add-observable",
-    "description": "RxJS Add Observable import",
-    "body": ["import 'rxjs/add/observable/${1:of}';", "$0"]
-  },
-  "RxJS Operators": {
-    "prefix": "rx-operators",
-    "description": "RxJS Operators import",
-    "body": ["import { ${1:map} } from 'rxjs/operators';", "$0"]
+  "RxJS Import": {
+    "prefix": "a-rxjs-import",
+    "description": "RxJS import",
+    "body": ["import { ${1:Observable} } from 'rxjs';", "$0"]
   }
 }

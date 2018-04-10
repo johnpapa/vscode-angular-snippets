@@ -1,11 +1,25 @@
 ## Angular Snippets Changelog
 
-<a name="2.16.2"></a>
+<a name="6.0.0"></a>
 
-# 2.16.2 (2018-04-03)
+# 6.0.0 (2018-04-10)
 
-* Added documentatin to README for new snippets
+* Added documentation to README for new snippets
 * Upgraded README for v6
+* Updated version to v6, to match Angular
+
+* Added
+  * `a-rxjs-import` to import rxjs features from `rxjs`
+* Removed several RxJs snippets as RxJS v6 recommends importing directly from `rxjs`
+  * `rx-add-operator`
+  * `rx-add-observable`
+  * `rx-behavior-subject`
+  * `rx-subject`
+  * `rx-replay-subject`
+  * `rx-observable`
+* Removed older Http library snippets in favor of HttpClient
+  * `a-http-get`
+  * `a-service-http`
 
 <a name="2.16.1"></a>
 
