@@ -1,19 +1,35 @@
 ## Angular Snippets Changelog
 
-<a name="2.16.2"></a>
+<a name="6.0.0"></a>
 
-# 2.16.2 (2018-04-03)
+# 6.0.0 (2018-05-05)
 
-* Added documentatin to README for new snippets
-* Upgraded README for v6
+* Added documentation to README for new snippets
+* Updated the `README.md` for v6
+* Updated version to v6, to match Angular
+
+* New Node.js Express snippet
+  * Snippet that is ideal for serving a simple node.js express app that serves the angular app
+    * `ex-node-server-simple`
+
+* Added
+  * `a-rxjs-import` to import rxjs features from `rxjs` (e.g. Observable, of, Subject)
+  * `a-rxjs-operator-import` to import rxjs operators (e.g. map, tap, catchError)
+* Removed several RxJs snippets as RxJS v6 recommends importing directly from `rxjs`
+  * `rx-add-operator`
+  * `rx-add-observable`
+  * `rx-behavior-subject`
+  * `rx-subject`
+  * `rx-replay-subject`
+  * `rx-observable`
+* Removed older Http library snippets in favor of HttpClient
+  * `a-http-get`
+  * `a-service-http`
 
 <a name="2.16.1"></a>
 
 # 2.16.1 (2018-04-03)
 
-* Added Node.js Express snippets
-  * Snippet that is ideal for serving a simple node.js express app that serves the angular app from the `./dist` folder
-  * `ex-simple-server`
 * Fixed bug where dockerfile was pointing at wrong output folder
 
 <a name="2.15.0"></a>
