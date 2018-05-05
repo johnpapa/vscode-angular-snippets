@@ -1,8 +1,8 @@
 {
   "name": "Angular2",
   "publisher": "johnpapa",
-  "displayName": "Angular v5 Snippets",
-  "description": "Angular v5 snippets by John Papa",
+  "displayName": "Angular v6 Snippets",
+  "description": "Angular v6 snippets by John Papa",
   "icon": "images/angular-shield.png",
   "galleryBanner": {
     "color": "#0273D4",
@@ -13,12 +13,21 @@
     "type": "git",
     "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
   },
-  "keywords": ["Angular", "Angular 2", "Angular 5", "TypeScript", "HTML"],
-  "version": "2.16.1",
+  "keywords": [
+    "Angular",
+    "Angular 2",
+    "Angular 6",
+    "TypeScript",
+    "HTML"
+  ],
+  "version": "6.0.0",
   "engines": {
     "vscode": "^1.17.0"
   },
-  "categories": ["Snippets", "Other"],
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
   "contributes": {
     "jsonValidation": [
       {
@@ -32,6 +41,10 @@
         "path": "./snippets/typescript.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
         "language": "html",
         "path": "./snippets/html.json"
       },
@@ -40,5 +53,6 @@
         "path": "./snippets/dockerfile.json"
       }
     ]
-  }
+  },
+  "dependencies": {}
 }

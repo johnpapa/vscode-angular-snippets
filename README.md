@@ -1,6 +1,6 @@
 # Angular TypeScript Snippets for VS Code
 
-**Now Updated for Angular 5.0.0 release**
+**Now Updated for Angular 6.0.0 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
@@ -24,7 +24,6 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-guard-can-activate-child` | `CanActivateChild` guard                                     |
 | `a-guard-can-deactivate`     | `CanDeactivate` guard                                        |
 | `a-guard-can-load`           | `CanLoad` guard                                              |
-| `a-http-get`                 | `http.get` with Rx Observable                                |
 | `a-httpclient-get`           | `httpClient.get` with Rx Observable                          |
 | `a-http-interceptor`         | Empty Angular `HttpInterceptor` for `HttpClient`             |
 | `a-http-interceptor-headers` | Angular `HttpInterceptor` that sets headers for `HttpClient` |
@@ -34,6 +33,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-module-routing`           | routing module file (forChild)                               |
 | `a-output-event`             | `@Output` event and emitter                                  |
 | `a-pipe`                     | pipe                                                         |
+| `a-rxjs-import`              | import RxJs features                                         |
 | `a-route-path-404`           | 404 route path                                               |
 | `a-route-path-default`       | default route path                                           |
 | `a-route-path-with-children` | route path with children                                     |
@@ -42,7 +42,6 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-router-events`            | listen to one or more router events                          |
 | `a-route-params-subscribe`   | subscribe to route parameters                                |
 | `a-service`                  | service                                                      |
-| `a-service-http`             | service with `Http`                                          |
 | `a-service-httpclient`       | service with `HttpClient`                                    |
 | `a-ctor-skip-self`           | angular `NgModule`'s `skipself` constructor                  |
 | `a-subscribe`                | Rx Observable subscription                                   |
@@ -53,17 +52,11 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | ---------------------------- | -------------------------------------------- |
 | `docker-angular-multi-stage` | Multi-stage Dockerfile for Node with Angular |
 
-### TypeScript RxJS Snippets
+### JavaScript Snippets
 
-| Snippet               | Purpose                     |
-| --------------------- | --------------------------- |
-| `rx-observable`       | Rx `Observable` import      |
-| `rx-subject`          | Rx `Subject` import         |
-| `rx-replay-subject`   | Rx `ReplaySubject` import   |
-| `rx-behavior-subject` | Rx `BehaviorSubject` import |
-| `rx-add-operator`     | Rx add operator import      |
-| `rx-add-observable`   | Rx add observable import    |
-| `rx-operators`        | Rx operators import         |
+| Snippet                      | Purpose                                      |
+| ---------------------------- | -------------------------------------------- |
+| `ex-simple-server`           | Node.js Express Server                       |
 
 ### HTML Snippets
 
