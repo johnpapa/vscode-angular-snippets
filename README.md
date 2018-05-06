@@ -58,18 +58,6 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | ---------------------------- | -------------------------------------------- |
 | `ex-simple-server`           | Node.js Express Server                       |
 
-### TypeScript RxJS Snippets
-
-| Snippet               | Purpose                     |
-| --------------------- | --------------------------- |
-| `rx-observable`       | Rx `Observable` import      |
-| `rx-subject`          | Rx `Subject` import         |
-| `rx-replay-subject`   | Rx `ReplaySubject` import   |
-| `rx-behavior-subject` | Rx `BehaviorSubject` import |
-| `rx-add-operator`     | Rx add operator import      |
-| `rx-add-observable`   | Rx add observable import    |
-| `rx-operators`        | Rx operators import         |
-
 ### HTML Snippets
 
 | Snippet              | Purpose                                    |
