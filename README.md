@@ -34,6 +34,7 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-output-event`             | `@Output` event and emitter                                  |
 | `a-pipe`                     | pipe                                                         |
 | `a-rxjs-import`              | import RxJs features                                         |
+| `a-rxjs-operators`           | import RxJs opertors                                         |
 | `a-route-path-404`           | 404 route path                                               |
 | `a-route-path-default`       | default route path                                           |
 | `a-route-path-with-children` | route path with children                                     |
