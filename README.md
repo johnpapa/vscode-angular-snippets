@@ -12,6 +12,12 @@ See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
+### Command Palette Commands
+
+| Command                             | Purpose                    |
+| ----------------------------------- | -------------------------- |
+| nginx: Add nginx files to workspace | Adds nginx.conf            |
+
 ### TypeScript Angular Snippets
 
 | Snippet                      | Purpose                                                      |
@@ -49,9 +55,10 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### Dockerfile Snippets
 
-| Snippet                      | Purpose                                      |
-| ---------------------------- | -------------------------------------------- |
-| `docker-angular-multi-stage` | Multi-stage Dockerfile for Node with Angular |
+| Snippet                            | Purpose                                       |
+| ---------------------------------- | --------------------------------------------- |
+| `docker-angular-node-multi-stage`  | Multi-stage Dockerfile for Node with Angular  |
+| `docker-angular-nginx-multi-stage` | Multi-stage Dockerfile for nginx with Angular |
 
 ### JavaScript Snippets
 

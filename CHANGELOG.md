@@ -1,5 +1,15 @@
 ## Angular Snippets Changelog
 
+<a name="6.1.0"></a>
+
+# 6.1.0 (2018-05-10)
+
+* Docker Snippets
+  * Added `docker-angular-nginx-multi-stage` for an nginx Dockerfile with Angular
+  * Renamed `docker-angular-multi-stage` to `docker-angular-node-multi-stage` for an node.js Dockerfile with Angular
+
+* Added command to the Command Palette for adding a new nginx.conf file
+
 <a name="6.0.0"></a>
 
 # 6.0.0 (2018-05-05)
