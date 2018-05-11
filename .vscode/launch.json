@@ -3,14 +3,6 @@
   "version": "0.1.0",
   "configurations": [
     {
-      "name": "Launch Extension - old",
-      "type": "extensionHost",
-      "request": "launch",
-      "runtimeExecutable": "${execPath}",
-      "args": ["--extensionDevelopmentPath=${workspaceRoot}"],
-      "stopOnEntry": false
-    },
-    {
       "name": "Launch Extension",
       "type": "extensionHost",
       "request": "launch",
