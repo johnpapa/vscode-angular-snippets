@@ -1,8 +1,8 @@
 ## Angular Snippets Changelog
 
-<a name="6.1.0"></a>
+<a name="6.1.1"></a>
 
-# 6.1.0 (2018-05-12)
+# 6.1.1 (2018-05-12)
 
 * Docker Snippets
 

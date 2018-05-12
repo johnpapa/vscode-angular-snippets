@@ -2,9 +2,9 @@ import vscode = require('vscode');
 
 export async function promptForPort(): Promise<string> {
   var opt: vscode.InputBoxOptions = {
-    placeHolder: '80',
+    placeHolder: '3000',
     prompt: 'What port does your app listen on?',
-    value: '80'
+    value: '3000'
   };
 
   return vscode.window.showInputBox(opt);
