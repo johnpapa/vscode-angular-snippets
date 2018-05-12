@@ -74,8 +74,7 @@
   "devDependencies": {
     "vscode": "^1.0.0",
     "typescript": "^2.1.5",
-    "@types/node": "^8.0.34",
-    "@types/keytar": "^4.0.1"
+    "@types/node": "^8.0.34"
   },
   "dependencies": {}
 }
