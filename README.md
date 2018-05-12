@@ -12,6 +12,12 @@ See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
+### Command Palette Commands
+
+| Command                                              | Purpose                     |
+| ---------------------------------------------------- | --------------------------- |
+| express: Add simple Express server file to workspace | Adds Node.js express server |
+
 ### TypeScript Angular Snippets
 
 | Snippet                      | Purpose                                                      |
@@ -49,15 +55,15 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ### Dockerfile Snippets
 
-| Snippet                      | Purpose                                      |
-| ---------------------------- | -------------------------------------------- |
-| `docker-angular-multi-stage` | Multi-stage Dockerfile for Node with Angular |
+| Snippet                           | Purpose                                      |
+| --------------------------------- | -------------------------------------------- |
+| `docker-angular-node-multi-stage` | Multi-stage Dockerfile for Node with Angular |
 
 ### JavaScript Snippets
 
-| Snippet                      | Purpose                                      |
-| ---------------------------- | -------------------------------------------- |
-| `ex-simple-server`           | Node.js Express Server                       |
+| Snippet            | Purpose                |
+| ------------------ | ---------------------- |
+| `ex-simple-server` | Node.js Express Server |
 
 ### HTML Snippets
 
@@ -87,9 +93,9 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 
 ## Installation
 
-1. Install Visual Studio Code 1.10.0 or higher
-1. Launch Code
-1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
-1. Select `Install Extension`
-1. Choose the extension
-1. Reload Visual Studio Code
+1.  Install Visual Studio Code 1.10.0 or higher
+1.  Launch Code
+1.  From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+1.  Select `Install Extension`
+1.  Choose the extension
+1.  Reload Visual Studio Code

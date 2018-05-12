@@ -1,5 +1,15 @@
 ## Angular Snippets Changelog
 
+<a name="6.1.0"></a>
+
+# 6.1.0 (2018-05-12)
+
+* Docker Snippets
+
+  * Renamed `docker-angular-multi-stage` to `docker-angular-node-multi-stage` for an node.js Dockerfile with Angular
+
+* Added command to the Command Palette for adding a new Express server file
+
 <a name="6.0.0"></a>
 
 # 6.0.0 (2018-05-05)
@@ -9,6 +19,7 @@
 * Updated version to v6, to match Angular
 
 * New Node.js Express snippet
+
   * Snippet that is ideal for serving a simple node.js express app that serves the angular app
     * `ex-node-server-simple`
 
