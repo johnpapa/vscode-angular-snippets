@@ -1,7 +1,3 @@
-/*---------------------------------------------------------
- * Copyright (C) Microsoft Corporation. All rights reserved.
- *--------------------------------------------------------*/
-
 import vscode = require('vscode');
 import { configure } from './configureWorkspace/configure';
 
