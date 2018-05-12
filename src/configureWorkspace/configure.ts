@@ -2,11 +2,6 @@ import vscode = require('vscode');
 import * as fs from 'fs';
 import * as path from 'path';
 import { promptForPort } from './config-utils';
-import {
-  PackageJson,
-  getDefaultPackageJson,
-  readPackageJson
-} from './package-json';
 
 function genNginxConfFile(port: string): string {
   const content = `worker_processes 4;
@@ -96,8 +91,6 @@ export async function configure(): Promise<void> {
   if (!port) return;
 
   const serviceName = path.basename(folder.uri.fsPath).toLowerCase();
-  let pkg: PackageJson = getDefaultPackageJson();
-  pkg = await readPackageJson(folder);
 
   await Promise.all(
     Object.keys(FILE_TYPES).map(fileName => {
