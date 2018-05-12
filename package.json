@@ -13,13 +13,7 @@
     "type": "git",
     "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
   },
-  "keywords": [
-    "Angular",
-    "Angular 2",
-    "Angular 6",
-    "TypeScript",
-    "HTML"
-  ],
+  "keywords": ["Angular", "Angular 2", "Angular 6", "TypeScript", "HTML"],
   "version": "6.1.0",
   "engines": {
     "vscode": "^1.20.0"
@@ -30,20 +24,15 @@
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "main": "./out/src/extension",
-  "categories": [
-    "Snippets",
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:angular.configureNginx"
-  ],
+  "categories": ["Snippets", "Other"],
+  "activationEvents": ["onCommand:angular.configureExpressServer"],
   "contributes": {
     "commands": [
       {
-        "command": "angular.configureNginx",
-        "title": "Add nginx files to workspace",
-        "description": "Add nginx.conf file",
-        "category": "nginx"
+        "command": "angular.configureExpressServer",
+        "title": "Add Node.js express file to workspace",
+        "description": "Add Node.js express file",
+        "category": "Express"
       }
     ],
     "jsonValidation": [
