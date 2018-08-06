@@ -16,7 +16,7 @@
       "WORKDIR /usr/src/app",
       "COPY [\"package.json\", \"npm-shrinkwrap.json*\", \"./\"]",
       "RUN npm install --production --silent && mv node_modules ../",
-      "COPY ${3:server.js}",
+      "COPY ${3:server.js} .",
       "COPY ${4:/server} /usr/src/app/server",
       "",
       "# Final image",
@@ -25,7 +25,7 @@
       "COPY --from=node-server /usr/src /usr/src",
       "COPY --from=client-app /usr/src/app/dist ./",
       "EXPOSE ${5:3000}",
-      "// CMD [\"node\", \"index.js\"]",
+      "# CMD [\"node\", \"server.js\"]",
       "CMD [\"npm\", \"start\"]",
       "$0"
     ],

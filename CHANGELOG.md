@@ -1,8 +1,8 @@
 ## Angular Snippets Changelog
 
-<a name="6.1.2"></a>
+<a name="6.1.3"></a>
 
-# 6.1.2 (2018-08-06)
+# 6.1.3 (2018-08-06)
 
 - Docker Snippets
   - Updated dockerfile snippet to look for server.js in the root by default. Works better out of the box with the CLI this way
