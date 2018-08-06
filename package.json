@@ -13,8 +13,14 @@
     "type": "git",
     "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
   },
-  "keywords": ["Angular", "Angular 2", "Angular 6", "TypeScript", "HTML"],
-  "version": "6.1.1",
+  "keywords": [
+    "Angular",
+    "Angular 2",
+    "Angular 6",
+    "TypeScript",
+    "HTML"
+  ],
+  "version": "6.1.2",
   "engines": {
     "vscode": "^1.20.0"
   },
@@ -24,8 +30,13 @@
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "main": "./out/src/extension",
-  "categories": ["Snippets", "Other"],
-  "activationEvents": ["onCommand:angular.configureExpressServer"],
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:angular.configureExpressServer"
+  ],
   "contributes": {
     "commands": [
       {
