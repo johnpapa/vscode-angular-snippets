@@ -75,10 +75,10 @@
     "description": "Angular route path with children",
     "body": [
       "{",
-      "\tpath: '', ",
-      "\tcomponent: ${1:Component},",
+      "\tpath: '${1:path}', ",
+      "\tcomponent: ${2:Component},",
       "\tchildren: [",
-      "\t\t{ path: '${2:childpath}', component: ${3:ChildComponent} }",
+      "\t\t{ path: '${3:childpath}', component: ${4:ChildComponent} }",
       "\t]",
       "}$0"
     ]

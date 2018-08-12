@@ -1,5 +1,11 @@
 ## Angular Snippets Changelog
 
+<a name="6.1.4"></a>
+
+# 6.1.4 (2018-08-11)
+
+- Updated the routing children snippet to allow replacement of the main path
+
 <a name="6.1.3"></a>
 
 # 6.1.3 (2018-08-06)
