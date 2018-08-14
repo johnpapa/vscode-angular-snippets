@@ -1,5 +1,11 @@
 ## Angular Snippets Changelog
 
+<a name="6.1.5"></a>
+
+# 6.1.5 (2018-08-14)
+
+- Added `a-injectable-providedin`
+
 <a name="6.1.4"></a>
 
 # 6.1.4 (2018-08-11)

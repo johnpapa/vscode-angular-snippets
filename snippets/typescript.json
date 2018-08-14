@@ -65,6 +65,11 @@
       "}"
     ]
   },
+  "Angular ProvidedIn Root": {
+    "prefix": "a-injectable-providedin",
+    "description": "Angular Injectable ProvidedIn",
+    "body": ["@Injectable({", "\tprovidedIn: ${1:'root'}", "})$0"]
+  },
   "Angular Default Route Path": {
     "prefix": "a-route-path-default",
     "description": "Angular default route path",
