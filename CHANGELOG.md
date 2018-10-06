@@ -1,5 +1,13 @@
 ## Angular Snippets Changelog
 
+<a name="6.2.0"></a>
+
+# 6.2.0 (2018-10-06)
+
+- Added `a-module-with-routing` to create an Angular module with routing combined into one file
+- Modified `a-route-path-404` to remove `pathMatchFull`, as it is no longer needed
+- Modified all services to default to using the `providedIn` syntax
+
 <a name="6.1.5"></a>
 
 # 6.1.5 (2018-08-14)

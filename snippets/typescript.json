@@ -68,7 +68,7 @@
   "Angular ProvidedIn Root": {
     "prefix": "a-injectable-providedin",
     "description": "Angular Injectable ProvidedIn",
-    "body": ["@Injectable({", "\tprovidedIn: ${1:'root'}", "})$0"]
+    "body": ["@Injectable({providedIn: ${1:'root'}})$0"]
   },
   "Angular Default Route Path": {
     "prefix": "a-route-path-default",
@@ -91,9 +91,7 @@
   "Angular 404 Route Path": {
     "prefix": "a-route-path-404",
     "description": "Angular 404 route path",
-    "body": [
-      "{ path: '**', pathMatch: 'full', component: ${1:PathNotFoundComponent} }$0"
-    ]
+    "body": ["{ path: '**', component: ${1:PathNotFoundComponent} }$0"]
   },
   "Angular Eager Route Path": {
     "prefix": "a-route-path-eager",
@@ -128,9 +126,8 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { HttpClient } from '@angular/common/http';",
-      "import { catchError } from 'rxjs/operators';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${2:'root'}})",
       "export class ${1:ServiceName}Service {",
       "\tconstructor(private httpClient: HttpClient) { }",
       "\t$0",
@@ -144,6 +141,7 @@
       "import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';",
       "import { Observable, tap } from 'rxjs';",
       "",
+      "@Injectable({providedIn: ${1:'root'}})",
       "export class LogInterceptor implements HttpInterceptor {",
       "\tconstructor() {}",
       "",
@@ -169,7 +167,7 @@
       "import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from '@angular/common/http';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${1:'root'}})",
       "export class HeaderInterceptor implements HttpInterceptor {",
       "\tconstructor() {}",
       "",
@@ -190,7 +188,7 @@
       "import { HttpInterceptor, HttpEvent, HttpHandler, HttpRequest } from '@angular/common/http';",
       "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${1:'root'}})",
       "export class HeaderInterceptor implements HttpInterceptor {",
       "\tintercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {",
       "\t\treturn next.handle(req);",
@@ -276,6 +274,23 @@
       "export const routedComponents = [${1:Name}Component];"
     ]
   },
+  "Angular Module with Routing": {
+    "prefix": "a-module-with-routing",
+    "description": "Angular module with routing combined into one file",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "import { Routes, RouterModule } from '@angular/router';",
+      "",
+      "const routes: Routes = [${0}]",
+      "",
+      "@NgModule({",
+      "\timports: [RouterModule.forChild(routes)],",
+      "\texports: [],",
+      "\tdeclarations: [],",
+      "})",
+      "export class ${1:Name}Module { }"
+    ]
+  },
   "Angular Module": {
     "prefix": "a-module",
     "description": "Angular Module",
@@ -313,7 +328,7 @@
       "import { Injectable } from '@angular/core';",
       "import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angular/router';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${2:'root'}})",
       "export class ${1:Name}Guard implements CanActivate {",
       "\tconstructor() { }",
       "",
@@ -330,7 +345,7 @@
       "import { Injectable } from '@angular/core';",
       "import { ActivatedRouteSnapshot, CanActivateChild, RouterStateSnapshot } from '@angular/router';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${2:'root'}})",
       "export class ${1:Name}Guard implements CanActivateChild {",
       "\tconstructor() { }",
       "",
@@ -347,7 +362,7 @@
       "import { Injectable } from '@angular/core';",
       "import { CanLoad, Route } from '@angular/router';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${2:'root'}})",
       "export class ${1:Name}Guard implements CanLoad {",
       "\tconstructor() { }",
       "",
@@ -365,7 +380,7 @@
       "import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot } from '@angular/router';",
       "import { Observable } from 'rxjs';",
       "",
-      "import { ${1:ComponentName}Component } from './${2:filename}.component';",
+      "import { ${2:ComponentName}Component } from './${3:filename}.component';",
       "",
       "// Consider using this interface for all CanDeactivate guards,",
       "// and have your components implement this interface, too.",
@@ -376,10 +391,10 @@
       "// canDeactivate: () => any;",
       "// }",
       "",
-      "@Injectable()",
-      "export class ${2:Name}Guard implements CanDeactivate<${1:ComponentName}Component> {",
+      "@Injectable({providedIn: ${4:'root'}})",
+      "export class ${1:Name}Guard implements CanDeactivate<${2:ComponentName}Component> {",
       "\tcanDeactivate(",
-      "\t\tcomponent: ${1:ComponentName}Component,",
+      "\t\tcomponent: ${2:ComponentName}Component,",
       "\t\tcurrentRoute: ActivatedRouteSnapshot, ",
       "\t\tcurrentState: RouterStateSnapshot",
       "\t): Observable<boolean>|Promise<boolean>|boolean {",
