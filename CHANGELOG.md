@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="6.3.0"></a>
+
+# 6.3.0 (2018-10-11)
+
+- Removed `a-module-routing` since the CLi does this for us and the new snippet `a-module-with-routing` is something the CLI doesn't
+- Modified `a-module-with-routing` to add `forChild` or `forRoot` as a prompt
+
 <a name="6.2.0"></a>
 
 # 6.2.0 (2018-10-06)
