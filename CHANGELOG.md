@@ -1,5 +1,15 @@
 ## Angular Snippets Changelog
 
+<a name="7.0.0"></a>
+
+# 7.0.0 (2018-11-05)
+
+Added NgRx-Data snippets
+
+- Create an NgRx Data store module `a-ngrx-data-store-module`
+- Create the entity metadata for NgRx Data `a-ngrx-data-entity-metadata`
+- Create a data service using NgRx data entitites `a-ngrx-data-entity-collection-data-service`
+
 <a name="6.2.0"></a>
 
 # 6.2.0 (2018-10-06)
