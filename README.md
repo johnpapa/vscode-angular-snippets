@@ -37,6 +37,9 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-module`                   | module                                                       |
 | `a-module-root`              | root app module                                              |
 | `a-module-routing`           | routing module file (forChild)                               |
+| `a-ngrx-data-store-module`   | create an NgRx Data store module                             |
+| `a-ngrx-data-entity-metadata` | create the entity metadata for NgRx                         |
+| `a-ngrx-data-entity-collection-data-service` | create a data service using NgRx             |
 | `a-output-event`             | `@Output` event and emitter                                  |
 | `a-pipe`                     | pipe                                                         |
 | `a-rxjs-import`              | import RxJs features                                         |

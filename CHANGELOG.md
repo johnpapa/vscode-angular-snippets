@@ -1,8 +1,8 @@
 ## Angular Snippets Changelog
 
-<a name="7.0.0"></a>
+<a name="7.0.1"></a>
 
-# 7.0.0 (2018-11-05)
+# 7.0.1 (2018-11-05)
 
 Added NgRx-Data snippets
 
