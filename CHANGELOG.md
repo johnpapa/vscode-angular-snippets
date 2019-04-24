@@ -1,5 +1,15 @@
 ## Angular Snippets Changelog
 
+<a name="7.1.0"></a>
+
+# 7.1.0 (2019-04-24)
+
+Added snippets or creating VS Code configurations for debugging
+
+- `a-launch-chrome` launch/debug configuration for VS Code for Chrome
+- `a-launch-edge` launch/debug configuration for VS Code for Edge
+- `a-task-start` create a task configuration for starting the Angular app for VS Code
+
 <a name="7.0.1"></a>
 
 # 7.0.1 (2018-11-05)
@@ -8,7 +18,7 @@ Added NgRx-Data snippets
 
 - Create an NgRx Data store module `a-ngrx-data-store-module`
 - Create the entity metadata for NgRx Data `a-ngrx-data-entity-metadata`
-- Create a data service using NgRx data entitites `a-ngrx-data-entity-collection-data-service`
+- Create a data service using NgRx data entities `a-ngrx-data-entity-collection-data-service`
 
 # 6.3.0 (2018-10-11)
 

@@ -20,7 +20,7 @@
     "TypeScript",
     "HTML"
   ],
-  "version": "7.0.1",
+  "version": "7.1.0",
   "engines": {
     "vscode": "^1.20.0"
   },
@@ -62,6 +62,10 @@
       {
         "language": "javascript",
         "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "jsonc",
+        "path": "./snippets/jsonc.json"
       },
       {
         "language": "html",
