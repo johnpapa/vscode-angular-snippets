@@ -29,6 +29,7 @@
   "Create task to start Angular": {
     "prefix": "a-task-start",
     "body": [
+      "{",
       "\"type\": \"npm\",",
       "\"script\": \"start\",",
       "\"isBackground\": true,",
@@ -58,6 +59,7 @@
       "\t\"regexp\": \"Compiled |Failed to compile.\"",
       "\t}",
       "\t}",
+      "}",
       "}"
     ]
   }
