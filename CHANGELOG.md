@@ -1,14 +1,18 @@
 ## Angular Snippets Changelog
 
-<a name="7.1.0"></a>
+<a name="7.1.1"></a>
 
-# 7.1.0 (2019-04-24)
+# 7.1.1 (2019-04-24)
 
 Added snippets or creating VS Code configurations for debugging
 
 - `a-launch-chrome` launch/debug configuration for VS Code for Chrome
 - `a-launch-edge` launch/debug configuration for VS Code for Edge
 - `a-task-start` create a task configuration for starting the Angular app for VS Code
+
+Maintenance
+
+- fixed `npm audit` issues with `devDepedencies`
 
 <a name="7.0.1"></a>
 
