@@ -1,12 +1,14 @@
 ## Angular Snippets Changelog
 
-<a name="7.1.2"></a>
+<a name="7.1.3"></a>
 
-# 7.1.2 (2019-04-25)
+# 7.1.3 (2019-04-25)
 
 Added HTML snippet
 
 - `a-formArrayName`
+
+Replaced some unknown invisible character with a real space
 
 <a name="7.1.1"></a>
 
