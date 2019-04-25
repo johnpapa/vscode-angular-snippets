@@ -1,12 +1,13 @@
 ## Angular Snippets Changelog
 
-<a name="next"></a>
+<a name="7.1.2"></a>
 
-# next (next)
+# 7.1.2 (2019-04-25)
 
-* Added HTML snippet
-  * `a-formArrayName`
-  
+Added HTML snippet
+
+- `a-formArrayName`
+
 <a name="7.1.1"></a>
 
 # 7.1.1 (2019-04-24)
