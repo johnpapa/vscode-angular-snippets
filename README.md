@@ -8,9 +8,15 @@ This extension for Visual Studio Code adds snippets for Angular for TypeScript a
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
+## Angular Essentials
+
+Check out the [Angular Essentials extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials&wt.mc_id=vscode_angular_snippets-github-jopapa) for more great extensions for developing with JavaScript and Angular.
+
 ## Usage
 
 Type part of a snippet, press `enter`, and the snippet unfolds.
+
+Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
 
 ### Command Palette Commands
 
@@ -100,13 +106,12 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | `a-launch-edge`   | launch/debug configuration for VS Code for Edge                      |
 | `a-task-start`    | create a task configuration for starting the Angular app for VS Code |
 
-Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
-
 ## Installation
 
-1.  Install Visual Studio Code 1.10.0 or higher
-1.  Launch Code
-1.  From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
-1.  Select `Install Extension`
-1.  Choose the extension
-1.  Reload Visual Studio Code
+1. Install Visual Studio Code 1.10.0 or higher
+1. Launch Code
+1. From the command palette `Ctrl`-`Shift`-`P` (Windows, Linux) or `Cmd`-`Shift`-`P` (OSX)
+1. Select `Install Extension`
+1. Choose the extension
+1. Reload Visual Studio Code
+
