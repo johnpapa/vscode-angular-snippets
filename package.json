@@ -1,8 +1,8 @@
 {
   "name": "Angular2",
   "publisher": "johnpapa",
-  "displayName": "Angular v6 Snippets",
-  "description": "Angular v6 snippets by John Papa",
+  "displayName": "Angular v7 Snippets",
+  "description": "Angular v7 snippets by John Papa",
   "icon": "images/angular-shield.png",
   "galleryBanner": {
     "color": "#0273D4",
@@ -13,19 +13,32 @@
     "type": "git",
     "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
   },
-  "keywords": ["Angular", "Angular 2", "Angular 6", "TypeScript", "HTML"],
-  "version": "6.1.1",
+  "keywords": [
+    "Angular",
+    "Angular 2",
+    "Angular 7",
+    "TypeScript",
+    "HTML"
+  ],
+  "version": "7.1.1",
   "engines": {
     "vscode": "^1.20.0"
   },
   "scripts": {
+    "package": "npx vsce package",
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -watch -p ./",
+    "publish": "npx vsce publish",
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "main": "./out/src/extension",
-  "categories": ["Snippets", "Other"],
-  "activationEvents": ["onCommand:angular.configureExpressServer"],
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:angular.configureExpressServer"
+  ],
   "contributes": {
     "commands": [
       {
@@ -51,6 +64,10 @@
         "path": "./snippets/javascript.json"
       },
       {
+        "language": "jsonc",
+        "path": "./snippets/jsonc.json"
+      },
+      {
         "language": "html",
         "path": "./snippets/html.json"
       },
@@ -61,9 +78,9 @@
     ]
   },
   "devDependencies": {
-    "vscode": "^1.0.0",
+    "@types/node": "^8.0.34",
     "typescript": "^2.1.5",
-    "@types/node": "^8.0.34"
+    "vscode": "^1.1.33"
   },
   "dependencies": {}
 }
