@@ -85,6 +85,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 | `a-ngFor`            | `*ngFor`                                   |
 | `a-ngForAsync`       | `*ngFor` with async                        |
 | `a-ngFor-trackBy`    | `*ngFor` with trackBy                      |
+| `a-formArrayName`    | `formArrayName`                            |
 | `a-formControlName`  | `formControlName`                          |
 | `a-formGroup`        | `formGroup`                                |
 | `a-formGroupName`    | `formGroupName`                            |
