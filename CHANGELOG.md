@@ -1,14 +1,17 @@
 ## Angular Snippets Changelog
 
-<a name="7.1.3"></a>
+<a name="7.1.4"></a>
 
-# 7.1.3 (2019-04-25)
+# 7.1.4 (2019-04-25)
 
 Added HTML snippet
 
 - `a-formArrayName`
 
-Replaced some unknown invisible character with a real space
+Fixes
+
+- Replaced some unknown invisible character with a real space
+- Fixed escape characters on tasks.json
 
 <a name="7.1.1"></a>
 
