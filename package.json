@@ -31,6 +31,7 @@
     "publish": "npx vsce publish",
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
+  "extensionKind": "ui",
   "main": "./out/src/extension",
   "categories": [
     "Snippets",
