@@ -1,5 +1,11 @@
 ## Angular Snippets Changelog
 
+<a name="7.1.5"></a>
+
+# 7.1.5 (2019-05-04)
+
+- Added "extensionKind": "ui"` to support remote development features in VS Code (see [#91](https://github.com/johnpapa/vscode-peacock/pull/91/))
+
 <a name="7.1.4"></a>
 
 # 7.1.4 (2019-04-25)
