@@ -1,5 +1,11 @@
 ## Angular Snippets Changelog
 
+<a name="7.1.6"></a>
+
+# 7.1.6 (2019-05-08)
+
+- Added `a-resolver` to create an Angular resolver
+
 <a name="7.1.5"></a>
 
 # 7.1.5 (2019-05-04)

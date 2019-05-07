@@ -489,5 +489,23 @@
       "  }",
       "}"
     ]
+  },
+  "Angular Resolver": {
+    "prefix": "a-resolver",
+    "description": "Angular Resolver",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { Resolve, ActivatedRouteSnapshot } from '@angular/router';",
+      "import { Observable } from 'rxjs';",
+      "",
+      "@Injectable({ providedIn: 'root' })",
+      "export class ${1}Resolver implements Resolve<{${2}}> {",
+      "\tconstructor() {}",
+      "",
+      "\tresolve(route: ActivatedRouteSnapshot): Observable<${2}>|Promise<${2}>|${2} {",
+      "\t\treturn ${0}",
+      "\t}",
+      "}"
+    ]
   }
 }
