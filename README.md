@@ -48,6 +48,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 | `a-ngrx-data-entity-collection-data-service` | create a data service using NgRx                             |
 | `a-output-event`                             | `@Output` event and emitter                                  |
 | `a-pipe`                                     | pipe                                                         |
+| `a-resolver`                                 | resolver                                                     |
 | `a-rxjs-import`                              | import RxJs features                                         |
 | `a-rxjs-operators`                           | import RxJs opertors                                         |
 | `a-route-path-404`                           | 404 route path                                               |
