@@ -499,11 +499,9 @@
       "import { Observable } from 'rxjs';",
       "",
       "@Injectable({ providedIn: 'root' })",
-      "export class ${1}Resolver implements Resolve<{${2}}> {",
-      "\tconstructor() {}",
-      "",
-      "\tresolve(route: ActivatedRouteSnapshot): Observable<${2}>|Promise<${2}>|${2} {",
-      "\t\treturn ${0}",
+      "export class ${1:YourResolver} implements Resolve<${2:ObjectToResolve}> {",
+      "\tresolve(route: ActivatedRouteSnapshot): Observable<${2:ObjectToResolve}> | Promise<${2:ObjectToResolve}> | ${2:ObjectToResolve} {",
+      "\t\treturn ${0};",
       "\t}",
       "}"
     ]
