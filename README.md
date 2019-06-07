@@ -46,13 +46,13 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 | `a-ngrx-data-store-module`                   | create an NgRx Data store module                             |
 | `a-ngrx-data-entity-metadata`                | create the entity metadata for NgRx                          |
 | `a-ngrx-data-entity-collection-data-service` | create a data service using NgRx                             |
-| `a-ngrx-create-action`                       | create an action                                             |
-| `a-ngrx-create-action-props`                 | create an action with props                                  |
-| `a-ngrx-create-reducer`                      | create a reducer                                             |
-| `a-ngrx-create-effect`                       | create an effect                                             |
-| `a-ngrx-create-effect-api`                   | create an effect with api call scaffolding                   |
-| `a-ngrx-create-selector`                     | create a selector                                            |
-| `a-ngrx-create-selector-props`               | create a selector with props                                 |
+| `a-ngrx-create-action`                       | create an NgRx action with `createAction`                    |
+| `a-ngrx-create-action-props`                 | create an NgRx action with `createAction` with props         |
+| `a-ngrx-create-reducer`                      | create an NgRx reducer with `createReducer`                  |
+| `a-ngrx-create-effect`                       | create an NgRx effect with `createEffect`                    |
+| `a-ngrx-create-effect-api`                   | create an NgRx effect with `createEffect` for an API call    |
+| `a-ngrx-create-selector`                     | create an NgRx selector with `createSelector`                |
+| `a-ngrx-create-selector-props`               | create an NgRx selector with `createSelector` with props     |
 | `a-output-event`                             | `@Output` event and emitter                                  |
 | `a-pipe`                                     | pipe                                                         |
 | `a-resolver`                                 | resolver                                                     |
