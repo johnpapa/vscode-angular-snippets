@@ -1,5 +1,11 @@
 ## Angular Snippets Changelog
 
+<a name="8.0.0"></a>
+
+# 8.0.0 (2019-06-07)
+
+- Updated `a-route-path-lazy` to use the newly supported `import` syntax for lazy loading.
+
 <a name="7.1.6"></a>
 
 # 7.1.6 (2019-05-08)
