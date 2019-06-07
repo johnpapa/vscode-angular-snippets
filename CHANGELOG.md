@@ -6,6 +6,7 @@
 
 - Added NgRx snippets for the creator functions: `createAction`, `createEffect`, `createReducer`, and `createSelector`.
 - Updated `ngrx-data` snippets for `NgRx` v8.
+- Fixed display and description names for version 8
 
 <a name="8.0.0"></a>
 
