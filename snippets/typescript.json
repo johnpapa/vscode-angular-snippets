@@ -510,7 +510,6 @@
     ]
   },
   "NgRx Create Action": {
-    "scope": "typescript",
     "prefix": "a-ngrx-create-action",
     "description": "Creates an NgRx Action",
     "body": [
@@ -518,7 +517,6 @@
     ]
   },
   "NgRx Create Action w/ Props": {
-    "scope": "typescript",
     "prefix": "a-ngrx-create-action-props",
     "description": "Creates an NgRx Action with Props",
     "body": [
@@ -526,7 +524,6 @@
     ]
   },
   "NgRx Create Reducer": {
-    "scope": "typescript",
     "prefix": "a-ngrx-create-reducer",
     "description": "Creates an NgRx Reducer",
     "body": [
@@ -541,7 +538,6 @@
     ]
   },
   "NgRx Create Effect": {
-    "scope": "typescript",
     "prefix": "a-ngrx-create-effect",
     "description": "Creates an NgRx Effect",
     "body": [
@@ -554,7 +550,6 @@
     ]
   },
   "NgRx Create Effect for API Call": {
-    "scope": "typescript",
     "prefix": "a-ngrx-create-effect-api",
     "description": "Creates an NgRx Effect Scaffolded for API Call",
     "body": [
@@ -570,7 +565,6 @@
     ]
   },
   "NgRx Create Selector": {
-    "scope": "typescript",
     "prefix": "a-ngrx-create-selector",
     "description": "Creates an NgRx Selector",
     "body": [
@@ -581,7 +575,6 @@
     ]
   },
   "NgRx Create Selector w/ Props": {
-    "scope": "typescript",
     "prefix": "a-ngrx-create-selector-props",
     "description": "Creates an NgRx Selector using props",
     "body": [
