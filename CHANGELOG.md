@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="8.0.1"></a>
+
+# 8.0.1 (2019-06-07)
+
+- Added NgRx snippets for the creator functions: `createAction`, `createEffect`, `createReducer`, and `createSelector`.
+- Updated `ngrx-data` snippets for `NgRx` v8.
+
 <a name="8.0.0"></a>
 
 # 8.0.0 (2019-06-07)
