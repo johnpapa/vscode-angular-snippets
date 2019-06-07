@@ -550,7 +550,7 @@
   "NgRx Data Import Entity Data Module": {
     "prefix": "a-ngrx-data-entity-data-module-import",
     "description": "Import NgRx Entity Data Module",
-    "body": ["EntityDataModule.forRoot(${1:entityConfig})"]
+    "body": ["EntityDataModule.forRoot(${1:entityConfig}),"]
   },
   "NgRx Data Entity Metadata": {
     "prefix": "a-ngrx-data-entity-metadata",
