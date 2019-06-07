@@ -1,8 +1,8 @@
 {
   "name": "Angular2",
   "publisher": "johnpapa",
-  "displayName": "Angular v7 Snippets",
-  "description": "Angular v7 snippets by John Papa",
+  "displayName": "Angular Snippets (Version 8)",
+  "description": "Angular version 8 snippets by John Papa",
   "icon": "images/angular-shield.png",
   "galleryBanner": {
     "color": "#0273D4",
