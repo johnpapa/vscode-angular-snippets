@@ -102,7 +102,10 @@
     "prefix": "a-route-path-lazy",
     "description": "Angular lazy route path",
     "body": [
-      "{ path: '${1:path}', loadChildren: () => import('${2:lazy-path}').then(m => m.${3:lazy-module}) },"
+      "{",
+      "\tpath: '${1:path}', ",
+      "\tloadChildren: () => import('${2:lazy-path}').then(m => m.${3:lazy-module})",
+      "},"
     ]
   },
   "Routing Params - Subscribe": {
