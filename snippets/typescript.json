@@ -436,63 +436,6 @@
     "description": "RxJs import",
     "body": ["import { ${1:map} } from 'rxjs/operators';", "$0"]
   },
-  "NgRx Data Module": {
-    "prefix": "a-ngrx-data-store-module",
-    "description": "NgRx Data Store Module",
-    "body": [
-      "import { NgModule } from '@angular/core';",
-      "import { EffectsModule } from '@ngrx/effects';",
-      "import { StoreModule } from '@ngrx/store';",
-      "import { StoreDevtoolsModule } from '@ngrx/store-devtools';",
-      "import { EntityDataModule } from '@ngrx/data';",
-      "import { environment } from '../../environments/environment';",
-      "import { entityConfig } from './entity-metadata';",
-      "",
-      "@NgModule({",
-      "  imports: [",
-      "    StoreModule.forRoot({}),",
-      "    EffectsModule.forRoot([]),",
-      "    environment.production ? [] : StoreDevtoolsModule.instrument(),",
-      "    EntityDataModule.forRoot(entityConfig)",
-      "  ]",
-      "})",
-      "export class AppStoreModule {}"
-    ]
-  },
-  "NgRx Data Entity Metadata": {
-    "prefix": "a-ngrx-data-entity-metadata",
-    "description": "NgRx Data Entity Metadata",
-    "body": [
-      "import { EntityMetadataMap } from '@ngrx/data';",
-      "",
-      "const entityMetadata: EntityMetadataMap = {",
-      "  ${1:Model1}: {},${0}",
-      "};",
-      "",
-      "export const entityConfig = {",
-      "  entityMetadata",
-      "};"
-    ]
-  },
-  "NgRx Data Entity Collection Data Service": {
-    "prefix": "a-ngrx-data-entity-collection-data-service",
-    "description": "NgRx Data Entity Collection Data Service",
-    "body": [
-      "import { Injectable } from '@angular/core';",
-      "import {",
-      "  EntityCollectionServiceBase,",
-      "  EntityCollectionServiceElementsFactory",
-      "} from '@ngrx/data';",
-      "import { ${1:Model} } from '${2:../core}';",
-      "",
-      "@Injectable({ providedIn: 'root' })",
-      "export class ${1:Model}Service extends EntityCollectionServiceBase<${1:Model}> {",
-      "  constructor(serviceElementsFactory: EntityCollectionServiceElementsFactory) {",
-      "    super('${1:Model}', serviceElementsFactory);",
-      "  }",
-      "}"
-    ]
-  },
   "Angular Resolver": {
     "prefix": "a-resolver",
     "description": "Angular Resolver",
@@ -507,6 +450,26 @@
       "\t\treturn ${0};",
       "\t}",
       "}"
+    ]
+  },
+  "NgRx Store Module": {
+    "prefix": "a-ngrx-store-module",
+    "description": "NgRx Store Module",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "import { EffectsModule } from '@ngrx/effects';",
+      "import { StoreModule } from '@ngrx/store';",
+      "import { StoreDevtoolsModule } from '@ngrx/store-devtools';",
+      "import { environment } from '../../environments/environment';",
+      "",
+      "@NgModule({",
+      "  imports: [",
+      "    StoreModule.forRoot({}),",
+      "    EffectsModule.forRoot([]),",
+      "    environment.production ? [] : StoreDevtoolsModule.instrument()",
+      "  ]",
+      "})",
+      "export class $1StoreModule {}"
     ]
   },
   "NgRx Create Action": {
@@ -582,6 +545,45 @@
       "\tselect$1,",
       "\t(state: $1State, props) => ${3:selectLogic}",
       ");"
+    ]
+  },
+  "NgRx Data Import Entity Data Module": {
+    "prefix": "a-ngrx-data-entity-data-module-import",
+    "description": "Import NgRx Entity Data Module",
+    "body": ["EntityDataModule.forRoot(${1:entityConfig})"]
+  },
+  "NgRx Data Entity Metadata": {
+    "prefix": "a-ngrx-data-entity-metadata",
+    "description": "NgRx Data Entity Metadata",
+    "body": [
+      "import { EntityMetadataMap } from '@ngrx/data';",
+      "",
+      "const entityMetadata: EntityMetadataMap = {",
+      "  ${1:Model1}: {},${0}",
+      "};",
+      "",
+      "export const entityConfig = {",
+      "  entityMetadata",
+      "};"
+    ]
+  },
+  "NgRx Data Entity Collection Data Service": {
+    "prefix": "a-ngrx-data-entity-collection-data-service",
+    "description": "NgRx Data Entity Collection Data Service",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import {",
+      "  EntityCollectionServiceBase,",
+      "  EntityCollectionServiceElementsFactory",
+      "} from '@ngrx/data';",
+      "import { ${1:Model} } from '${2:../core}';",
+      "",
+      "@Injectable({ providedIn: 'root' })",
+      "export class ${1:Model}Service extends EntityCollectionServiceBase<${1:Model}> {",
+      "  constructor(serviceElementsFactory: EntityCollectionServiceElementsFactory) {",
+      "    super('${1:Model}', serviceElementsFactory);",
+      "  }",
+      "}"
     ]
   }
 }
