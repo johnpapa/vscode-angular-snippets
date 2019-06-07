@@ -436,34 +436,127 @@
     "description": "RxJs import",
     "body": ["import { ${1:map} } from 'rxjs/operators';", "$0"]
   },
-  "NgRx Data Module": {
-    "prefix": "a-ngrx-data-store-module",
-    "description": "NgRx Data Store Module",
+  "Angular Resolver": {
+    "prefix": "a-resolver",
+    "description": "Angular Resolver",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { Resolve, ActivatedRouteSnapshot } from '@angular/router';",
+      "import { Observable } from 'rxjs';",
+      "",
+      "@Injectable({ providedIn: 'root' })",
+      "export class ${1:YourResolver} implements Resolve<${2:ObjectToResolve}> {",
+      "\tresolve(route: ActivatedRouteSnapshot): Observable<${2:ObjectToResolve}> | Promise<${2:ObjectToResolve}> | ${2:ObjectToResolve} {",
+      "\t\treturn ${0};",
+      "\t}",
+      "}"
+    ]
+  },
+  "NgRx Store Module": {
+    "prefix": "a-ngrx-store-module",
+    "description": "NgRx Store Module",
     "body": [
       "import { NgModule } from '@angular/core';",
       "import { EffectsModule } from '@ngrx/effects';",
       "import { StoreModule } from '@ngrx/store';",
       "import { StoreDevtoolsModule } from '@ngrx/store-devtools';",
-      "import { NgrxDataModule } from 'ngrx-data';",
       "import { environment } from '../../environments/environment';",
-      "import { entityConfig } from './entity-metadata';",
       "",
       "@NgModule({",
       "  imports: [",
       "    StoreModule.forRoot({}),",
       "    EffectsModule.forRoot([]),",
-      "    environment.production ? [] : StoreDevtoolsModule.instrument(),",
-      "    NgrxDataModule.forRoot(entityConfig)",
+      "    environment.production ? [] : StoreDevtoolsModule.instrument()",
       "  ]",
       "})",
-      "export class AppStoreModule {}"
+      "export class $1StoreModule {}"
     ]
+  },
+  "NgRx Create Action": {
+    "prefix": "a-ngrx-create-action",
+    "description": "Creates an NgRx Action",
+    "body": [
+      "export const ${1:action} = createAction('[${2:Source}] ${3:Event}');"
+    ]
+  },
+  "NgRx Create Action w/ Props": {
+    "prefix": "a-ngrx-create-action-props",
+    "description": "Creates an NgRx Action with Props",
+    "body": [
+      "export const ${1:action} = createAction('[${2:Source}] ${3:Event}', props<{${4:key}: ${5:type}}>());"
+    ]
+  },
+  "NgRx Create Reducer": {
+    "prefix": "a-ngrx-create-reducer",
+    "description": "Creates an NgRx Reducer",
+    "body": [
+      "const ${1:feature}Reducer = createReducer(",
+      "\tintialState,",
+      "\ton($1Actions.action, state => ({ ...state, ${2:prop}: ${3:updatedValue} })),",
+      ");",
+      "",
+      "export function reducer(state: State | undefined: action: Action) {",
+      "\treturn $1Reducer(state, action);",
+      "}"
+    ]
+  },
+  "NgRx Create Effect": {
+    "prefix": "a-ngrx-create-effect",
+    "description": "Creates an NgRx Effect",
+    "body": [
+      "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
+      "\tofType(${2:action}.type),",
+      "\t/** An EMPTY observable only emits completion. Replace with your own observable stream */",
+      "\t${3:operator}(() => ${4:EMPTY})",
+      "\t)",
+      ");"
+    ]
+  },
+  "NgRx Create Effect for API Call": {
+    "prefix": "a-ngrx-create-effect-api",
+    "description": "Creates an NgRx Effect Scaffolded for API Call",
+    "body": [
+      "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
+      "\tofType(${2:Feature}Actions.${3:action}.type),",
+      "\t${4:operator}(() =>",
+      "\t\t${5:apiSource}.pipe(",
+      "\t\t\tmap(data => $2Actions.$3Success({ data })),",
+      "\t\t\tcatchError(error => of($2Actions.$3Failure({ error }))))",
+      "\t\t)",
+      "\t)",
+      ");"
+    ]
+  },
+  "NgRx Create Selector": {
+    "prefix": "a-ngrx-create-selector",
+    "description": "Creates an NgRx Selector",
+    "body": [
+      "export const select${1:Feature}${2:Property} = createSelector(",
+      "\tselect$1,",
+      "\t(state: $1State) => state.${3:property}",
+      ");"
+    ]
+  },
+  "NgRx Create Selector w/ Props": {
+    "prefix": "a-ngrx-create-selector-props",
+    "description": "Creates an NgRx Selector using props",
+    "body": [
+      "export const select${1:Feature}${2:Property} = createSelector(",
+      "\tselect$1,",
+      "\t(state: $1State, props) => ${3:selectLogic}",
+      ");"
+    ]
+  },
+  "NgRx Data Import Entity Data Module": {
+    "prefix": "a-ngrx-data-entity-data-module-import",
+    "description": "Import NgRx Entity Data Module",
+    "body": ["EntityDataModule.forRoot(${1:entityConfig})"]
   },
   "NgRx Data Entity Metadata": {
     "prefix": "a-ngrx-data-entity-metadata",
     "description": "NgRx Data Entity Metadata",
     "body": [
-      "import { EntityMetadataMap } from 'ngrx-data';",
+      "import { EntityMetadataMap } from '@ngrx/data';",
       "",
       "const entityMetadata: EntityMetadataMap = {",
       "  ${1:Model1}: {},${0}",
@@ -482,7 +575,7 @@
       "import {",
       "  EntityCollectionServiceBase,",
       "  EntityCollectionServiceElementsFactory",
-      "} from 'ngrx-data';",
+      "} from '@ngrx/data';",
       "import { ${1:Model} } from '${2:../core}';",
       "",
       "@Injectable({ providedIn: 'root' })",
@@ -490,22 +583,6 @@
       "  constructor(serviceElementsFactory: EntityCollectionServiceElementsFactory) {",
       "    super('${1:Model}', serviceElementsFactory);",
       "  }",
-      "}"
-    ]
-  },
-  "Angular Resolver": {
-    "prefix": "a-resolver",
-    "description": "Angular Resolver",
-    "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { Resolve, ActivatedRouteSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs';",
-      "",
-      "@Injectable({ providedIn: 'root' })",
-      "export class ${1:YourResolver} implements Resolve<${2:ObjectToResolve}> {",
-      "\tresolve(route: ActivatedRouteSnapshot): Observable<${2:ObjectToResolve}> | Promise<${2:ObjectToResolve}> | ${2:ObjectToResolve} {",
-      "\t\treturn ${0};",
-      "\t}",
       "}"
     ]
   }
