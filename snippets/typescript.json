@@ -508,5 +508,87 @@
       "\t}",
       "}"
     ]
+  },
+  "NgRx Create Action": {
+    "scope": "typescript",
+    "prefix": "a-ngrx-create-action",
+    "description": "Creates an NgRx Action",
+    "body": [
+      "export const ${1:action} = createAction('[${2:Source}] ${3:Event}');"
+    ]
+  },
+  "NgRx Create Action w/ Props": {
+    "scope": "typescript",
+    "prefix": "ngrx-create-action-props",
+    "description": "Creates an NgRx Action with Props",
+    "body": [
+      "export const ${1:action} = createAction('[${2:Source}] ${3:Event}', props<{${4:key}: ${5:type}}>());"
+    ]
+  },
+  "NgRx Create Reducer": {
+    "scope": "typescript",
+    "prefix": "a-ngrx-create-reducer",
+    "description": "Creates an NgRx Reducer",
+    "body": [
+      "const ${1:feature}Reducer = createReducer(",
+      "\tintialState,",
+      "\ton($1Actions.action, state => ({ ...state, ${2:prop}: ${3:updatedValue} })),",
+      ");",
+      "",
+      "export function reducer(state: State | undefined: action: Action) {",
+      "\treturn $1Reducer(state, action);",
+      "}"
+    ]
+  },
+  "NgRx Create Effect": {
+    "scope": "typescript",
+    "prefix": "a-ngrx-create-effect",
+    "description": "Creates an NgRx Effect",
+    "body": [
+      "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
+      "\tofType(${2:action}.type),",
+      "\t/** An EMPTY observable only emits completion. Replace with your own observable stream */",
+      "\t${3:operator}(() => ${4:EMPTY})",
+      "\t)",
+      ");"
+    ]
+  },
+  "NgRx Create Effect for API Call": {
+    "scope": "typescript",
+    "prefix": "a-ngrx-create-effect-api",
+    "description": "Creates an NgRx Effect Scaffolded for API Call",
+    "body": [
+      "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
+      "\tofType(${2:Feature}Actions.${3:action}.type),",
+      "\t${4:operator}(() =>",
+      "\t\t${5:apiSource}.pipe(",
+      "\t\t\tmap(data => $2Actions.$3Success({ data })),",
+      "\t\t\tcatchError(error => of($2Actions.$3Failure({ error }))))",
+      "\t\t)",
+      "\t)",
+      ");"
+    ]
+  },
+  "NgRx Create Selector": {
+    "scope": "typescript",
+    "prefix": "a-ngrx-create-selector",
+    "description": "Creates an NgRx Selector",
+    "body": [
+      "export const select${1:Feature}${2:Property} = createSelector(",
+      "\tselect$1,",
+      "\t(state: $1State) => state.${3:property}",
+      ");"
+    ]
+  },
+  "NgRx Create Selector w/ Props": {
+    "scope": "typescript",
+    "prefix": "a-ngrx-create-selector-props",
+    "description": "Creates an NgRx Selector using props",
+    "body": [
+      "export const select${1:Feature}${2:Property} = createSelector(",
+      "\tselect$1,",
+      "\t(state: $1State, props) => ${3:selectLogic}",
+      ");"
+    ]
   }
 }
