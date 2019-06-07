@@ -7,7 +7,7 @@
 - Added NgRx snippets for the creator functions: `createAction`, `createEffect`, `createReducer`, and `createSelector`.
 - Updated `ngrx-data` snippets for `NgRx` v8.
 - Fixed display and description names for version 8
-- Removed `a-ngrx-data-store-module`, replaced with new `a-ngrx-store-module` and `a-ngrx-data-module-import`
+- Removed `a-ngrx-data-store-module`, replaced with new `a-ngrx-store-module` and `a-ngrx-data-entity-data-module-import`
 
 <a name="8.0.0"></a>
 
