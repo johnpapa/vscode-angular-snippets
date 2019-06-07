@@ -127,7 +127,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 
 ## Credits
 
-Thanks to the following contributors:
+Thanks to the following contributors for the NgRx snippets:
 
 - [Wes Grimes](https://twitter.com/wesgrimes)
 - [Tim Deschryver](https://twitter.com/tim_deschryver)
