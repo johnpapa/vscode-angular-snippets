@@ -8,6 +8,7 @@
 - Updated `ngrx-data` snippets for `NgRx` version 8
 - Fixed display and description names for version 8
 - Removed `a-ngrx-data-store-module`, replaced with new `a-ngrx-store-module` and `a-ngrx-data-entity-data-module-import`
+- Added "credits" to the Readme
 
 <a name="8.0.0"></a>
 
