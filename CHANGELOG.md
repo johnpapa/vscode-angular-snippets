@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="8.1.1"></a>
+
+# 8.1.1 (2019-06-10)
+
+- Fixed typo in NgRx snippet for `createReducer`
+- Moved NgRx snippets into separate section of README
+
 <a name="8.1.0"></a>
 
 # 8.1.0 (2019-06-07)

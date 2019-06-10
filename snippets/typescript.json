@@ -495,7 +495,7 @@
       "\ton($1Actions.action, state => ({ ...state, ${2:prop}: ${3:updatedValue} })),",
       ");",
       "",
-      "export function reducer(state: State | undefined: action: Action) {",
+      "export function reducer(state: State | undefined, action: Action) {",
       "\treturn $1Reducer(state, action);",
       "}"
     ]
