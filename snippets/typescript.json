@@ -491,7 +491,7 @@
     "description": "Creates an NgRx Reducer",
     "body": [
       "const ${1:feature}Reducer = createReducer(",
-      "\tintialState,",
+      "\tinitialState,",
       "\ton($1Actions.action, state => ({ ...state, ${2:prop}: ${3:updatedValue} })),",
       ");",
       "",
