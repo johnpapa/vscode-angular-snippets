@@ -2,7 +2,7 @@
 
 <a name="8.1.1"></a>
 
-# 8.1.1 (2019-06-10)
+# 8.1.1 (2019-06-11)
 
 - Fixed typos in NgRx snippets for `createReducer` and `createEffect`
 - Moved NgRx snippets into separate section of README
