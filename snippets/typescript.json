@@ -491,11 +491,11 @@
     "description": "Creates an NgRx Reducer",
     "body": [
       "const ${1:feature}Reducer = createReducer(",
-      "\tintialState,",
+      "\tinitialState,",
       "\ton($1Actions.action, state => ({ ...state, ${2:prop}: ${3:updatedValue} })),",
       ");",
       "",
-      "export function reducer(state: State | undefined: action: Action) {",
+      "export function reducer(state: State | undefined, action: Action) {",
       "\treturn $1Reducer(state, action);",
       "}"
     ]
@@ -505,7 +505,7 @@
     "description": "Creates an NgRx Effect",
     "body": [
       "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
-      "\tofType(${2:action}.type),",
+      "\tofType(${2:action}),",
       "\t/** An EMPTY observable only emits completion. Replace with your own observable stream */",
       "\t${3:operator}(() => ${4:EMPTY})",
       "\t)",
@@ -517,7 +517,7 @@
     "description": "Creates an NgRx Effect Scaffolded for API Call",
     "body": [
       "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
-      "\tofType(${2:Feature}Actions.${3:action}.type),",
+      "\tofType(${2:Feature}Actions.${3:action}),",
       "\t${4:operator}(() =>",
       "\t\t${5:apiSource}.pipe(",
       "\t\t\tmap(data => $2Actions.$3Success({ data })),",
