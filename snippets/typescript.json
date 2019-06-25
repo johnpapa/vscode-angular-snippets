@@ -586,4 +586,37 @@
       "}"
     ]
   }
+},
+"Spec with beforeEach": {
+  "prefix": "a-spec-with-before-each",
+  "description": "Component Spec with beforeEach",
+  "body": [      
+    "import { TestBed, async } from '@angular/core/testing';",
+    "import { RouterTestingModule } from '@angular/router/testing';",
+    "import { ${1:Name}Component } from './${2:name}.component';",
+    "",
+    "describe('${3:description}', () => {",
+    "\tbeforeEach(async(() => {",
+    "\t\tTestBed.configureTestingModule({",
+    "\t\t\timports: [],",
+    "\t\t\tdeclarations: [${1:Name}Component]",
+    "\t\t}).compileComponents();",
+    "\t}));",
+    "",
+    "\tit('should ${4:assert-description}', () => {",
+    "\t\texpect(fail());",
+    "\t});",
+    "});",
+    ""
+  ]
+},
+"Simple spec": {
+  "prefix": "a-spec",
+  "description": "Simple spec",
+  "body": [
+    "it('should ${1:should-description}', () => {",
+    "\texpect(fail());",
+    "});",
+    ""
+  ]
 }
