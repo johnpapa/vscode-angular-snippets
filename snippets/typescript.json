@@ -504,27 +504,28 @@
     "prefix": "a-ngrx-create-effect",
     "description": "Creates an NgRx Effect",
     "body": [
-      "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
-      "\tofType(${2:action}),",
-      "\t/** An EMPTY observable only emits completion. Replace with your own observable stream */",
-      "\t${3:operator}(() => ${4:EMPTY})",
-      "\t)",
-      ");"
+      "${1:effectName}$ = createEffect(() => {",
+      "\treturn this.actions$.pipe(",
+      "\t\t\tofType(${2:action}),",
+      "\t\t\t/** An EMPTY observable only emits completion. Replace with your own observable stream */",
+      "\t\t\t${3:operator}(() => ${4:EMPTY}));",
+      "});"
     ]
   },
   "NgRx Create Effect for API Call": {
     "prefix": "a-ngrx-create-effect-api",
     "description": "Creates an NgRx Effect Scaffolded for API Call",
     "body": [
-      "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
-      "\tofType(${2:Feature}Actions.${3:action}),",
-      "\t${4:operator}(() =>",
-      "\t\t${5:apiSource}.pipe(",
-      "\t\t\tmap(data => $2Actions.$3Success({ data })),",
-      "\t\t\tcatchError(error => of($2Actions.$3Failure({ error }))))",
-      "\t\t)",
-      "\t)",
-      ");"
+      "${1:effectName}$ = createEffect(() => {",
+      "\treturn this.actions$.pipe(",
+      "\t\t\tofType(${2:Feature}Actions.${3:action}),",
+      "\t\t\t${4:operator}(() =>",
+      "\t\t\t\t${5:apiSource}.pipe(",
+      "\t\t\t\t\tmap(data => $2Actions.$3Success({ data })),",
+      "\t\t\t\t\tcatchError(error => of($2Actions.$3Failure({ error }))))",
+      "\t\t\t\t),",
+      "\t);",
+      "});"
     ]
   },
   "NgRx Create Selector": {
