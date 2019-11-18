@@ -55,7 +55,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 | `a-route-path-lazy`          | lazy route path                                              |
 | `a-router-events`            | listen to one or more router events                          |
 | `a-route-params-subscribe`   | subscribe to route parameters                                |
-| `a-service`                  | service                                                      |
+| `a-service`                  | service with injectable provided in root                     |
 | `a-service-httpclient`       | service with `HttpClient`                                    |
 | `a-ctor-skip-self`           | angular `NgModule`'s `skipself` constructor                  |
 | `a-subscribe`                | Rx Observable subscription                                   |

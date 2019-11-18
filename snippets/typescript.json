@@ -35,19 +35,6 @@
       "}"
     ]
   },
-  "Angular Service": {
-    "prefix": "a-service",
-    "description": "Angular service",
-    "body": [
-      "import { Injectable } from '@angular/core';",
-      "",
-      "@Injectable()",
-      "export class ${1:Name}Service {",
-      "$0",
-      "\tconstructor() { }",
-      "}"
-    ]
-  },
   "Angular Pipe": {
     "prefix": "a-pipe",
     "description": "Angular pipe",
@@ -65,9 +52,9 @@
       "}"
     ]
   },
-  "Angular ProvidedIn Root": {
-    "prefix": "a-injectable-providedin",
-    "description": "Angular Injectable ProvidedIn",
+  "Angular Service": {
+    "prefix": "a-service",
+    "description": "Angular Service with Injectable ProvidedIn Root",
     "body": ["@Injectable({providedIn: ${1:'root'}})$0"]
   },
   "Angular Default Route Path": {
@@ -207,11 +194,7 @@
   "Subscribe": {
     "prefix": "a-subscribe",
     "description": "Angular observable subscribe",
-    "body": [
-      "this.${1:service}.${2:function}",
-      "\t.subscribe(${3:arg} => this.${4:property} = ${3:arg});",
-      "$0"
-    ]
+    "body": ["this.${1:service}.${2:function}", "\t.subscribe(${3:arg} => this.${4:property} = ${3:arg});", "$0"]
   },
   "Angular Root Component": {
     "prefix": "a-component-root",
@@ -475,16 +458,12 @@
   "NgRx Create Action": {
     "prefix": "a-ngrx-create-action",
     "description": "Creates an NgRx Action",
-    "body": [
-      "export const ${1:action} = createAction('[${2:Source}] ${3:Event}');"
-    ]
+    "body": ["export const ${1:action} = createAction('[${2:Source}] ${3:Event}');"]
   },
   "NgRx Create Action w/ Props": {
     "prefix": "a-ngrx-create-action-props",
     "description": "Creates an NgRx Action with Props",
-    "body": [
-      "export const ${1:action} = createAction('[${2:Source}] ${3:Event}', props<{${4:key}: ${5:type}}>());"
-    ]
+    "body": ["export const ${1:action} = createAction('[${2:Source}] ${3:Event}', props<{${4:key}: ${5:type}}>());"]
   },
   "NgRx Create Reducer": {
     "prefix": "a-ngrx-create-reducer",

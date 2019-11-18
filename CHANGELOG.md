@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="8.2.0"></a>
+
+# 8.2.0 (2019-11-18)
+
+- Removed duplicate service snippet
+- Refactored `a-service` to create a service with injectable provided in root
+
 <a name="8.1.1"></a>
 
 # 8.1.1 (2019-06-11)
