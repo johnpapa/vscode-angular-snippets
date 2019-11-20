@@ -99,10 +99,12 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 | `a-ngFor`            | `*ngFor`                                   |
 | `a-ngForAsync`       | `*ngFor` with async                        |
 | `a-ngFor-trackBy`    | `*ngFor` with trackBy                      |
+| `a-form`             | `form`                                     |
 | `a-formArrayName`    | `formArrayName`                            |
 | `a-formControlName`  | `formControlName`                          |
 | `a-formGroup`        | `formGroup`                                |
 | `a-formGroupName`    | `formGroupName`                            |
+| `a-form-submit`      | `form submit`                              |
 | `a-ngIf`             | `*ngIf`                                    |
 | `a-ngIfElse`         | `*ngIf` with `else`                        |
 | `a-ngModel`          | `ngModel`                                  |
