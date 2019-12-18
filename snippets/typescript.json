@@ -55,7 +55,15 @@
   "Angular Service": {
     "prefix": "a-service",
     "description": "Angular Service with Injectable ProvidedIn Root",
-    "body": ["@Injectable({providedIn: ${1:'root'}})$0"]
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "",
+      "@Injectable({providedIn: ${2:'root'}})",
+      "export class ${1:ServiceName}Service {",
+      "\tconstructor() { }",
+      "\t$0",
+      "}"
+    ]
   },
   "Angular Default Route Path": {
     "prefix": "a-route-path-default",
