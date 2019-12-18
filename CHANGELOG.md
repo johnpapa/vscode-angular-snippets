@@ -10,6 +10,7 @@
 - Added `a-ng-container` to create `<ng-container>` element
 - Added `a-ng-template` to create `<ng-template>` element
 - Added `a-ng-content` to create `<ng-content>` element
+- Updated dockerfile to use node 12
 
 <a name="8.2.0"></a>
 
