@@ -1,86 +1,130 @@
 # Angular TypeScript Snippets for VS Code
 
-**Now Updated for Angular 4.3.0 release**
+**Now Updated for Angular 8.0.0 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
-![Use Extension](images/use-extension-1.gif)
+![Use Extension](images/use-extension.gif)
 
 See the [CHANGELOG](CHANGELOG.md) for the latest changes
+
+## Angular Essentials
+
+Check out the [Angular Essentials extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials&wt.mc_id=vscode_angular_snippets-github-jopapa) for more great extensions for developing with JavaScript and Angular.
 
 ## Usage
 
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
+Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to activate snippets from within the editor.
+
+### Command Palette Commands
+
+| Command                                              | Purpose                     |
+| ---------------------------------------------------- | --------------------------- |
+| express: Add simple Express server file to workspace | Adds Node.js express server |
+
 ### TypeScript Angular Snippets
 
-| Snippet                      | Purpose                    |
-|------------------------------|----------------------------|
-| `a-component`                | component |
-| `a-component-inline`         | component with inline template |
-| `a-component-root`           | root app component |
-| `a-directive`                | directive |
-| `a-guard-can-activate`       | `CanActivate` guard |
-| `a-guard-can-activate-child` | `CanActivateChild` guard |
-| `a-guard-can-deactivate`     | `CanDeactivate` guard |
-| `a-guard-can-load`           | `CanLoad` guard |
-| `a-http-get`                 | `http.get` with Rx Observable |
-| `a-httpclient-get`           | `httpClient.get` with Rx Observable |
-| `a-http-interceptor`         | Empty Angular `HttpInterceptor` for `HttpClient` |
+| Snippet                      | Purpose                                                      |
+| ---------------------------- | ------------------------------------------------------------ |
+| `a-component`                | component                                                    |
+| `a-component-inline`         | component with inline template                               |
+| `a-component-root`           | root app component                                           |
+| `a-directive`                | directive                                                    |
+| `a-guard-can-activate`       | `CanActivate` guard                                          |
+| `a-guard-can-activate-child` | `CanActivateChild` guard                                     |
+| `a-guard-can-deactivate`     | `CanDeactivate` guard                                        |
+| `a-guard-can-load`           | `CanLoad` guard                                              |
+| `a-httpclient-get`           | `httpClient.get` with Rx Observable                          |
+| `a-http-interceptor`         | Empty Angular `HttpInterceptor` for `HttpClient`             |
 | `a-http-interceptor-headers` | Angular `HttpInterceptor` that sets headers for `HttpClient` |
 | `a-http-interceptor-logging` | Angular `HttpInterceptor` that logs traffic for `HttpClient` |
-| `a-module`                   | module |
-| `a-module-root`              | root app module |
-| `a-module-routing`           | routing module file (forChild) |
-| `a-output-event`             | `@Output` event and emitter |
-| `a-pipe`                     | pipe |
-| `a-route-path-404`           | 404 route path |
-| `a-route-path-default`       | default route path |
-| `a-route-path-eager`         | eager route path |
-| `a-route-path-lazy`          | lazy route path |
-| `a-router-events`            | listen to one or more router events |
-| `a-service`                  | service |
-| `a-service-http`             | service with `Http` |
-| `a-service-httpclient`       | service with `HttpClient` |
-| `a-ctor-skip-self`           | angular `NgModule`'s `skipself` constructor |
-| `a-subscribe`                | Rx Observable subscription |
+| `a-module`                   | module                                                       |
+| `a-module-root`              | root app module                                              |
+| `a-module-routing`           | routing module file (forChild)                               |
+| `a-output-event`             | `@Output` event and emitter                                  |
+| `a-pipe`                     | pipe                                                         |
+| `a-resolver`                 | resolver                                                     |
+| `a-rxjs-import`              | import RxJs features                                         |
+| `a-rxjs-operators`           | import RxJs operators                                        |
+| `a-route-path-404`           | 404 route path                                               |
+| `a-route-path-default`       | default route path                                           |
+| `a-route-path-with-children` | route path with children                                     |
+| `a-route-path-eager`         | eager route path                                             |
+| `a-route-path-lazy`          | lazy route path                                              |
+| `a-router-events`            | listen to one or more router events                          |
+| `a-route-params-subscribe`   | subscribe to route parameters                                |
+| `a-service`                  | service with injectable provided in root                     |
+| `a-service-httpclient`       | service with `HttpClient`                                    |
+| `a-ctor-skip-self`           | angular `NgModule`'s `skipself` constructor                  |
+| `a-subscribe`                | Rx Observable subscription                                   |
 
-### TypeScript RxJS Snippets
+### NgRx Snippets
 
-| Snippet                      | Purpose                    |
-|------------------------------|----------------------------|
-| `rx-observable`              | Rx `Observable` import |
-| `rx-subject`                 | Rx `Subject` import |
-| `rx-replay-subject`          | Rx `ReplaySubject` import |
-| `rx-behavior-subject`        | Rx `BehaviorSubject` import |
-| `rx-add-operator`            | Rx add operator import |
-| `rx-add-observable`          | Rx add observable import |
+| Snippet                                      | Purpose                                                   |
+| -------------------------------------------- | --------------------------------------------------------- |
+| `a-ngrx-store-module`                        | create an NgRx store module                               |
+| `a-ngrx-create-action`                       | create an NgRx action with `createAction`                 |
+| `a-ngrx-create-action-props`                 | create an NgRx action with `createAction` with props      |
+| `a-ngrx-create-reducer`                      | create an NgRx reducer with `createReducer`               |
+| `a-ngrx-create-effect`                       | create an NgRx effect with `createEffect`                 |
+| `a-ngrx-create-effect-api`                   | create an NgRx effect with `createEffect` for an API call |
+| `a-ngrx-create-selector`                     | create an NgRx selector with `createSelector`             |
+| `a-ngrx-create-selector-props`               | create an NgRx selector with `createSelector` with props  |
+| `a-ngrx-data-entity-data-module-import`      | add `EntityDataModule`                                    |
+| `a-ngrx-data-entity-metadata`                | create the entity metadata for NgRx                       |
+| `a-ngrx-data-entity-collection-data-service` | create a data service using NgRx                          |
+
+### Dockerfile Snippets
+
+| Snippet                           | Purpose                                      |
+| --------------------------------- | -------------------------------------------- |
+| `docker-angular-node-multi-stage` | Multi-stage Dockerfile for Node with Angular |
+
+### JavaScript Snippets
+
+| Snippet            | Purpose                |
+| ------------------ | ---------------------- |
+| `ex-simple-server` | Node.js Express Server |
 
 ### HTML Snippets
 
-| Snippet                      | Purpose                             |
-|------------------------------|-------------------------------------|
-| `a-class`                    | `[class]` binding |
-| `a-select`                   | `<select>` control |
-| `a-style`                    | `[style]` binding |
-| `a-ngClass`                  | `ngClass` |
-| `a-ngFor`                    | `*ngFor` |
-| `a-ngForAsync`               | `*ngFor` with async |
-| `a-ngFor-trackBy`            | `*ngFor` with trackBy |
-| `a-ngIf`                     | `*ngIf` |
-| `a-ngIfElse`                 | `*ngIf` with `else` |
-| `a-ngModel`                  | `ngModel` |
-| `a-routerLink`               | `routerLink` |
-| `a-routerLink-param`         | `routerLink` with a route parameter |
-| `a-ngStyle`                  | `ngStyle` |
-| `a-ngSwitch`                 | `ngSwitch` |
-| `a-prej`                     | show the JSON form of a model |
-| `a-preja`                    | show the JSON form of a model, using async |
-| `a-ng-container`             | `<ng-container>` element |
-| `a-ng-template`              | `<ng-template>` element |
-| `a-ng-content`               | `<ng-content>` element |
+| Snippet              | Purpose                                             |
+| -------------------- | --------------------------------------------------- |
+| `a-class`            | `[class]` binding                                   |
+| `a-select`           | `<select>` control                                  |
+| `a-style`            | `[style]` binding                                   |
+| `a-ngClass`          | `ngClass`                                           |
+| `a-ngFor`            | `*ngFor`                                            |
+| `a-ngForAsync`       | `*ngFor` with async                                 |
+| `a-ngFor-trackBy`    | `*ngFor` with trackBy                               |
+| `a-form`             | create a form tag with ngSubmit and form attributes |
+| `a-formArrayName`    | `formArrayName`                                     |
+| `a-formControlName`  | `formControlName`                                   |
+| `a-formGroup`        | `formGroup`                                         |
+| `a-formGroupName`    | `formGroupName`                                     |
+| `a-form-submit`      | create a submit button for a form                   |
+| `a-ngIf`             | `*ngIf`                                             |
+| `a-ngIfElse`         | `*ngIf` with `else`                                 |
+| `a-ngModel`          | `ngModel`                                           |
+| `a-routerLink`       | `routerLink`                                        |
+| `a-routerLink-param` | `routerLink` with a route parameter                 |
+| `a-ngStyle`          | `ngStyle`                                           |
+| `a-ngSwitch`         | `ngSwitch`                                          |
+| `a-prej`             | show the JSON form of a model                       |
+| `a-preja`            | show the JSON form of a model, using async          |
+| `a-ng-container`     | `<ng-container>` element                            |
+| `a-ng-template`      | `<ng-template>` element                             |
+| `a-ng-content`       | `<ng-content>` element                              |
 
-Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
+### VS Code Snippets
+
+| Snippet           | Purpose                                                              |
+| ----------------- | -------------------------------------------------------------------- |
+| `a-launch-chrome` | launch/debug configuration for VS Code for Chrome                    |
+| `a-launch-edge`   | launch/debug configuration for VS Code for Edge                      |
+| `a-task-start`    | create a task configuration for starting the Angular app for VS Code |
 
 ## Installation
 
@@ -91,4 +135,9 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 1. Choose the extension
 1. Reload Visual Studio Code
 
-![Install Extension](images/install-extension.gif)
+## Credits
+
+Thanks to the following contributors for the NgRx snippets:
+
+- [Wes Grimes](https://twitter.com/wesgrimes)
+- [Tim Deschryver](https://twitter.com/tim_deschryver)

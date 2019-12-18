@@ -1,78 +1,106 @@
 {
   "class": {
     "prefix": "a-class",
-    "body": [
-      "[class]=\"${1:expression}\""
-    ],
+    "body": ["[class]=\"${1:expression}\""],
     "description": "Angular [class] binding"
   },
   "style": {
     "prefix": "a-style",
-    "body": [
-      "[style.${1:property}]=\"${2:expression}\""
-    ],
+    "body": ["[style.${1:property}]=\"${2:expression}\""],
     "description": "Angular [style] binding"
   },
   "ngClass": {
     "prefix": "a-ngClass",
-    "body": [
-      "[ngClass]=\"{${1:cssClass}: ${2:expression}}\""
-    ],
+    "body": ["[ngClass]=\"{${1:cssClass}: ${2:expression}}\""],
     "description": "Angular ngClass"
   },
   "ngFor": {
     "prefix": "a-ngFor",
-    "body": [
-      "*ngFor=\"let ${1:item} of ${2:list}\"${0}"
-    ],
+    "body": ["*ngFor=\"let ${1:item} of ${2:list}\"${0}"],
     "description": "Angular *ngFor"
   },
   "ngFor with trackBy": {
     "prefix": "a-ngFor-trackBy",
-    "body": [
-      "*ngFor=\"let ${1:item} of ${2:list}; trackBy:${1:item}.id\"${0}"
-    ],
+    "body": ["*ngFor=\"let ${1:item} of ${2:list}; trackBy:${1:item}.id\"${0}"],
     "description": "Angular *ngFor with trackBy"
   },
   "ngForAsync": {
     "prefix": "a-ngForAsync",
-    "body": [
-      "*ngFor=\"let ${1:item} of ${2:stream} | async as ${3:list}\"${0}"
-    ],
+    "body": ["*ngFor=\"let ${1:item} of ${2:stream} | async as ${3:list}\"${0}"],
     "description": "Angular *ngForAsync"
+  },
+  "ngForm": {
+    "prefix": "a-form",
+    "body": [
+      "<form (ngSubmit)=\"onSubmit()\" #${1:form}=\"ngForm\">",
+      "</form>"
+    ],
+    "description": "Form with ngSubmit and form attributes"
+  },
+  "ngFormArrayName": {
+    "prefix": "a-formArrayName",
+    "body": [
+      "formArrayName=\"${1:control}\""
+    ],
+    "description": "Angular formArrayName"
+  },
+  "ngFormControlName": {
+    "prefix": "a-formControlName",
+    "body": [
+      "formControlName=\"${1:control}\""
+    ],
+    "description": "Angular formControlName"
+  },
+  "ngFormGroup": {
+    "prefix": "a-formGroup",
+    "body": [
+      "[formGroup]=\"${1:form}\""
+    ],
+    "description": "Angular formGroup"
+  },
+  "ngFormGroupName": {
+    "prefix": "a-formGroupName",
+    "body": [
+      "[formGroupName]=\"${1:name}\""
+    ],
+    "description": "Angular formGroupName"
+  },
+  "ngFormSubmit": {
+    "prefix": "a-form-submit",
+    "body": [
+      "<button type=\"submit\" [disabled]=\"!${1:form}.form.valid\">",
+      "\tSave",
+      "</button>"
+    ],
+    "description": "Angular form submit"
   },
   "ngIf": {
     "prefix": "a-ngIf",
-    "body": [
-      "*ngIf=\"${1:expression}\""
-    ],
+    "body": ["*ngIf=\"${1:expression}\""],
     "description": "Angular *ngIf"
   },
   "ngIfElse": {
     "prefix": "a-ngIfElse",
-    "body": [
-      "*ngIf=\"${1:expression};else ${2:templateName}\""
-    ],
+    "body": ["*ngIf=\"${1:expression};else ${2:templateName}\""],
     "description": "Angular *ngIfElse"
   },
   "ngModel": {
     "prefix": "a-ngModel",
-    "body": [
-      "[(ngModel)]=\"${1:binding}\""
-    ],
+    "body": ["[(ngModel)]=\"${1:binding}\""],
     "description": "Angular ngModel"
   },
   "ngRouterLink": {
     "prefix": "a-routerLink",
     "body": [
-      "[routerLink]=\"['/${1:routePath}']\"$0"
+      "[routerLink]=\"['/${1:routePath}']\" routerLinkActive=\"${2:router-link-active}\" $0"
     ],
     "description": "Angular routerLink"
   },
   "ngRouterLinkWithParameter": {
     "prefix": "a-routerLink-param",
     "body": [
-      "[routerLink]=\"['${1:routePath}', ${2:routeParameterValue}$0]\""
+      "[routerLink]=\"['${1:routePath}', ${2:routeParameterValue}]\"",
+      "routerLinkActive=\"${3:router-link-active}\"$0"
     ],
     "description": "Angular routerLink with a route parameter"
   },
@@ -87,9 +115,7 @@
   },
   "ngStyle": {
     "prefix": "a-ngStyle",
-    "body": [
-      "[ngStyle]=\"{${1:style}: ${2:expression}}\""
-    ],
+    "body": ["[ngStyle]=\"{${1:style}: ${2:expression}}\""],
     "description": "Angular ngStyle"
   },
   "ngSwitch": {
@@ -104,16 +130,12 @@
   },
   "pre w/ json": {
     "prefix": "a-prej",
-    "body": [
-      "<pre>{{${model:1} | json}}</pre>$0"
-    ],
+    "body": ["<pre>{{${1:model} | json}}</pre>$0"],
     "description": "Angular pre debug | json"
   },
   "pre w/ async json": {
     "prefix": "a-preja",
-    "body": [
-      "<pre>{{${1:model} | async | json}}</pre>$0"
-    ],
+    "body": ["<pre>{{${1:model} | async | json}}</pre>$0"],
     "description": "Angular pre debug | async | json"
   },
   "ng-container": {

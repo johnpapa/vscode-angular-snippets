@@ -1,52 +1,87 @@
 {
-    "name": "Angular2",
-    "publisher": "johnpapa",
-    "displayName": "Angular v4 TypeScript Snippets",
-    "description": "Angular with TypeScript snippets.",
-    "icon": "images/angular-shield.png",
-    "galleryBanner": {
-        "color": "#0273D4",
-        "theme": "dark"
-    },
-    "license": "SEE LICENSE IN LICENSE.md",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
-    },
-    "keywords": [
-        "Angular",
-        "Angular 2",
-        "Angular 4",
-        "TypeScript",
-        "HTML"
+  "name": "Angular2",
+  "publisher": "johnpapa",
+  "displayName": "Angular Snippets (Version 8)",
+  "description": "Angular version 8 snippets by John Papa",
+  "icon": "images/angular-shield.png",
+  "galleryBanner": {
+    "color": "#0273D4",
+    "theme": "dark"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnpapa/vscode-angular-snippets.git"
+  },
+  "keywords": [
+    "Angular",
+    "Angular 2",
+    "Angular 8",
+    "TypeScript",
+    "HTML"
+  ],
+  "version": "8.3.0",
+  "engines": {
+    "vscode": "^1.20.0"
+  },
+  "scripts": {
+    "package": "npx vsce package",
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "publish": "npx vsce publish",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "extensionKind": "ui",
+  "main": "./out/src/extension",
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:angular.configureExpressServer"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "angular.configureExpressServer",
+        "title": "Add Node.js express file to workspace",
+        "description": "Add Node.js express file",
+        "category": "Express"
+      }
     ],
-    "version": "2.7.0",
-    "engines": {
-        "vscode": "^1.10.0"
-    },
-    "devDependencies": {
-        "vscode": "^1.11.0"
-    },
-    "categories": [
-        "Snippets",
-        "Other"
+    "jsonValidation": [
+      {
+        "fileMatch": "manifest.json",
+        "url": "http://json.schemastore.org/web-manifest"
+      }
     ],
-    "contributes": {
-        "jsonValidation": [
-            {
-                "fileMatch": "manifest.json",
-                "url": "http://json.schemastore.org/web-manifest"
-            }
-        ],
-        "snippets": [
-            {
-                "language": "typescript",
-                "path": "./snippets/typescript.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/html.json"
-            }
-        ]
-    }
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "jsonc",
+        "path": "./snippets/jsonc.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      },
+      {
+        "language": "dockerfile",
+        "path": "./snippets/dockerfile.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.34",
+    "typescript": "^2.1.5",
+    "vscode": "^1.1.33"
+  },
+  "dependencies": {}
 }

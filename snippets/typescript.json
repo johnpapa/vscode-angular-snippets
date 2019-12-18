@@ -35,19 +35,6 @@
       "}"
     ]
   },
-  "Angular Service": {
-    "prefix": "a-service",
-    "description": "Angular service",
-    "body": [
-      "import { Injectable } from '@angular/core';",
-      "",
-      "@Injectable()",
-      "export class ${1:Name}Service {",
-      "$0",
-      "\tconstructor() { }",
-      "}"
-    ]
-  },
   "Angular Pipe": {
     "prefix": "a-pipe",
     "description": "Angular pipe",
@@ -65,15 +52,41 @@
       "}"
     ]
   },
+  "Angular Service": {
+    "prefix": "a-service",
+    "description": "Angular Service with Injectable ProvidedIn Root",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "",
+      "@Injectable({providedIn: ${2:'root'}})",
+      "export class ${1:ServiceName}Service {",
+      "\tconstructor() { }",
+      "\t$0",
+      "}"
+    ]
+  },
   "Angular Default Route Path": {
     "prefix": "a-route-path-default",
     "description": "Angular default route path",
     "body": ["{ path: '', pathMatch: 'full', redirectTo: '${1:path}' }$0"]
   },
+  "Angular Route Path with Children": {
+    "prefix": "a-route-path-with-children",
+    "description": "Angular route path with children",
+    "body": [
+      "{",
+      "\tpath: '${1:path}', ",
+      "\tcomponent: ${2:Component},",
+      "\tchildren: [",
+      "\t\t{ path: '${3:childpath}', component: ${4:ChildComponent} }",
+      "\t]",
+      "}$0"
+    ]
+  },
   "Angular 404 Route Path": {
     "prefix": "a-route-path-404",
     "description": "Angular 404 route path",
-    "body": ["{ path: '**', pathMatch: 'full', component: ${1:PathNotFoundComponent} }$0"]
+    "body": ["{ path: '**', component: ${1:PathNotFoundComponent} }$0"]
   },
   "Angular Eager Route Path": {
     "prefix": "a-route-path-eager",
@@ -83,37 +96,27 @@
   "Angular Lazy Route Path": {
     "prefix": "a-route-path-lazy",
     "description": "Angular lazy route path",
-    "body": ["{ path: '${1:path}', loadChildren: '${2:lazy-path}#${3:lazy-module}' },"]
-  },
-  "Http.get": {
-    "prefix": "a-http-get",
-    "description": "Angular Http.get",
     "body": [
-      "return this.http.get('${1:url}')",
-      "\t.map((response: Response) => response.json());$0"
+      "{",
+      "\tpath: '${1:path}', ",
+      "\tloadChildren: () => import('${2:lazy-path}').then(m => m.${3:lazy-module})",
+      "},"
+    ]
+  },
+  "Routing Params - Subscribe": {
+    "prefix": "a-route-params-subscribe",
+    "description": "Angular - subscribe to routing parameters",
+    "body": [
+      "this.route.params",
+      "\t.pipe(map(params => params['id']), tap(id => (this.id = +id)))",
+      "\t.subscribe(id => ${1:function()}());",
+      "$0"
     ]
   },
   "HttpClient.get": {
     "prefix": "a-httpclient-get",
     "description": "Angular HttpClient.get",
     "body": ["return this.httpClient.get('${1:url}');$0"]
-  },
-  "Angular Http Service": {
-    "prefix": "a-service-http",
-    "description": "Angular service with Http",
-    "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { Http, Response } from '@angular/http';",
-      "import { Observable } from 'rxjs/Observable';",
-      "import 'rxjs/add/operator/map';",
-      "import 'rxjs/add/operator/catch';",
-      "",
-      "@Injectable()",
-      "export class ${1:ServiceName}Service {",
-      "\tconstructor(private http: Http) { }",
-      "\t$0",
-      "}"
-    ]
   },
   "Angular HttpClient Service": {
     "prefix": "a-service-httpclient",
@@ -122,7 +125,7 @@
       "import { Injectable } from '@angular/core';",
       "import { HttpClient } from '@angular/common/http';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${2:'root'}})",
       "export class ${1:ServiceName}Service {",
       "\tconstructor(private httpClient: HttpClient) { }",
       "\t$0",
@@ -134,20 +137,22 @@
     "description": "Angular HttpInterceptor for Logging HttpClient",
     "body": [
       "import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';",
-      "import { Observable } from 'rxjs/Observable';",
-      "import 'rxjs/add/operator/do';",
+      "import { Observable, tap } from 'rxjs';",
       "",
+      "@Injectable({providedIn: ${1:'root'}})",
       "export class LogInterceptor implements HttpInterceptor {",
       "\tconstructor() {}",
       "",
       "\tintercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {",
       "\t\tconst started = Date.now();",
-      "\t\treturn next.handle(req).do(event => {",
-      "\t\t\tif (event instanceof HttpResponse) {",
-      "\t\t\t\tconst elapsed = Date.now() - started;",
-      "\t\t\t\tconsole.log(`Request for \\${req.urlWithParams} took \\${elapsed} ms.`);",
-      "\t\t\t}",
-      "\t\t});",
+      "\t\treturn next.handle(req).pipe(",
+      "\t\t\ttap(event => {",
+      "\t\t\t\tif (event instanceof HttpResponse) {",
+      "\t\t\t\t\tconst elapsed = Date.now() - started;",
+      "\t\t\t\t\tconsole.log(`Request for \\${req.urlWithParams} took \\${elapsed} ms.`);",
+      "\t\t\t\t}",
+      "\t\t\t})",
+      "\t\t);",
       "\t}",
       "}"
     ]
@@ -158,9 +163,9 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from '@angular/common/http';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${1:'root'}})",
       "export class HeaderInterceptor implements HttpInterceptor {",
       "\tconstructor() {}",
       "",
@@ -179,9 +184,9 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { HttpInterceptor, HttpEvent, HttpHandler, HttpRequest } from '@angular/common/http';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${1:'root'}})",
       "export class HeaderInterceptor implements HttpInterceptor {",
       "\tintercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {",
       "\t\treturn next.handle(req);",
@@ -197,11 +202,7 @@
   "Subscribe": {
     "prefix": "a-subscribe",
     "description": "Angular observable subscribe",
-    "body": [
-      "this.${1:service}.${2:function}",
-      "\t.subscribe(${3:arg} => this.${4:property} = ${3:arg});",
-      "$0"
-    ]
+    "body": ["this.${1:service}.${2:function}", "\t.subscribe(${3:arg} => this.${4:property} = ${3:arg});", "$0"]
   },
   "Angular Root Component": {
     "prefix": "a-component-root",
@@ -228,43 +229,34 @@
       "import { HttpModule } from '@angular/http';",
       "",
       "import { ${1:App}Component } from './${1:app}.component';",
-      "import { AppRoutingModule } from './${1:app}.routing'; //TODO: Create ${1:app}.routing",
       "",
       "@NgModule({",
       "\timports: [",
       "\t\tBrowserModule,",
       "\t\tHttpModule,",
-      "\t",
-      "\t\tAppRoutingModule,",
       "\t],",
       "\tdeclarations: [${1:App}Component],",
-      "\tproviders: [/* TODO: Providers go here */],",
       "\tbootstrap: [${1:App}Component],",
       "})",
       "export class ${1:App}Module { }",
       "$0"
     ]
   },
-  "Angular Routing Module": {
-    "prefix": "a-module-routing",
-    "description": "Angular routing module file (forChild)",
+  "Angular Module with Routing": {
+    "prefix": "a-module-with-routing",
+    "description": "Angular module with routing combined into one file",
     "body": [
       "import { NgModule } from '@angular/core';",
       "import { Routes, RouterModule } from '@angular/router';",
       "",
-      "import { ${1:Name}Component } from './${2:name}.component';",
-      "",
-      "const routes: Routes = [",
-      "  { path: '${3:path}', component: ${1:Name}Component },",
-      "];",
+      "const routes: Routes = [${0}]",
       "",
       "@NgModule({",
-      "  imports: [RouterModule.forChild(routes)],",
-      "  exports: [RouterModule],",
+      "\timports: [RouterModule.${2:forChild}(routes)],",
+      "\texports: [],",
+      "\tdeclarations: [],",
       "})",
-      "export class ${1:Name}RoutingModule { }",
-      "",
-      "export const routedComponents = [${1:Name}Component];"
+      "export class ${1:Name}Module { }"
     ]
   },
   "Angular Module": {
@@ -304,7 +296,7 @@
       "import { Injectable } from '@angular/core';",
       "import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angular/router';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${2:'root'}})",
       "export class ${1:Name}Guard implements CanActivate {",
       "\tconstructor() { }",
       "",
@@ -321,11 +313,11 @@
       "import { Injectable } from '@angular/core';",
       "import { ActivatedRouteSnapshot, CanActivateChild, RouterStateSnapshot } from '@angular/router';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${2:'root'}})",
       "export class ${1:Name}Guard implements CanActivateChild {",
       "\tconstructor() { }",
       "",
-      "\tcanActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {",
+      "\tcanActivateChild(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {",
       "\t\treturn true;$0",
       "\t}",
       "}"
@@ -338,7 +330,7 @@
       "import { Injectable } from '@angular/core';",
       "import { CanLoad, Route } from '@angular/router';",
       "",
-      "@Injectable()",
+      "@Injectable({providedIn: ${2:'root'}})",
       "export class ${1:Name}Guard implements CanLoad {",
       "\tconstructor() { }",
       "",
@@ -354,9 +346,9 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
-      "import { ${1:ComponentName}Component } from './${2:filename}.component';",
+      "import { ${2:ComponentName}Component } from './${3:filename}.component';",
       "",
       "// Consider using this interface for all CanDeactivate guards,",
       "// and have your components implement this interface, too.",
@@ -367,16 +359,31 @@
       "// canDeactivate: () => any;",
       "// }",
       "",
-      "@Injectable()",
-      "export class ${2:Name}Guard implements CanDeactivate<${1:ComponentName}Component> {",
+      "@Injectable({providedIn: ${4:'root'}})",
+      "export class ${1:Name}Guard implements CanDeactivate<${2:ComponentName}Component> {",
       "\tcanDeactivate(",
-      "\t\tcomponent: ${1:ComponentName}Component,",
+      "\t\tcomponent: ${2:ComponentName}Component,",
       "\t\tcurrentRoute: ActivatedRouteSnapshot, ",
       "\t\tcurrentState: RouterStateSnapshot",
       "\t): Observable<boolean>|Promise<boolean>|boolean {",
       "\t\treturn false;$0",
       "\t}",
       "}"
+    ]
+  },
+  "Angular Custom Preload Strategy": {
+    "prefix": "a-preload-strategy",
+    "description": "Angular custom preload strategy",
+    "body": [
+      "import { PreloadingStrategy, Route } from '@angular/router';",
+      "import { Observable, of } from 'rxjs';",
+      "",
+      "export class PreloadSelectedModulesList implements PreloadingStrategy {",
+      "\tpreload(route: Route, load: Function): Observable<any> {",
+      "\t\treturn route.data && route.data['${1:preload}'] ? load() : of(null);",
+      "\t}",
+      "}",
+      "$0"
     ]
   },
   "Angular Router Events": {
@@ -410,34 +417,160 @@
       "}"
     ]
   },
-  "RxJS Observable Import": {
-    "prefix": "rx-observable",
-    "description": "RxJS Observable import",
-    "body": ["import { Observable } from 'rxjs/Observable';", "$0"]
+  "RxJs Import": {
+    "prefix": "a-rxjs-import",
+    "description": "RxJs import",
+    "body": ["import { ${1:Observable} } from 'rxjs';", "$0"]
   },
-  "RxJS ReplaySubject Import": {
-    "prefix": "rx-replay-subject",
-    "description": "RxJS ReplaySubject import",
-    "body": ["import { ReplaySubject } from 'rxjs/ReplaySubject';", "$0"]
+  "RxJs Operator Import": {
+    "prefix": "a-rxjs-operator-import",
+    "description": "RxJs import",
+    "body": ["import { ${1:map} } from 'rxjs/operators';", "$0"]
   },
-  "RxJS Subject Import": {
-    "prefix": "rx-subject",
-    "description": "RxJS Subject import",
-    "body": ["import { Subject } from 'rxjs/Subject';", "$0"]
+  "Angular Resolver": {
+    "prefix": "a-resolver",
+    "description": "Angular Resolver",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { Resolve, ActivatedRouteSnapshot } from '@angular/router';",
+      "import { Observable } from 'rxjs';",
+      "",
+      "@Injectable({ providedIn: 'root' })",
+      "export class ${1:YourResolver} implements Resolve<${2:ObjectToResolve}> {",
+      "\tresolve(route: ActivatedRouteSnapshot): Observable<${2:ObjectToResolve}> | Promise<${2:ObjectToResolve}> | ${2:ObjectToResolve} {",
+      "\t\treturn ${0};",
+      "\t}",
+      "}"
+    ]
   },
-  "RxJS BehaviorSubject Import": {
-    "prefix": "rx-behavior-subject",
-    "description": "RxJS BehaviorSubject import",
-    "body": ["import { BehaviorSubject } from 'rxjs/BehaviorSubject';", "$0"]
+  "NgRx Store Module": {
+    "prefix": "a-ngrx-store-module",
+    "description": "NgRx Store Module",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "import { EffectsModule } from '@ngrx/effects';",
+      "import { StoreModule } from '@ngrx/store';",
+      "import { StoreDevtoolsModule } from '@ngrx/store-devtools';",
+      "import { environment } from '../../environments/environment';",
+      "",
+      "@NgModule({",
+      "  imports: [",
+      "    StoreModule.forRoot({}),",
+      "    EffectsModule.forRoot([]),",
+      "    environment.production ? [] : StoreDevtoolsModule.instrument()",
+      "  ]",
+      "})",
+      "export class $1StoreModule {}"
+    ]
   },
-  "RxJS Add Operator Import": {
-    "prefix": "rx-add-operator",
-    "description": "RxJS Add Operator import",
-    "body": ["import 'rxjs/add/operator/${1:map}';", "$0"]
+  "NgRx Create Action": {
+    "prefix": "a-ngrx-create-action",
+    "description": "Creates an NgRx Action",
+    "body": ["export const ${1:action} = createAction('[${2:Source}] ${3:Event}');"]
   },
-  "RxJS Add Observable Import": {
-    "prefix": "rx-add-observable",
-    "description": "RxJS Add Observable import",
-    "body": ["import 'rxjs/add/observable/${1:of}';", "$0"]
+  "NgRx Create Action w/ Props": {
+    "prefix": "a-ngrx-create-action-props",
+    "description": "Creates an NgRx Action with Props",
+    "body": ["export const ${1:action} = createAction('[${2:Source}] ${3:Event}', props<{${4:key}: ${5:type}}>());"]
+  },
+  "NgRx Create Reducer": {
+    "prefix": "a-ngrx-create-reducer",
+    "description": "Creates an NgRx Reducer",
+    "body": [
+      "const ${1:feature}Reducer = createReducer(",
+      "\tinitialState,",
+      "\ton($1Actions.action, state => ({ ...state, ${2:prop}: ${3:updatedValue} })),",
+      ");",
+      "",
+      "export function reducer(state: State | undefined, action: Action) {",
+      "\treturn $1Reducer(state, action);",
+      "}"
+    ]
+  },
+  "NgRx Create Effect": {
+    "prefix": "a-ngrx-create-effect",
+    "description": "Creates an NgRx Effect",
+    "body": [
+      "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
+      "\tofType(${2:action}),",
+      "\t/** An EMPTY observable only emits completion. Replace with your own observable stream */",
+      "\t${3:operator}(() => ${4:EMPTY})",
+      "\t)",
+      ");"
+    ]
+  },
+  "NgRx Create Effect for API Call": {
+    "prefix": "a-ngrx-create-effect-api",
+    "description": "Creates an NgRx Effect Scaffolded for API Call",
+    "body": [
+      "${1:effectName}$ = createEffect(() => this.actions$.pipe(",
+      "\tofType(${2:Feature}Actions.${3:action}),",
+      "\t${4:operator}(() =>",
+      "\t\t${5:apiSource}.pipe(",
+      "\t\t\tmap(data => $2Actions.$3Success({ data })),",
+      "\t\t\tcatchError(error => of($2Actions.$3Failure({ error }))))",
+      "\t\t)",
+      "\t)",
+      ");"
+    ]
+  },
+  "NgRx Create Selector": {
+    "prefix": "a-ngrx-create-selector",
+    "description": "Creates an NgRx Selector",
+    "body": [
+      "export const select${1:Feature}${2:Property} = createSelector(",
+      "\tselect$1,",
+      "\t(state: $1State) => state.${3:property}",
+      ");"
+    ]
+  },
+  "NgRx Create Selector w/ Props": {
+    "prefix": "a-ngrx-create-selector-props",
+    "description": "Creates an NgRx Selector using props",
+    "body": [
+      "export const select${1:Feature}${2:Property} = createSelector(",
+      "\tselect$1,",
+      "\t(state: $1State, props) => ${3:selectLogic}",
+      ");"
+    ]
+  },
+  "NgRx Data Import Entity Data Module": {
+    "prefix": "a-ngrx-data-entity-data-module-import",
+    "description": "Import NgRx Entity Data Module",
+    "body": ["EntityDataModule.forRoot(${1:entityConfig}),"]
+  },
+  "NgRx Data Entity Metadata": {
+    "prefix": "a-ngrx-data-entity-metadata",
+    "description": "NgRx Data Entity Metadata",
+    "body": [
+      "import { EntityMetadataMap } from '@ngrx/data';",
+      "",
+      "const entityMetadata: EntityMetadataMap = {",
+      "  ${1:Model1}: {},${0}",
+      "};",
+      "",
+      "export const entityConfig = {",
+      "  entityMetadata",
+      "};"
+    ]
+  },
+  "NgRx Data Entity Collection Data Service": {
+    "prefix": "a-ngrx-data-entity-collection-data-service",
+    "description": "NgRx Data Entity Collection Data Service",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import {",
+      "  EntityCollectionServiceBase,",
+      "  EntityCollectionServiceElementsFactory",
+      "} from '@ngrx/data';",
+      "import { ${1:Model} } from '${2:../core}';",
+      "",
+      "@Injectable({ providedIn: 'root' })",
+      "export class ${1:Model}Service extends EntityCollectionServiceBase<${1:Model}> {",
+      "  constructor(serviceElementsFactory: EntityCollectionServiceElementsFactory) {",
+      "    super('${1:Model}', serviceElementsFactory);",
+      "  }",
+      "}"
+    ]
   }
 }
