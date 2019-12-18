@@ -1,5 +1,11 @@
 ## Angular Snippets Changelog
 
+<a name="8.3.0"></a>
+
+# 8.3.0 (2019-12-18)
+
+- Fixed `a-service` to create a service with injectable provided in root
+
 <a name="8.2.0"></a>
 
 # 8.2.0 (2019-11-18)
