@@ -35,7 +35,7 @@
       "<form (ngSubmit)=\"onSubmit()\" #${1:form}=\"ngForm\">",
       "</form>"
     ],
-    "description": "Angular form"
+    "description": "Form with ngSubmit and form attributes"
   },
   "ngFormArrayName": {
     "prefix": "a-formArrayName",

@@ -4,6 +4,8 @@
 
 # 8.3.0 (2019-12-18)
 
+- Added `a-form` to create a form tag with ngSubmit and form attributes
+- Added `a-form-submit` to create a submit button for a form
 - Fixed `a-service` to create a service with injectable provided in root
 
 <a name="8.2.0"></a>
