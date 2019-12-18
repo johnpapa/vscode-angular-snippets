@@ -7,6 +7,9 @@
 - Added `a-form` to create a form tag with ngSubmit and form attributes
 - Added `a-form-submit` to create a submit button for a form
 - Fixed `a-service` to create a service with injectable provided in root
+- Added `a-ng-container` to create `<ng-container>` element
+- Added `a-ng-template` to create `<ng-template>` element
+- Added `a-ng-content` to create `<ng-content>` element
 
 <a name="8.2.0"></a>
 

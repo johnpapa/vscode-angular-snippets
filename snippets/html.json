@@ -31,47 +31,32 @@
   },
   "ngForm": {
     "prefix": "a-form",
-    "body": [
-      "<form (ngSubmit)=\"onSubmit()\" #${1:form}=\"ngForm\">",
-      "</form>"
-    ],
+    "body": ["<form (ngSubmit)=\"onSubmit()\" #${1:form}=\"ngForm\">", "</form>"],
     "description": "Form with ngSubmit and form attributes"
   },
   "ngFormArrayName": {
     "prefix": "a-formArrayName",
-    "body": [
-      "formArrayName=\"${1:control}\""
-    ],
+    "body": ["formArrayName=\"${1:control}\""],
     "description": "Angular formArrayName"
   },
   "ngFormControlName": {
     "prefix": "a-formControlName",
-    "body": [
-      "formControlName=\"${1:control}\""
-    ],
+    "body": ["formControlName=\"${1:control}\""],
     "description": "Angular formControlName"
   },
   "ngFormGroup": {
     "prefix": "a-formGroup",
-    "body": [
-      "[formGroup]=\"${1:form}\""
-    ],
+    "body": ["[formGroup]=\"${1:form}\""],
     "description": "Angular formGroup"
   },
   "ngFormGroupName": {
     "prefix": "a-formGroupName",
-    "body": [
-      "[formGroupName]=\"${1:name}\""
-    ],
+    "body": ["[formGroupName]=\"${1:name}\""],
     "description": "Angular formGroupName"
   },
   "ngFormSubmit": {
     "prefix": "a-form-submit",
-    "body": [
-      "<button type=\"submit\" [disabled]=\"!${1:form}.form.valid\">",
-      "\tSave",
-      "</button>"
-    ],
+    "body": ["<button type=\"submit\" [disabled]=\"!${1:form}.form.valid\">", "\tSave", "</button>"],
     "description": "Angular form submit"
   },
   "ngIf": {
@@ -91,9 +76,7 @@
   },
   "ngRouterLink": {
     "prefix": "a-routerLink",
-    "body": [
-      "[routerLink]=\"['/${1:routePath}']\" routerLinkActive=\"${2:router-link-active}\" $0"
-    ],
+    "body": ["[routerLink]=\"['/${1:routePath}']\" routerLinkActive=\"${2:router-link-active}\" $0"],
     "description": "Angular routerLink"
   },
   "ngRouterLinkWithParameter": {
@@ -137,5 +120,20 @@
     "prefix": "a-preja",
     "body": ["<pre>{{${1:model} | async | json}}</pre>$0"],
     "description": "Angular pre debug | async | json"
+  },
+  "ng-container": {
+    "prefix": "a-ng-container",
+    "body": ["<ng-container $0></ng-container>"],
+    "description": "Angular ng-container"
+  },
+  "ng-template": {
+    "prefix": "a-ng-template",
+    "body": ["<ng-template [ngTemplateOutlet]=\"${1:outlet}\" [ngOutletContext]=\"${2:context}\"></ng-template>"],
+    "description": "Angular ng-template"
+  },
+  "ng-content": {
+    "prefix": "a-ng-content",
+    "body": ["<ng-content select=\"${0:selector}\"></ng-content>"],
+    "description": "Angular ng-content"
   }
 }

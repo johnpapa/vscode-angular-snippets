@@ -16,7 +16,7 @@ Check out the [Angular Essentials extension](https://marketplace.visualstudio.co
 
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
-Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
+Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to activate snippets from within the editor.
 
 ### Command Palette Commands
 
@@ -114,6 +114,9 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 | `a-ngSwitch`         | `ngSwitch`                                          |
 | `a-prej`             | show the JSON form of a model                       |
 | `a-preja`            | show the JSON form of a model, using async          |
+| `a-ng-container`     | `<ng-container>` element                            |
+| `a-ng-template`      | `<ng-template>` element                             |
+| `a-ng-content`       | `<ng-content>` element                              |
 
 ### VS Code Snippets
 
