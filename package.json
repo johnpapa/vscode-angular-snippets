@@ -22,7 +22,7 @@
   ],
   "version": "8.3.0",
   "engines": {
-    "vscode": "^1.20.0"
+    "vscode": "^1.40.0"
   },
   "scripts": {
     "package": "npx vsce package",
