@@ -90,28 +90,30 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to a
 
 ### HTML Snippets
 
-| Snippet              | Purpose                                    |
-| -------------------- | ------------------------------------------ |
-| `a-class`            | `[class]` binding                          |
-| `a-select`           | `<select>` control                         |
-| `a-style`            | `[style]` binding                          |
-| `a-ngClass`          | `ngClass`                                  |
-| `a-ngFor`            | `*ngFor`                                   |
-| `a-ngForAsync`       | `*ngFor` with async                        |
-| `a-ngFor-trackBy`    | `*ngFor` with trackBy                      |
-| `a-formArrayName`    | `formArrayName`                            |
-| `a-formControlName`  | `formControlName`                          |
-| `a-formGroup`        | `formGroup`                                |
-| `a-formGroupName`    | `formGroupName`                            |
-| `a-ngIf`             | `*ngIf`                                    |
-| `a-ngIfElse`         | `*ngIf` with `else`                        |
-| `a-ngModel`          | `ngModel`                                  |
-| `a-routerLink`       | `routerLink`                               |
-| `a-routerLink-param` | `routerLink` with a route parameter        |
-| `a-ngStyle`          | `ngStyle`                                  |
-| `a-ngSwitch`         | `ngSwitch`                                 |
-| `a-prej`             | show the JSON form of a model              |
-| `a-preja`            | show the JSON form of a model, using async |
+| Snippet              | Purpose                                             |
+| -------------------- | --------------------------------------------------- |
+| `a-class`            | `[class]` binding                                   |
+| `a-select`           | `<select>` control                                  |
+| `a-style`            | `[style]` binding                                   |
+| `a-ngClass`          | `ngClass`                                           |
+| `a-ngFor`            | `*ngFor`                                            |
+| `a-ngForAsync`       | `*ngFor` with async                                 |
+| `a-ngFor-trackBy`    | `*ngFor` with trackBy                               |
+| `a-form`             | create a form tag with ngSubmit and form attributes |
+| `a-formArrayName`    | `formArrayName`                                     |
+| `a-formControlName`  | `formControlName`                                   |
+| `a-formGroup`        | `formGroup`                                         |
+| `a-formGroupName`    | `formGroupName`                                     |
+| `a-form-submit`      | create a submit button for a form                   |
+| `a-ngIf`             | `*ngIf`                                             |
+| `a-ngIfElse`         | `*ngIf` with `else`                                 |
+| `a-ngModel`          | `ngModel`                                           |
+| `a-routerLink`       | `routerLink`                                        |
+| `a-routerLink-param` | `routerLink` with a route parameter                 |
+| `a-ngStyle`          | `ngStyle`                                           |
+| `a-ngSwitch`         | `ngSwitch`                                          |
+| `a-prej`             | show the JSON form of a model                       |
+| `a-preja`            | show the JSON form of a model, using async          |
 
 ### VS Code Snippets
 
