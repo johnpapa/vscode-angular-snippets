@@ -137,7 +137,8 @@
     "description": "Angular HttpInterceptor for Logging HttpClient",
     "body": [
       "import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';",
-      "import { Observable, tap } from 'rxjs';",
+      "import { Observable } from 'rxjs';",
+      "import { tap } from 'rxjs/operators';",
       "",
       "@Injectable({providedIn: ${1:'root'}})",
       "export class LogInterceptor implements HttpInterceptor {",
