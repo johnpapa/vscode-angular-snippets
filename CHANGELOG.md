@@ -1,6 +1,11 @@
 ## Angular Snippets Changelog
 
-<a name="8.3.0"></a>
+<a name="8.3.1"></a>
+
+# 8.3.1 (2020-02-01)
+
+- Revised `a-http-interceptor` to prompt for interceptor name
+- Revised interceptors to use `@Injectable()`
 
 # 8.3.0 (2019-12-18)
 
