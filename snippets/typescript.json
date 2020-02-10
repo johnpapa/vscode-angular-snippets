@@ -107,9 +107,9 @@
     "prefix": "a-route-params-subscribe",
     "description": "Angular - subscribe to routing parameters",
     "body": [
-      "this.route.params",
-      "\t.pipe(map(params => params['id']), tap(id => (this.id = +id)))",
-      "\t.subscribe(id => ${1:function()}());",
+      "this.route.paramMap",
+      "\t.pipe(switchMap(params => params.get('id')), tap(id => (this.id = +id)))",
+      "\t.subscribe(id => {$1});",
       "$0"
     ]
   },
