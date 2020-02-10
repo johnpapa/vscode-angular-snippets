@@ -4,16 +4,15 @@
 
 # 9.0.0 (2020-02-10)
 
-v9 Changes
+Changes
 
 - Revise all providedIn snippets to prompt user for a value
-
-Updates
-
 - Update `a-http-interceptor-logging` for RxJS move (#107)
 - Update ngrx effects - wrap with return (#100)
 - Various interceptor fixes
 - Revised routing module to be part of regular module
+- Added `a-preload-opt-in-strategy` as a custom preload strategy that allows choosing which routes to preload
+- Added `a-preload-network-strategy` as a custom preload strategy that preloads based on network connectivity
 
 <a name="8.3.1"></a>
 

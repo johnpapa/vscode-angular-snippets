@@ -372,9 +372,9 @@
       "}"
     ]
   },
-  "Angular Custom Preload Strategy": {
-    "prefix": "a-preload-strategy",
-    "description": "Angular custom preload strategy",
+  "Angular Opt-In Preload Strategy": {
+    "prefix": "a-preload-opt-in-strategy",
+    "description": "Angular opt-in preload strategy",
     "body": [
       "import { PreloadingStrategy, Route } from '@angular/router';",
       "import { Observable, of } from 'rxjs';",
@@ -385,6 +385,40 @@
       "\t}",
       "}",
       "$0"
+    ]
+  },
+  "Angular Network-Aware Preload Strategy": {
+  "prefix": "a-preload-network-strategy",
+    "description": "Angular network aware preload strategy",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { PreloadingStrategy, Route } from '@angular/router';",
+      "import { Observable, EMPTY } from 'rxjs';",
+      "",
+      "// avoid typing issues for now",
+      "export declare var navigator;",
+      "",
+      "@Injectable({ providedIn: 'root' })",
+      "export class NetworkAwarePreloadStrategy implements PreloadingStrategy {",
+      "\tpreload(route: Route, load: () => Observable<any>): Observable<any> {",
+      "\t\treturn this.hasGoodConnection() ? load() : EMPTY;",
+      "\t}",
+      "",
+      "\thasGoodConnection(): boolean {",
+      "\t\tconst conn = navigator.connection;",
+      "\t\tif (conn) {",
+      "\t\t\tif (conn.saveData) {",
+      "\t\t\t\treturn false; // save data mode is enabled, so dont preload",
+      "\t\t\t}",
+      "\t\t\tconst avoidTheseConnections = ['slow-2g', '2g' /* , '3g', '4g' */];",
+      "\t\t\tconst effectiveType = conn.effectiveType || '';",
+      "\t\t\tif (avoidTheseConnections.includes(effectiveType)) {",
+      "\t\t\t\treturn false;",
+      "\t\t\t}",
+      "\t\t}",
+      "\t\treturn true;",
+      "\t}",
+      "}"
     ]
   },
   "Angular Router Events": {
