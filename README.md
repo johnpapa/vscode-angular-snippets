@@ -26,39 +26,41 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 
 ### TypeScript Angular Snippets
 
-| Snippet                      | Purpose                                                      |
-| ---------------------------- | ------------------------------------------------------------ |
-| `a-component`                | component                                                    |
-| `a-component-inline`         | component with inline template                               |
-| `a-component-root`           | root app component                                           |
-| `a-directive`                | directive                                                    |
-| `a-guard-can-activate`       | `CanActivate` guard                                          |
-| `a-guard-can-activate-child` | `CanActivateChild` guard                                     |
-| `a-guard-can-deactivate`     | `CanDeactivate` guard                                        |
-| `a-guard-can-load`           | `CanLoad` guard                                              |
-| `a-httpclient-get`           | `httpClient.get` with Rx Observable                          |
-| `a-http-interceptor`         | Empty Angular `HttpInterceptor` for `HttpClient`             |
-| `a-http-interceptor-headers` | Angular `HttpInterceptor` that sets headers for `HttpClient` |
-| `a-http-interceptor-logging` | Angular `HttpInterceptor` that logs traffic for `HttpClient` |
-| `a-module`                   | module                                                       |
-| `a-module-root`              | root app module                                              |
-| `a-module-routing`           | routing module file (forChild)                               |
-| `a-output-event`             | `@Output` event and emitter                                  |
-| `a-pipe`                     | pipe                                                         |
-| `a-resolver`                 | resolver                                                     |
-| `a-rxjs-import`              | import RxJs features                                         |
-| `a-rxjs-operators`           | import RxJs operators                                        |
-| `a-route-path-404`           | 404 route path                                               |
-| `a-route-path-default`       | default route path                                           |
-| `a-route-path-with-children` | route path with children                                     |
-| `a-route-path-eager`         | eager route path                                             |
-| `a-route-path-lazy`          | lazy route path                                              |
-| `a-router-events`            | listen to one or more router events                          |
-| `a-route-params-subscribe`   | subscribe to route parameters                                |
-| `a-service`                  | service with injectable provided in root                     |
-| `a-service-httpclient`       | service with `HttpClient`                                    |
-| `a-ctor-skip-self`           | angular `NgModule`'s `skipself` constructor                  |
-| `a-subscribe`                | Rx Observable subscription                                   |
+| Snippet                      | Purpose                                                              |
+| ---------------------------- | -------------------------------------------------------------------- |
+| `a-component`                | component                                                            |
+| `a-component-inline`         | component with inline template                                       |
+| `a-component-root`           | root app component                                                   |
+| `a-directive`                | directive                                                            |
+| `a-guard-can-activate`       | `CanActivate` guard                                                  |
+| `a-guard-can-activate-child` | `CanActivateChild` guard                                             |
+| `a-guard-can-deactivate`     | `CanDeactivate` guard                                                |
+| `a-guard-can-load`           | `CanLoad` guard                                                      |
+| `a-httpclient-get`           | `httpClient.get` with Rx Observable                                  |
+| `a-http-interceptor`         | Empty Angular `HttpInterceptor` for `HttpClient`                     |
+| `a-http-interceptor-headers` | Angular `HttpInterceptor` that sets headers for `HttpClient`         |
+| `a-http-interceptor-logging` | Angular `HttpInterceptor` that logs traffic for `HttpClient`         |
+| `a-module`                   | module                                                               |
+| `a-module-root`              | root app module                                                      |
+| `a-module-routing`           | routing module file (forChild)                                       |
+| `a-output-event`             | `@Output` event and emitter                                          |
+| `a-pipe`                     | pipe                                                                 |
+| `a-preload-opt-in-strategy`  | custom preload strategy that allows choosing which routes to preload |
+| `a-preload-network-strategy` | custom preload strategy that preloads based on network connectivity  |
+| `a-resolver`                 | resolver                                                             |
+| `a-rxjs-import`              | import RxJs features                                                 |
+| `a-rxjs-operators`           | import RxJs operators                                                |
+| `a-route-path-404`           | 404 route path                                                       |
+| `a-route-path-default`       | default route path                                                   |
+| `a-route-path-with-children` | route path with children                                             |
+| `a-route-path-eager`         | eager route path                                                     |
+| `a-route-path-lazy`          | lazy route path                                                      |
+| `a-router-events`            | listen to one or more router events                                  |
+| `a-route-params-subscribe`   | subscribe to route parameters                                        |
+| `a-service`                  | service with injectable provided in root                             |
+| `a-service-httpclient`       | service with `HttpClient`                                            |
+| `a-ctor-skip-self`           | angular `NgModule`'s `skipself` constructor                          |
+| `a-subscribe`                | Rx Observable subscription                                           |
 
 ### NgRx Snippets
 

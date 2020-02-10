@@ -16,11 +16,11 @@
   "keywords": [
     "Angular",
     "Angular 2",
-    "Angular 8",
+    "Angular 9",
     "TypeScript",
     "HTML"
   ],
-  "version": "8.3.1",
+  "version": "9.0.0",
   "engines": {
     "vscode": "^1.40.0"
   },
