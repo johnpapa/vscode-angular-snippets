@@ -32,7 +32,8 @@
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "extensionKind": [
-    "ui"
+    "ui",
+    "workspace"
   ],
   "main": "./out/src/extension",
   "categories": [
