@@ -3,6 +3,7 @@
   "publisher": "johnpapa",
   "displayName": "Angular Snippets (Version 9)",
   "description": "Angular version 9 snippets by John Papa",
+  "version": "9.1.0",
   "icon": "images/angular-shield.png",
   "galleryBanner": {
     "color": "#0273D4",
@@ -20,7 +21,6 @@
     "TypeScript",
     "HTML"
   ],
-  "version": "9.0.1",
   "engines": {
     "vscode": "^1.40.0"
   },
