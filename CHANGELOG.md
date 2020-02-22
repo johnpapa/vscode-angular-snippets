@@ -1,8 +1,8 @@
 ## Angular Snippets Changelog
 
-<a name="9.1.0"></a>
+<a name="9.1.1"></a>
 
-# 9.1.0 (2020-02-22)
+# 9.1.1 (2020-02-22)
 
 - Added `a-trackby` to create a trackby function in TypeScript for the `ngFor`
 - Removed `a-module-routing` and replaced with `a-routes`. Routes will be defined in a `router.ts` file and no more Routing Module.
