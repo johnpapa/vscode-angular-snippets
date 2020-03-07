@@ -31,7 +31,7 @@
     "body": [
       "{",
       "\t\"type\": \"npm\",",
-      "\t\"script\": \"start\",",
+      "\t\"script\": \"${1:start}\",",
       "\t\"isBackground\": true,",
       "\t\"presentation\": {",
       "\t\t\"focus\": true,",
