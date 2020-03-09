@@ -1,5 +1,11 @@
 ## Angular Snippets Changelog
 
+<a name="9.1.2"></a>
+
+# 9.1.2 (2020-03-07)
+
+- Added a prompt for the debugging task for VS Code
+
 <a name="9.1.1"></a>
 
 # 9.1.1 (2020-02-22)
