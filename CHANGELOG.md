@@ -5,6 +5,7 @@
 # 9.1.2 (2020-03-07)
 
 - Added a prompt for the debugging task for VS Code
+- Added extensionKind workspace, to fix [The extension cannot be installed into VSO](https://github.com/johnpapa/vscode-angular-snippets/issues/109)
 
 <a name="9.1.1"></a>
 
