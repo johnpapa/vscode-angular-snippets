@@ -243,21 +243,13 @@
       "$0"
     ]
   },
-  "Angular Module with Routing": {
-    "prefix": "a-module-with-routing",
-    "description": "Angular module with routing combined into one file",
+  "Route definitions": {
+    "prefix": "a-routes",
+    "description": "Route definitions",
     "body": [
-      "import { NgModule } from '@angular/core';",
-      "import { Routes, RouterModule } from '@angular/router';",
+      "import { Routes } from '@angular/router';",
       "",
-      "const routes: Routes = [${0}]",
-      "",
-      "@NgModule({",
-      "\timports: [RouterModule.${2:forChild}(routes)],",
-      "\texports: [],",
-      "\tdeclarations: [],",
-      "})",
-      "export class ${1:Name}Module { }"
+      "export const routes: Routes = [${0}]"
     ]
   },
   "Angular Module": {
@@ -608,5 +600,10 @@
       "  }",
       "}"
     ]
+  },
+  "TrackBy Function": {
+    "prefix": "a-trackby",
+    "description": "TrackBy Function",
+    "body": ["${1:trackBy}(index: number, ${2:name}: ${3:model}): ${4:number} {", "  return ${2:name}${5:.id};$0", "}"]
   }
 }

@@ -1,5 +1,19 @@
 ## Angular Snippets Changelog
 
+<a name="9.1.2"></a>
+
+# 9.1.2 (2020-03-07)
+
+- Added a prompt for the debugging task for VS Code
+- Added extensionKind workspace, to fix [The extension cannot be installed into VSO](https://github.com/johnpapa/vscode-angular-snippets/issues/109)
+
+<a name="9.1.1"></a>
+
+# 9.1.1 (2020-02-22)
+
+- Added `a-trackby` to create a trackby function in TypeScript for the `ngFor`
+- Removed `a-module-routing` and replaced with `a-routes`. Routes will be defined in a `router.ts` file and no more Routing Module.
+
 <a name="9.0.1"></a>
 
 # 9.0.1 (2020-02-10)
