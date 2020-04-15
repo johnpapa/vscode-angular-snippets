@@ -79,6 +79,12 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 | `a-ngrx-data-entity-metadata`                | create the entity metadata for NgRx                       |
 | `a-ngrx-data-entity-collection-data-service` | create a data service using NgRx                          |
 
+### Ngx Snippets
+
+| Snippet                                      | Purpose                                                   |
+| -------------------------------------------- | --------------------------------------------------------- |
+| `a-ngx-translate-i18n`                       | creates a Ngx Translate i18n template                     |
+
 ### Dockerfile Snippets
 
 | Snippet                           | Purpose                                      |

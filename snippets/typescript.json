@@ -605,5 +605,17 @@
     "prefix": "a-trackby",
     "description": "TrackBy Function",
     "body": ["${1:trackBy}(index: number, ${2:name}: ${3:model}): ${4:number} {", "  return ${2:name}${5:.id};$0", "}"]
+  },
+  "Ngx Translate i18n": {
+    "prefix": "a-ngx-translate-i18n",
+    "description": "Creates a Ngx Translate i18n template",
+    "body": [
+      "export const locale = {",
+      "  lang: '${1:en}',",
+      "  data: {",
+      "    ${2:KEY}: '${3:TRANSLATION}'",
+      "  }",
+      "};"
+    ]
   }
 }
