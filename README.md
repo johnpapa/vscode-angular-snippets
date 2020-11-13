@@ -10,7 +10,7 @@ See the [CHANGELOG](CHANGELOG.md) for the latest changes
 
 ## Angular Essentials
 
-Check out the [Angular Essentials extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials&wt.mc_id=vscode_angular_snippets-github-jopapa) for more great extensions for developing with JavaScript and Angular.
+Check out the [Angular Essentials extension](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials&WT.mc_id=javascript-0000-jopapa) for more great extensions for developing with JavaScript and Angular.
 
 ## Usage
 
