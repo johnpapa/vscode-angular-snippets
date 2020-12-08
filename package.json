@@ -1,9 +1,9 @@
 {
   "name": "Angular2",
   "publisher": "johnpapa",
-  "displayName": "Angular Snippets (Version 9)",
-  "description": "Angular version 9 snippets by John Papa",
-  "version": "9.1.2",
+  "displayName": "Angular Snippets (Version 11)",
+  "description": "Angular version 11 snippets by John Papa",
+  "version": "11.0.0",
   "icon": "images/angular-shield.png",
   "galleryBanner": {
     "color": "#0273D4",
@@ -16,8 +16,7 @@
   },
   "keywords": [
     "Angular",
-    "Angular 2",
-    "Angular 9",
+    "Angular 11",
     "TypeScript",
     "HTML"
   ],
@@ -82,9 +81,9 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^8.10.59",
+    "@types/node": "^8.10.66",
     "typescript": "^2.9.2",
-    "vscode": "^1.1.36"
+    "vscode": "^1.1.37"
   },
   "dependencies": {}
 }

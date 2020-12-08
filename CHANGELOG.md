@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="11.0.0"></a>
+
+# 11.0.0 (2020-12-08)
+
+- 
+- The old faulty implementation in the typescript.json did use a switchMap which would lead to problematic behavior. Replaced it with the map operator. Closes #113
+
 <a name="9.1.2"></a>
 
 # 9.1.2 (2020-03-07)
