@@ -610,14 +610,17 @@
 		"prefix": "a-test-service",
 		"body": [
 			"import { TestBed } from \"@angular/core/testing\";",
-			"describe(\"Service\", () => {",
+			"describe(\"${2:ServiceName}\", () => {",
 			"beforeEach(() => {",
 			"TestBed.configureTestingModule({",
 			"providers: [",
+			"\t$0",
 			"]});",
 			"});",
 			"it('should have my first test', ()=> {",
+			"\t$0",
 			"});",
+			"\t$0",
 			"});"
 		],
 		"description": "Service Testbed setup"
