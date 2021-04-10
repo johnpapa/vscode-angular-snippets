@@ -68,7 +68,7 @@
   "Angular Default Route Path": {
     "prefix": "a-route-path-default",
     "description": "Angular default route path",
-    "body": ["{ path: '', pathMatch: 'full', redirectTo: '${1:path}' }$0"]
+    "body": ["{ path: '', pathMatch: 'full', redirectTo: '${1:path}' },"]
   },
   "Angular Route Path with Children": {
     "prefix": "a-route-path-with-children",
