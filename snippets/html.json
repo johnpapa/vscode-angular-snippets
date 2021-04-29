@@ -104,10 +104,10 @@
   "ngSwitch": {
     "prefix": "a-ngSwitch",
     "body": [
-      "<div [ngSwitch]=\"${1:conditionExpression}\">",
-      "\t<div *ngSwitchCase=\"${2:expression}\">${3:output}</div>",
-      "\t<div *ngSwitchDefault>${4:output2}</div>",
-      "</div>"
+      "<ng-container [ngSwitch]=\"${1:conditionExpression}\">",
+      "\t<ng-container *ngSwitchCase=\"${2:expression}\">${3:output}</ng-container>",
+      "\t<ng-container *ngSwitchDefault>${4:output2}</ng-container>",
+      "</ng-container>"
     ],
     "description": "Angular ngSwitch"
   },
