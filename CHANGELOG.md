@@ -1,10 +1,17 @@
 ## Angular Snippets Changelog
 
+<a name="12.0.0"></a>
+
+# 12.0.0 (2021-05-24)
+
+- merged PR for adding trailing commas to route snippets
+- minor updates for v12
+- added devcontainer
+
 <a name="11.0.0"></a>
 
 # 11.0.0 (2020-12-08)
 
-- 
 - The old faulty implementation in the typescript.json did use a switchMap which would lead to problematic behavior. Replaced it with the map operator. Closes #113
 
 <a name="9.1.2"></a>
