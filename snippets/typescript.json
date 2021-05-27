@@ -68,7 +68,7 @@
   "Angular Default Route Path": {
     "prefix": "a-route-path-default",
     "description": "Angular default route path",
-    "body": ["{ path: '', pathMatch: 'full', redirectTo: '${1:path}' }$0"]
+    "body": ["{ path: '', pathMatch: 'full', redirectTo: '${1:path}' },$0"]
   },
   "Angular Route Path with Children": {
     "prefix": "a-route-path-with-children",
@@ -80,18 +80,18 @@
       "\tchildren: [",
       "\t\t{ path: '${3:childpath}', component: ${4:ChildComponent} }",
       "\t]",
-      "}$0"
+      "},$0"
     ]
   },
   "Angular 404 Route Path": {
     "prefix": "a-route-path-404",
     "description": "Angular 404 route path",
-    "body": ["{ path: '**', component: ${1:PathNotFoundComponent} }$0"]
+    "body": ["{ path: '**', component: ${1:PathNotFoundComponent} },$0"]
   },
   "Angular Eager Route Path": {
     "prefix": "a-route-path-eager",
     "description": "Angular eager route path",
-    "body": ["{ path: '${1:path}', component: ${2:Name}Component },"]
+    "body": ["{ path: '${1:path}', component: ${2:Name}Component },$0"]
   },
   "Angular Lazy Route Path": {
     "prefix": "a-route-path-lazy",
@@ -100,7 +100,7 @@
       "{",
       "\tpath: '${1:path}', ",
       "\tloadChildren: () => import('${2:lazy-path}').then(m => m.${3:lazy-module})",
-      "},"
+      "},$0"
     ]
   },
   "Routing Params - Subscribe": {
