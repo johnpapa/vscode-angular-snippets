@@ -133,7 +133,7 @@
   },
   "ng-content": {
     "prefix": "a-ng-content",
-    "body": ["<ng-content select=\"${0:selector}\"></ng-content>"],
+    "body": ["<ng-content select=\"[${0:selector}]\"></ng-content>"],
     "description": "Angular ng-content"
   }
 }
