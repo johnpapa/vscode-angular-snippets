@@ -1,5 +1,12 @@
 ## Angular Snippets Changelog
 
+<a name="13.0.0"></a>
+
+# 13.0.0 (2022-01-31)
+
+- vscode.dev support
+- minor v13 updates
+
 <a name="12.0.0"></a>
 
 # 12.0.0 (2021-05-24)
