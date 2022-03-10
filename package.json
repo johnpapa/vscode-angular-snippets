@@ -1,9 +1,9 @@
 {
   "name": "Angular2",
   "publisher": "johnpapa",
-  "displayName": "Angular Snippets (Version 12)",
-  "description": "Angular version 12 snippets by John Papa",
-  "version": "12.0.0",
+  "displayName": "Angular Snippets (Version 13)",
+  "description": "Angular version 13 snippets by John Papa",
+  "version": "13.0.0",
   "icon": "images/angular-shield.png",
   "galleryBanner": {
     "color": "#0273D4",
@@ -16,7 +16,7 @@
   },
   "keywords": [
     "Angular",
-    "Angular 12",
+    "Angular 13",
     "TypeScript",
     "HTML"
   ],
@@ -25,38 +25,19 @@
   },
   "scripts": {
     "package": "npx vsce package",
-    "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./",
     "publish": "npx vsce publish",
-    "postinstall": "node ./node_modules/vscode/bin/install"
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "open-in-browser": "vscode-test-web --extensionDevelopmentPath=. ."
   },
   "extensionKind": [
     "ui",
     "workspace"
   ],
-  "main": "./out/src/extension",
   "categories": [
     "Snippets",
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:angular.configureExpressServer"
-  ],
   "contributes": {
-    "commands": [
-      {
-        "command": "angular.configureExpressServer",
-        "title": "Add Node.js express file to workspace",
-        "description": "Add Node.js express file",
-        "category": "Express"
-      }
-    ],
-    "jsonValidation": [
-      {
-        "fileMatch": "manifest.json",
-        "url": "http://json.schemastore.org/web-manifest"
-      }
-    ],
     "snippets": [
       {
         "language": "typescript",
@@ -82,7 +63,8 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.11",
+    "@vscode/test-web": "^0.0.22",
     "typescript": "^4.1.2",
-    "vscode": "^1.1.37"
+    "vscode": "*"
   }
 }
