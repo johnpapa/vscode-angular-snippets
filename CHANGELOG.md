@@ -8,7 +8,7 @@
 - minor v13 updates
 - removed node express server generation so the extension can be supported in vscode for the web
 - removed JSON schema validation for Web App Manifest
-- added "open-in-browser" npm script to test the vscode.dev mode
+- added "open-in-browser" npm script to test the vscode.dev mode as shown in https://code.visualstudio.com/api/extension-guides/web-extensions#test-your-web-extension
 
 <a name="12.0.0"></a>
 
