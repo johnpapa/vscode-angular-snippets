@@ -34,7 +34,6 @@
     "ui",
     "workspace"
   ],
-  "main": "./out/src/extension",
   "categories": [
     "Snippets",
     "Other"
@@ -43,12 +42,6 @@
     "*"
   ],
   "contributes": {
-    "jsonValidation": [
-      {
-        "fileMatch": "manifest.json",
-        "url": "http://json.schemastore.org/web-manifest"
-      }
-    ],
     "snippets": [
       {
         "language": "typescript",
