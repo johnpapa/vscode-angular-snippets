@@ -40,17 +40,9 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:angular.configureExpressServer"
+    "*"
   ],
   "contributes": {
-    "commands": [
-      {
-        "command": "angular.configureExpressServer",
-        "title": "Add Node.js express file to workspace",
-        "description": "Add Node.js express file",
-        "category": "Express"
-      }
-    ],
     "jsonValidation": [
       {
         "fileMatch": "manifest.json",

@@ -6,6 +6,7 @@
 
 - vscode.dev support
 - minor v13 updates
+- removed node express server generation so the extension can be supported in vscode for the web
 
 <a name="12.0.0"></a>
 
