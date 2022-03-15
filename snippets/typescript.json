@@ -444,6 +444,21 @@
       "}"
     ]
   },
+  "Angular Reactive forms custom validator": {
+    "prefix": "a-reactive-forms-custom-validator",
+    "description": "Angular Reactive forms custom validator",
+    "body": [
+      "// import { AbstractControl, ValidatorFn} from '@angular/forms';",
+      "function ${1:validatorFactory}(${2:arg1}: ${3:argType}): ValidatorFn {",
+      "\treturn (c: AbstractControl): { [key: string]: boolean } | null => {",
+      "\t\tif (${4:conditionToCheckIfSomeThingIsWrong}) {",
+      "\t\t\treturn { ${5:whatsWrong}: true };",
+      "\t\t}",
+      "\t\treturn null;",
+      "\t};",
+      "}"
+    ]
+  }
   "RxJs Import": {
     "prefix": "a-rxjs-import",
     "description": "RxJs import",
