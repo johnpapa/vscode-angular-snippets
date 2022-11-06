@@ -17,6 +17,26 @@
       "}"
     ]
   },
+  "Angular Standalone Component": {
+    "prefix": "a-component-standalone",
+    "description": "Angular standalone component",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tstandalone: true,",
+      "\timports: [],",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
   "Angular Component with Inline Template": {
     "prefix": "a-component-inline",
     "description": "Angular component with an inline template",
