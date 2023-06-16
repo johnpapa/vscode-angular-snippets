@@ -246,11 +246,7 @@
   "Route definitions": {
     "prefix": "a-routes",
     "description": "Route definitions",
-    "body": [
-      "import { Routes } from '@angular/router';",
-      "",
-      "export const routes: Routes = [${0}]"
-    ]
+    "body": ["import { Routes } from '@angular/router';", "", "export const routes: Routes = [${0}]"]
   },
   "Angular Module": {
     "prefix": "a-module",
@@ -286,16 +282,15 @@
     "prefix": "a-guard-can-activate",
     "description": "Angular CanActivate guard",
     "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angular/router';",
+      "import { inject } from '@angular/core';",
+      "import { ActivatedRouteSnapshot, CanActivateFn, RouterStateSnapshot } from '@angular/router';",
       "",
-      "@Injectable({providedIn: ${1:'root'}})",
-      "export class ${2:Name}Guard implements CanActivate {",
-      "\tconstructor() { }",
+      "export const ${2:Name}Guard: CanActivateFn = (",
+      "\troute: ActivatedRouteSnapshot,",
+      "\tstate: RouterStateSnapshot",
+      "\t) => {",
       "",
-      "\tcanActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {",
       "\t\treturn true;$0",
-      "\t}",
       "}"
     ]
   },
@@ -303,33 +298,30 @@
     "prefix": "a-guard-can-activate-child",
     "description": "Angular CanActivateChild guard",
     "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { ActivatedRouteSnapshot, CanActivateChild, RouterStateSnapshot } from '@angular/router';",
+      "import { inject } from '@angular/core';",
+      "import { ActivatedRouteSnapshot, CanActivateChildFn, RouterStateSnapshot } from '@angular/router';",
       "",
-      "@Injectable({providedIn: ${1:'root'}})",
-      "export class ${2:Name}Guard implements CanActivateChild {",
-      "\tconstructor() { }",
+      "export const ${2:Name}Guard: CanActivateChildFn = (",
+      "\troute: ActivatedRouteSnapshot,",
+      "\tstate: RouterStateSnapshot",
+      "\t) => {",
       "",
-      "\tcanActivateChild(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {",
       "\t\treturn true;$0",
-      "\t}",
       "}"
     ]
   },
-  "Angular CanLoad Guard": {
-    "prefix": "a-guard-can-load",
-    "description": "Angular CanLoad guard",
+  "Angular CanMatch Guard": {
+    "prefix": "a-guard-can-match",
+    "description": "Angular CanMatch guard",
     "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { CanLoad, Route } from '@angular/router';",
+      "import { inject } from '@angular/core';",
+      "import { CanMatchFn, Route, Router, UrlSegment } from '@angular/router';",
       "",
-      "@Injectable({providedIn: ${1:'root'}})",
-      "export class ${2:Name}Guard implements CanLoad {",
-      "\tconstructor() { }",
-      "",
-      "\tcanLoad(route: Route) {",
-      "\t\treturn true;$0",
-      "\t}",
+      "export const ${2:Name}Guard: CanMatchFn = (",
+      "\troute: Route,",
+      "\tsegments: UrlSegment[]",
+      ") => {",
+      "\treturn true;$0",
       "}"
     ]
   },
@@ -337,29 +329,28 @@
     "prefix": "a-guard-can-deactivate",
     "description": "Angular CanDeactivate guard",
     "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot } from '@angular/router';",
+      "import { inject } from '@angular/core';",
+      "import { CanDeactivateFn } from '@angular/router';",
       "import { Observable } from 'rxjs';",
-      "",
-      "import { ${2:ComponentName}Component } from './${3:filename}.component';",
       "",
       "// Consider using this interface for all CanDeactivate guards,",
       "// and have your components implement this interface, too.",
       "//",
-      "//   e.g. export class CanDeactivateGuard implements CanDeactivate<CanComponentDeactivate> {",
+      "//   e.g. export class VillainsComponent implements CanComponentDeactivate { ...",
       "//",
-      "// export interface CanComponentDeactivate {",
-      "// canDeactivate: () => any;",
-      "// }",
+      "export interface CanComponentDeactivate {",
+      "\tcanDeactivate: () => Observable<boolean> | Promise<boolean> | boolean;",
+      "}",
       "",
-      "@Injectable({providedIn: ${4:'root'}})",
-      "export class ${1:Name}Guard implements CanDeactivate<${2:ComponentName}Component> {",
-      "\tcanDeactivate(",
-      "\t\tcomponent: ${2:ComponentName}Component,",
-      "\t\tcurrentRoute: ActivatedRouteSnapshot, ",
-      "\t\tcurrentState: RouterStateSnapshot",
-      "\t): Observable<boolean>|Promise<boolean>|boolean {",
-      "\t\treturn false;$0",
+      "export const ${1:Name}Guard: CanDeactivateFn<CanComponentDeactivate> = (",
+      "\tcomponent: CanComponentDeactivate",
+      ") => {",
+      "\t\tif (component.canDeactivate()) {",
+      "\t\t\tconsole.log(`💂‍♀️ [Guard] - Can Deactivate Guard - allowed`);",
+      "\t\t\treturn true;",
+      "\t\t} else {",
+      "\t\t\tconsole.log(`💂‍♀️ [Guard] - Can Deactivate Guard - not allowed`);",
+      "\t\t\treturn false;",
       "\t}",
       "}"
     ]
@@ -380,7 +371,7 @@
     ]
   },
   "Angular Network-Aware Preload Strategy": {
-  "prefix": "a-preload-network-strategy",
+    "prefix": "a-preload-network-strategy",
     "description": "Angular network aware preload strategy",
     "body": [
       "import { Injectable } from '@angular/core';",
