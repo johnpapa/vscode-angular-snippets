@@ -29,6 +29,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 | Snippet                      | Purpose                                                              |
 | ---------------------------- | -------------------------------------------------------------------- |
 | `a-component`                | component                                                            |
+| `a-component-standalone`     | standalone component                                                 |
 | `a-component-inline`         | component with inline template                                       |
 | `a-component-root`           | root app component                                                   |
 | `a-ctor-skip-self`           | angular `NgModule`'s `skipself` constructor                          |
