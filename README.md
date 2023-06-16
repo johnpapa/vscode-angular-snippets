@@ -1,6 +1,6 @@
 # Angular TypeScript Snippets for VS Code
 
-**Updated for Angular 16.0.0 release**
+**Updated for Angular 16.0.1 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
@@ -36,7 +36,7 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 | `a-guard-can-activate`       | `CanActivate` guard                                                  |
 | `a-guard-can-activate-child` | `CanActivateChild` guard                                             |
 | `a-guard-can-deactivate`     | `CanDeactivate` guard                                                |
-| `a-guard-can-load`           | `CanLoad` guard                                                      |
+| `a-guard-can-match`          | `CanMatch` guard                                                     |
 | `a-httpclient-get`           | `httpClient.get` with Rx Observable                                  |
 | `a-http-interceptor`         | Empty Angular `HttpInterceptor` for `HttpClient`                     |
 | `a-http-interceptor-headers` | Angular `HttpInterceptor` that sets headers for `HttpClient`         |

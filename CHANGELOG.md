@@ -1,8 +1,8 @@
 ## Angular Snippets Changelog
 
-<a name="16.0.0"></a>
+<a name="16.0.1"></a>
 
-# 16.0.0 (2023-06-15)
+# 16.0.1 (2023-06-15)
 
 - Updated functional guard support for a-guard-can-activate, a-guard-can-activate-child, a-guard-can-match, and a-guard-can-deactivate
 
