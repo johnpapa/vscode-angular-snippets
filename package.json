@@ -1,8 +1,8 @@
 {
   "name": "Angular2",
   "publisher": "johnpapa",
-  "displayName": "Angular Snippets (Version 13)",
-  "description": "Angular version 13 snippets by John Papa",
+  "displayName": "Angular Snippets (Version 16)",
+  "description": "Angular version 16 snippets by John Papa",
   "version": "16.0.0",
   "icon": "images/angular-shield.png",
   "galleryBanner": {
@@ -16,7 +16,7 @@
   },
   "keywords": [
     "Angular",
-    "Angular 13",
+    "Angular 16",
     "TypeScript",
     "HTML"
   ],
