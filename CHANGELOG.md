@@ -1,5 +1,15 @@
 ## Angular Snippets Changelog
 
+<a name="18.0.0"></a>
+
+# 18.0.0 (2024-07-15)
+
+- removed ngTemplate due to syntax changes
+- updated ngContent with squared brackets syntax
+- Newer functional guard syntax updates:
+  - Updated CanActivate guard to be a functional CanActivateFn guard
+  - Updated CanActivateFn guard to be a functional CanActivateChildFn guard
+
 <a name="16.0.1"></a>
 
 # 16.0.1 (2023-06-15)

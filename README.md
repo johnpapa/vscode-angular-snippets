@@ -34,8 +34,8 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 | `a-component-root`           | root app component                                                   |
 | `a-ctor-skip-self`           | angular `NgModule`'s `skipself` constructor                          |
 | `a-directive`                | directive                                                            |
-| `a-guard-can-activate`       | `CanActivate` guard                                                  |
-| `a-guard-can-activate-child` | `CanActivateChild` guard                                             |
+| `a-guard-can-activate`       | `CanActivateFn` guard                                                |
+| `a-guard-can-activate-child` | `CanActivateChildFn` guard                                             |
 | `a-guard-can-deactivate`     | `CanDeactivate` guard                                                |
 | `a-guard-can-match`          | `CanMatch` guard                                                     |
 | `a-httpclient-get`           | `httpClient.get` with Rx Observable                                  |
@@ -119,7 +119,6 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 | `a-prej`             | show the JSON form of a model                       |
 | `a-preja`            | show the JSON form of a model, using async          |
 | `a-ng-container`     | `<ng-container>` element                            |
-| `a-ng-template`      | `<ng-template>` element                             |
 | `a-ng-content`       | `<ng-content>` element                              |
 
 ### VS Code Snippets
