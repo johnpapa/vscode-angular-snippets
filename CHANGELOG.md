@@ -6,6 +6,7 @@
 
 - removed ngTemplate due to syntax changes
 - updated ngContent with squared brackets syntax
+- udpated `a-ngFor-trackBy` to call a trackBy function you create (using `a-trackBy`)
 - Newer functional guard syntax updates:
   - Updated CanActivate guard to be a functional CanActivateFn guard
   - Updated CanActivateFn guard to be a functional CanActivateChildFn guard
