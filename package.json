@@ -1,9 +1,9 @@
 {
   "name": "Angular2",
   "publisher": "johnpapa",
-  "displayName": "Angular Snippets (Version 16)",
-  "description": "Angular version 16 snippets by John Papa",
-  "version": "16.0.1",
+  "displayName": "Angular Snippets (Version 18)",
+  "description": "Angular version 18 snippets by John Papa",
+  "version": "18.0.0",
   "icon": "images/angular-shield.png",
   "galleryBanner": {
     "color": "#0273D4",

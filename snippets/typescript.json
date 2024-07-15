@@ -298,41 +298,50 @@
       "}"
     ]
   },
-  "Angular CanActivate Guard": {
+  "Angular Functional CanActivateFn Guard": {
     "prefix": "a-guard-can-activate",
-    "description": "Angular CanActivate guard",
+    "description": "Angular Functional CanActivate guard",
     "body": [
       "import { inject } from '@angular/core';",
-      "import { ActivatedRouteSnapshot, CanActivateFn, RouterStateSnapshot } from '@angular/router';",
+      "import {",
+      "  ActivatedRouteSnapshot,",
+      "  CanActivateFn,",
+      "  Router,",
+      "  RouterStateSnapshot,",
+      "} from '@angular/router';",
       "",
-      "export const ${2:Name}Guard: CanActivateFn = (",
+      "export const ${1:Name}Guard: CanActivateFn = (",
       "\troute: ActivatedRouteSnapshot,",
       "\tstate: RouterStateSnapshot",
-      "\t) => {",
+      ") => {",
+      "\tconst router = inject(Router);",
       "",
-      "\t\treturn true;$0",
-      "}"
+      "\treturn true;$0",
+      "};"
     ]
   },
-  "Angular CanActivateChild Guard": {
+  "Angular Functional CanActivateChildFn Guard": {
     "prefix": "a-guard-can-activate-child",
     "description": "Angular CanActivateChild guard",
     "body": [
       "import { inject } from '@angular/core';",
-      "import { ActivatedRouteSnapshot, CanActivateChildFn, RouterStateSnapshot } from '@angular/router';",
+      "import {",
+      "  ActivatedRouteSnapshot,",
+      "  CanActivateChildFn,",
+      "  RouterStateSnapshot,",
+      "} from '@angular/router';",
       "",
-      "export const ${2:Name}Guard: CanActivateChildFn = (",
-      "\troute: ActivatedRouteSnapshot,",
-      "\tstate: RouterStateSnapshot",
-      "\t) => {",
-      "",
-      "\t\treturn true;$0",
-      "}"
+      "const ${1:Name}Guard: CanActivateChildFn = (",
+      "  route: ActivatedRouteSnapshot,",
+      "  state: RouterStateSnapshot",
+      ") => {",
+      "\treturn true;$0",
+      "};"
     ]
   },
-  "Angular CanMatch Guard": {
+  "Angular Functional CanMatchFn Guard": {
     "prefix": "a-guard-can-match",
-    "description": "Angular CanMatch guard",
+    "description": "Angular Functional CanMatchFn guard",
     "body": [
       "import { inject } from '@angular/core';",
       "import { CanMatchFn, Route, Router, UrlSegment } from '@angular/router';",
@@ -347,7 +356,7 @@
   },
   "Angular CanDeactivate Guard": {
     "prefix": "a-guard-can-deactivate",
-    "description": "Angular CanDeactivate guard",
+    "description": "Angular Functional CanDeactivateFn guard",
     "body": [
       "import { inject } from '@angular/core';",
       "import { CanDeactivateFn } from '@angular/router';",
