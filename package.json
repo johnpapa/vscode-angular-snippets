@@ -3,7 +3,7 @@
   "publisher": "johnpapa",
   "displayName": "Angular Snippets (Version 18)",
   "description": "Angular version 18 snippets by John Papa",
-  "version": "18.0.0",
+  "version": "18.0.1",
   "icon": "images/angular-shield.png",
   "galleryBanner": {
     "color": "#0273D4",
@@ -16,7 +16,7 @@
   },
   "keywords": [
     "Angular",
-    "Angular 16",
+    "Angular 18",
     "TypeScript",
     "HTML"
   ],

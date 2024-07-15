@@ -1,6 +1,6 @@
 # Angular TypeScript Snippets for VS Code
 
-**Updated for Angular 16.0.1 release**
+**Updated for Angular 18 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
