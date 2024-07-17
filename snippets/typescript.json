@@ -625,5 +625,24 @@
     "prefix": "a-trackby",
     "description": "TrackBy Function",
     "body": ["${1:trackBy}(index: number, ${2:name}: ${3:model}): ${4:number} {", "  return ${2:name}${5:.id};$0", "}"]
-  }
+  },
+  "Test-bed setup": {
+		"prefix": "a-test-service",
+		"body": [
+			"import { TestBed } from \"@angular/core/testing\";",
+			"describe(\"${2:ServiceName}\", () => {",
+			"beforeEach(() => {",
+			"TestBed.configureTestingModule({",
+			"providers: [",
+			"\t$0",
+			"]});",
+			"});",
+			"it('should have my first test', ()=> {",
+			"\t$0",
+			"});",
+			"\t$0",
+			"});"
+		],
+		"description": "Service Testbed setup"
+	}
 }
