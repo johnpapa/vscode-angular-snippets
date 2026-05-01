@@ -1,5 +1,7 @@
 # Angular TypeScript Snippets for VS Code
 
+[![AI Ready](https://img.shields.io/badge/AI--Ready-yes-brightgreen?style=flat)](https://github.com/johnpapa/ai-ready)
+
 **Updated for Angular 18 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
@@ -137,6 +139,12 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 1. Select `Install Extension`
 1. Choose the extension
 1. Reload Visual Studio Code
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute, including submitting issues and pull requests.
+
+For the full contributor guide, including snippet conventions and the maintenance matrix, see [AGENTS.md](AGENTS.md).
 
 ## Credits
 
