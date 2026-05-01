@@ -1,0 +1,55 @@
+name: Feature Request
+description: Suggest a new snippet or improvement to an existing one
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for a new Angular snippet or an improvement? We'd love to hear it!
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Request type
+      options:
+        - New snippet
+        - Improve existing snippet
+        - New language scope
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: prefix
+    attributes:
+      label: Suggested prefix
+      description: What prefix should the snippet use? (e.g., `a-new-feature`)
+      placeholder: "a-"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the snippet and what code it should generate
+    validations:
+      required: true
+
+  - type: textarea
+    id: snippet-body
+    attributes:
+      label: Proposed snippet body
+      description: If you have a draft of the snippet body, paste it here
+      render: json
+    validations:
+      required: false
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this snippet useful? What Angular pattern does it support?
+    validations:
+      required: true

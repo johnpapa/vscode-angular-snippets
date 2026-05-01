@@ -1,0 +1,72 @@
+name: Bug Report
+description: Report a problem with an Angular snippet
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the details below.
+
+  - type: input
+    id: snippet-prefix
+    attributes:
+      label: Snippet prefix
+      description: Which snippet prefix is affected? (e.g., `a-component`, `a-service`)
+      placeholder: "a-component"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language scope
+      description: In which file type does the issue occur?
+      options:
+        - TypeScript (.ts)
+        - JavaScript (.js)
+        - HTML (.html)
+        - JSONC (.jsonc)
+        - Dockerfile
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should the snippet produce?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What does the snippet actually produce?
+    validations:
+      required: true
+
+  - type: input
+    id: vscode-version
+    attributes:
+      label: VS Code version
+      placeholder: "1.90.0"
+    validations:
+      required: false
+
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      placeholder: "18.0.2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Any other details, screenshots, or screen recordings
+    validations:
+      required: false

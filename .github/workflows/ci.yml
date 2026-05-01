@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  pull_request:
+    paths-ignore:
+      - '**.md'
+      - 'images/**'
+      - 'LICENSE.md'
+      - '.gitignore'
+      - '.vscodeignore'
+      - 'code_of_conduct/**'
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - 'images/**'
+      - 'LICENSE.md'
+      - '.gitignore'
+      - '.vscodeignore'
+      - 'code_of_conduct/**'
+
+jobs:
+  validate:
+    name: Validate snippets and manifest
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON syntax — snippet files
+        run: |
+          echo "Validating snippet JSON files..."
+          for f in snippets/*.json; do
+            echo "  Checking $f"
+            python3 -c "import json; json.load(open('$f'))" || exit 1
+          done
+          echo "✅ All snippet files are valid JSON"
+
+      - name: Validate JSON syntax — package.json
+        run: |
+          echo "Checking package.json..."
+          python3 -c "import json; json.load(open('package.json'))"
+          echo "✅ package.json is valid JSON"
+
+      - name: Verify snippet file references
+        run: |
+          echo "Checking that all snippet files referenced in package.json exist..."
+          python3 -c "
+          import json, sys, os
+          pkg = json.load(open('package.json'))
+          snippets = pkg.get('contributes', {}).get('snippets', [])
+          missing = []
+          for s in snippets:
+              path = s['path'].lstrip('./')
+              if not os.path.exists(path):
+                  missing.append(path)
+                  print(f'  ❌ Missing: {path}')
+              else:
+                  print(f'  ✅ Found: {path}')
+          if missing:
+              sys.exit(1)
+          "
+          echo "✅ All referenced snippet files exist"
+
+      - name: Check snippet prefix uniqueness
+        run: |
+          echo "Checking for duplicate prefixes across snippet files..."
+          python3 -c "
+          import json, glob, sys
+          prefixes = {}
+          for f in sorted(glob.glob('snippets/*.json')):
+              data = json.load(open(f))
+              for name, snippet in data.items():
+                  prefix = snippet.get('prefix', '')
+                  if prefix in prefixes:
+                      print(f'  ⚠️  Duplicate prefix \"{prefix}\" in {f} and {prefixes[prefix]}')
+                  else:
+                      prefixes[prefix] = f
+          print(f'✅ Checked {len(prefixes)} snippet prefixes')
+          "
