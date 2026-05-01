@@ -1,5 +1,7 @@
 # Angular TypeScript Snippets for VS Code
 
+[![AI-Ready](https://img.shields.io/badge/AI--Ready-AGENTS.md-blue?logo=githubcopilot)](./AGENTS.md)
+
 **Updated for Angular 18 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
