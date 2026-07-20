@@ -119,7 +119,7 @@ Each snippet file is scoped to a specific VS Code language ID via `package.json`
 
 ### Version tracking
 
-The extension version tracks Angular major versions (e.g., `18.x.x` for Angular 18). The `displayName` in `package.json` also reflects the current Angular version.
+The extension version tracks Angular major versions (e.g., `22.x.x` for Angular 22). The `displayName` in `package.json` also reflects the current Angular version.
 
 ## Adding a New Snippet
 
