@@ -32,6 +32,9 @@
     "ui",
     "workspace"
   ],
+  "capabilities": {
+    "virtualWorkspaces": true
+  },
   "categories": [
     "Snippets",
     "Other"

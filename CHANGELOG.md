@@ -17,6 +17,8 @@
   - fixed `a-guard-can-activate-child` to export the guard constant
   - corrected `a-guard-can-match` placeholder numbering and imports
   - fixed `a-ctor-skip-self` constructor signature
+  - fixed `a-ngFor-trackBy` to use a trackBy function placeholder
+- added explicit VS Code virtual workspace support via `capabilities.virtualWorkspaces`
 
 <a name="18.0.0"></a>
 
