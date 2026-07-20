@@ -20,12 +20,6 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to activate snippets from within the editor.
 
-### Command Palette Commands
-
-| Command                                              | Purpose                     |
-| ---------------------------------------------------- | --------------------------- |
-| express: Add simple Express server file to workspace | Adds Node.js express server |
-
 ### TypeScript Angular Snippets
 
 | Snippet                      | Purpose                                                              |
