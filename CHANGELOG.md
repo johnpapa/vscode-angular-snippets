@@ -1,5 +1,25 @@
 ## Angular Snippets Changelog
 
+<a name="22.0.0"></a>
+
+# 22.0.0 (2026-07-19)
+
+- updated extension metadata and docs for Angular 22
+- modernized key snippets:
+  - added `a-route-path-lazy-component` for standalone lazy loading with `loadComponent`
+  - updated `a-component-root` to standalone style with `RouterOutlet` imports
+  - replaced deprecated `HttpModule` usage in `a-module-root` with `HttpClientModule`
+  - updated `a-resolver` to functional `ResolveFn`
+  - updated `a-rxjs-operator-import` to import operators from `rxjs`
+- improved control-flow coverage in templates:
+  - added `a-if` (`@if`) and `a-for` (`@for`) HTML snippets
+- fixed snippet issues:
+  - fixed `a-guard-can-activate-child` to export the guard constant
+  - corrected `a-guard-can-match` placeholder numbering and imports
+  - fixed `a-ctor-skip-self` constructor signature
+  - fixed `a-ngFor-trackBy` to use a trackBy function placeholder
+- added explicit VS Code virtual workspace support via `capabilities.virtualWorkspaces`
+
 <a name="18.0.0"></a>
 
 # 18.0.0 (2024-07-15)

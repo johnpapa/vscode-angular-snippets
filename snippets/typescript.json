@@ -123,6 +123,16 @@
       "},$0"
     ]
   },
+  "Angular Lazy Route Path - Standalone Component": {
+    "prefix": "a-route-path-lazy-component",
+    "description": "Angular lazy route path for a standalone component",
+    "body": [
+      "{",
+      "\tpath: '${1:path}',",
+      "\tloadComponent: () => import('${2:lazy-path}').then(c => c.${3:LazyComponent})",
+      "},$0"
+    ]
+  },
   "Routing Params - Subscribe": {
     "prefix": "a-route-params-subscribe",
     "description": "Angular - subscribe to routing parameters",
@@ -158,7 +168,7 @@
     "body": [
       "import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';",
       "import { Observable } from 'rxjs';",
-      "import { tap } from 'rxjs/operators';",
+      "import { tap } from 'rxjs';",
       "",
       "@Injectable()",
       "export class LogInterceptor implements HttpInterceptor {",
@@ -230,8 +240,11 @@
     "description": "Angular App root component",
     "body": [
       "import { Component } from '@angular/core';",
+      "import { RouterOutlet } from '@angular/router';",
       "",
       "@Component({",
+      "\tstandalone: true,",
+      "\timports: [RouterOutlet],",
       "\tselector: '${1:prefix-app}',",
       "\ttemplate: `",
       "\t\t<router-outlet></router-outlet>",
@@ -247,14 +260,14 @@
     "body": [
       "import { NgModule } from '@angular/core';",
       "import { BrowserModule  } from '@angular/platform-browser';",
-      "import { HttpModule } from '@angular/http';",
+      "import { HttpClientModule } from '@angular/common/http';",
       "",
       "import { ${1:App}Component } from './${1:app}.component';",
       "",
       "@NgModule({",
       "\timports: [",
       "\t\tBrowserModule,",
-      "\t\tHttpModule,",
+      "\t\tHttpClientModule,",
       "\t],",
       "\tdeclarations: [${1:App}Component],",
       "\tbootstrap: [${1:App}Component],",
@@ -324,14 +337,13 @@
     "prefix": "a-guard-can-activate-child",
     "description": "Angular CanActivateChild guard",
     "body": [
-      "import { inject } from '@angular/core';",
       "import {",
       "  ActivatedRouteSnapshot,",
       "  CanActivateChildFn,",
       "  RouterStateSnapshot,",
       "} from '@angular/router';",
       "",
-      "const ${1:Name}Guard: CanActivateChildFn = (",
+      "export const ${1:Name}Guard: CanActivateChildFn = (",
       "  route: ActivatedRouteSnapshot,",
       "  state: RouterStateSnapshot",
       ") => {",
@@ -343,15 +355,14 @@
     "prefix": "a-guard-can-match",
     "description": "Angular Functional CanMatchFn guard",
     "body": [
-      "import { inject } from '@angular/core';",
-      "import { CanMatchFn, Route, Router, UrlSegment } from '@angular/router';",
+      "import { CanMatchFn, Route, UrlSegment } from '@angular/router';",
       "",
-      "export const ${2:Name}Guard: CanMatchFn = (",
+      "export const ${1:Name}Guard: CanMatchFn = (",
       "\troute: Route,",
       "\tsegments: UrlSegment[]",
       ") => {",
       "\treturn true;$0",
-      "}"
+      "};"
     ]
   },
   "Angular CanDeactivate Guard": {
@@ -455,7 +466,7 @@
     "prefix": "a-ctor-skip-self",
     "description": "Angular Module SkipSelf constructor",
     "body": [
-      "constructor( @Optional() @SkipSelf() parentModule: ${1:ModuleName} {",
+      "constructor(@Optional() @SkipSelf() parentModule: ${1:ModuleName}) {",
       "\tif (parentModule) {",
       "\t\tconst msg = `${1:ModuleName} has already been loaded. ",
       "\t\t\tImport ${1:ModuleName} once, only, in the root AppModule.`;",
@@ -471,23 +482,21 @@
   },
   "RxJs Operator Import": {
     "prefix": "a-rxjs-operator-import",
-    "description": "RxJs import",
-    "body": ["import { ${1:map} } from 'rxjs/operators';", "$0"]
+    "description": "RxJs operator import",
+    "body": ["import { ${1:map} } from 'rxjs';", "$0"]
   },
   "Angular Resolver": {
     "prefix": "a-resolver",
     "description": "Angular Resolver",
     "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { Resolve, ActivatedRouteSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs';",
+      "import { ActivatedRouteSnapshot, ResolveFn, RouterStateSnapshot } from '@angular/router';",
       "",
-      "@Injectable({ providedIn: ${1:'root'} })",
-      "export class ${2:YourResolver} implements Resolve<${3:ObjectToResolve}> {",
-      "\tresolve(route: ActivatedRouteSnapshot): Observable<${3:ObjectToResolve}> | Promise<${3:ObjectToResolve}> | ${3:ObjectToResolve} {",
-      "\t\treturn ${0};",
-      "\t}",
-      "}"
+      "export const ${1:yourResolver}: ResolveFn<${2:ObjectToResolve}> = (",
+      "\troute: ActivatedRouteSnapshot,",
+      "\tstate: RouterStateSnapshot",
+      ") => {",
+      "\treturn ${0};",
+      "};"
     ]
   },
   "NgRx Store Module": {

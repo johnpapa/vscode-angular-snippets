@@ -21,7 +21,7 @@
   },
   "ngFor with trackBy": {
     "prefix": "a-ngFor-trackBy",
-    "body": ["*ngFor=\"let ${1:item} of ${2:list}; trackBy:${1:trackByFnName}\"${0}"],
+    "body": ["*ngFor=\"let ${1:item} of ${2:list}; trackBy:${3:trackByFnName}\"${0}"],
     "description": "Angular *ngFor with trackBy"
   },
   "ngForAsync": {
@@ -68,6 +68,16 @@
     "prefix": "a-ngIfElse",
     "body": ["*ngIf=\"${1:expression};else ${2:templateName}\""],
     "description": "Angular *ngIfElse"
+  },
+  "@if block": {
+    "prefix": "a-if",
+    "body": ["@if (${1:expression}) {", "\t${0}", "}"],
+    "description": "Angular @if control-flow block"
+  },
+  "@for block": {
+    "prefix": "a-for",
+    "body": ["@for (${1:item} of ${2:items}; track ${3:item.id}) {", "\t${0}", "}"],
+    "description": "Angular @for control-flow block"
   },
   "ngModel": {
     "prefix": "a-ngModel",

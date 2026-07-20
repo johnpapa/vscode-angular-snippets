@@ -1,8 +1,8 @@
 # Angular TypeScript Snippets for VS Code
 
-[![AI Ready](https://img.shields.io/badge/AI--Ready-yes-brightgreen?style=flat)](https://github.com/johnpapa/ai-ready)
+[AI Ready project](https://github.com/johnpapa/ai-ready)
 
-**Updated for Angular 18 release**
+**Updated for Angular 22 release**
 
 This extension for Visual Studio Code adds snippets for Angular for TypeScript and HTML.
 
@@ -19,12 +19,6 @@ Check out the [Angular Essentials extension](https://marketplace.visualstudio.co
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to activate snippets from within the editor.
-
-### Command Palette Commands
-
-| Command                                              | Purpose                     |
-| ---------------------------------------------------- | --------------------------- |
-| express: Add simple Express server file to workspace | Adds Node.js express server |
 
 ### TypeScript Angular Snippets
 
@@ -53,12 +47,13 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 | `a-resolver`                 | resolver                                                             |
 | `a-routes`                   | Route definition file                                                |
 | `a-rxjs-import`              | import RxJs features                                                 |
-| `a-rxjs-operators`           | import RxJs operators                                                |
+| `a-rxjs-operator-import`     | import RxJs operators                                                |
 | `a-route-path-404`           | 404 route path                                                       |
 | `a-route-path-default`       | default route path                                                   |
 | `a-route-path-with-children` | route path with children                                             |
 | `a-route-path-eager`         | eager route path                                                     |
-| `a-route-path-lazy`          | lazy route path                                                      |
+| `a-route-path-lazy`          | lazy route path for module loading                                  |
+| `a-route-path-lazy-component`| lazy route path for standalone component loading                    |
 | `a-router-events`            | listen to one or more router events                                  |
 | `a-route-params-subscribe`   | subscribe to route parameters                                        |
 | `a-service`                  | service with injectable provided in root                             |
@@ -113,6 +108,8 @@ Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (macOS) to
 | `a-form-submit`      | create a submit button for a form                   |
 | `a-ngIf`             | `*ngIf`                                             |
 | `a-ngIfElse`         | `*ngIf` with `else`                                 |
+| `a-if`               | `@if` control-flow block                            |
+| `a-for`              | `@for` control-flow block                           |
 | `a-ngModel`          | `ngModel`                                           |
 | `a-routerLink`       | `routerLink`                                        |
 | `a-routerLink-param` | `routerLink` with a route parameter                 |
