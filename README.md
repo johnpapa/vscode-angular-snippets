@@ -1,6 +1,6 @@
 # Angular TypeScript Snippets for VS Code
 
-[![AI Ready](https://img.shields.io/badge/AI--Ready-yes-brightgreen?style=flat)](https://github.com/johnpapa/ai-ready)
+[AI Ready project](https://github.com/johnpapa/ai-ready)
 
 **Updated for Angular 22 release**
 

@@ -1,6 +1,7 @@
 {
   "Create launch config for Chrome": {
     "prefix": "a-launch-chrome",
+    "description": "Launch/debug configuration for VS Code for Chrome",
     "body": [
       "{",
       "\t\"name\": \"Launch Angular\",",
@@ -14,6 +15,7 @@
   },
   "Create launch config for Edge": {
     "prefix": "a-launch-edge",
+    "description": "Launch/debug configuration for VS Code for Edge",
     "body": [
       "{",
       "\t\"name\": \"Launch Angular\",",
@@ -28,6 +30,7 @@
   },
   "Create task to start Angular": {
     "prefix": "a-task-start",
+    "description": "Create a task to start Angular for VS Code",
     "body": [
       "{",
       "\t\"type\": \"npm\",",
