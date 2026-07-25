@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
-    "@vscode/test-web": "^0.0.80",
+    "@vscode/test-web": "^0.0.81",
     "typescript": "^6.0.3",
     "@types/vscode": "^1.40.0",
     "@vscode/vsce": "^3.9.1"
